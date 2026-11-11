@@ -17,7 +17,7 @@
         <a href="#lernangebot">Lernangebot</a>
         <a href="#decision-lab">Decision Lab</a>
         <a href="#fallstudien">Fälle</a>
-        <a href="#workshops">Workshops</a>
+        <a href="#workshops">HR UNLEARN IT</a>
         <a class="nav-teaching" href="#lehre">Lehre <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
@@ -510,7 +510,42 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
             <p>Thema · Evidence Card und Quelle · Befund · Interpretation · Gegenposition · UNLEARN-Frage · Aufgabe und Rolle · Einordnung · Annahme · 30-Tage-Test · Verantwortung · nächster Schritt · Erfolgskriterium · Review-Termin.</p>
           </details>
         </div>
-        <p class="catalog-back"><a href="https://hr-unlearn-it-workbench.a-dulic.chatgpt.site" target="_blank" rel="noopener noreferrer">Bestehende Workshop-Workbench öffnen ↗</a> · Privater Bereich mit ChatGPT-Anmeldung.</p>
+        <div class="workbench-box">
+          <h3>Workshop-Workbench</h3>
+          <p>Halte deine Entscheidung fest und exportiere das Protokoll. Die Eingaben bleiben auf deinem Gerät.</p>
+          <form id="workbench-form" class="workbench-form">
+            <label>Thema<input name="w0" type="input" required maxlength="200"></label>
+            <label>Evidence Card und Quelle<textarea name="w1" rows="2" maxlength="4000"></textarea></label>
+            <label>Befund<textarea name="w2" rows="2" maxlength="4000"></textarea></label>
+            <label>Interpretation<textarea name="w3" rows="2" maxlength="4000"></textarea></label>
+            <label>Gegenposition<textarea name="w4" rows="2" maxlength="4000"></textarea></label>
+            <label>UNLEARN-Frage<textarea name="w5" rows="2" maxlength="4000"></textarea></label>
+            <label>Aufgabe oder Rolle<input name="w6" type="input" maxlength="200"></label>
+            <label>Einordnung<select name="w7"><option value="">Offen</option><option>Automate</option><option>Augment</option><option>Keep Human</option><option>Stop</option></select></label>
+            <label>Begründung und Annahme<textarea name="w8" rows="2" maxlength="4000"></textarea></label>
+            <label>30-Tage-Test<textarea name="w9" rows="2" maxlength="4000"></textarea></label>
+            <label>Verantwortung<input name="w10" type="input" maxlength="200"></label>
+            <label>Nächster Schritt<input name="w11" type="input" maxlength="200"></label>
+            <label>Erfolgskriterium<input name="w12" type="input" maxlength="200"></label>
+            <label>Review-Termin<input name="w13" type="date"></label>
+            <button class="button" type="submit">Protokoll erstellen</button>
+            <div id="workbench-result" hidden>
+              <label>Workshop-Protokoll<textarea id="workbench-record" rows="12" readonly></textarea></label>
+              <a id="workbench-download" download="HR-UNLEARN-Workshop.txt">Protokoll herunterladen ↓</a>
+            </div>
+          </form>
+        </div>
+        <div class="workbench-box" id="literacy">
+          <h3>AI Literacy</h3>
+          <p>Für den Workshop stehen die Lernmaterialien der Academy direkt auf dieser Seite bereit.</p>
+          <ul>
+            <li><a href="#safe-ai-hr">KI in HR verantwortungsvoll einsetzen</a></li>
+            <li><a href="#evidence-check">Wissenschaftliche Aussagen überprüfen</a></li>
+            <li><a href="#human-ai-work-design">Arbeit zwischen Mensch und KI gestalten</a></li>
+            <li><a href="#perspektiven">Zwölf wissenschaftliche Perspektiven</a></li>
+          </ul>
+          <p>Der Originalbestand der separaten Literacy-Datenbank ist in dieser Fassung noch nicht enthalten.</p>
+        </div>
       </div>
     </section>
 
@@ -586,6 +621,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
   <footer class="wrap"><span>Aida Dulic · HR Future Thinkers Academy</span><a href="#start">Nach oben ↑</a></footer>
 </body>
 </html>
+
 
 
 

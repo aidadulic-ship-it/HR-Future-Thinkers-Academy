@@ -88,3 +88,24 @@ test('die Skill-Suche filtert Titel und Prompt-Text und zeigt die Trefferzahl', 
   assert.deepEqual(cards.map(card => card.hidden), [false, false]);
 });
 
+
+test('die Workbench exportiert Thema, Entscheidung und Review ohne Server', () => {
+  const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
+  const fields = [['Thema', 'Recruiting'], ['Einordnung', 'Keep Human'], ['Review-Termin', '2026-12-01']]
+    .map(([label, value]) => ({ labels: [{ firstChild: { textContent: label } }], value }));
+  const form = { addEventListener(_, handler) { this.submit = handler; }, querySelectorAll: () => fields };
+  const record = { focus() {} };
+  const result = { hidden: true };
+  const download = {};
+  const nodes = { 'workbench-form': form, 'workbench-record': record, 'workbench-result': result, 'workbench-download': download };
+  const context = {
+    window: { addEventListener() {} }, location: { hash: '' },
+    document: { querySelector: () => ({ addEventListener() {} }), querySelectorAll: () => [], getElementById: id => nodes[id] ?? null },
+  };
+  for (const [, script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) runInNewContext(script, context);
+  form.submit({ preventDefault() {} });
+  assert.equal(result.hidden, false);
+  for (const field of fields) assert.ok(record.value.includes(field.value));
+  assert.equal(decodeURIComponent(download.href.split(',')[1]), record.value);
+});
+

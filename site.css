@@ -167,3 +167,16 @@ footer { justify-content: space-between; gap: 16px; min-height: 72px; color: var
 .skill-search label { color: var(--navy); font-weight: 700; }
 .skill-search input { width: 100%; min-height: 46px; padding: 8px 12px; color: var(--ink); background: var(--white); border: 1px solid var(--blue-muted); }
 .skill-search p { color: var(--muted); font-size: .9rem; }
+
+.workbench-box { margin-top: 24px; padding: clamp(16px, 4vw, 34px); border: 1px solid var(--blue-line); border-top: 4px solid var(--magenta); background: var(--white); }
+.workbench-box h3 { color: var(--navy); }
+.workbench-box p { margin-block: 8px; }
+.workbench-box a { color: var(--magenta-text); }
+.workbench-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+.workbench-form label { display: block; color: var(--navy); font-weight: 700; }
+.workbench-form :is(input, select, textarea) { display: block; width: 100%; margin-top: 4px; min-height: 42px; padding: 8px; font: inherit; color: var(--ink); background: var(--background); border: 1px solid var(--blue-muted); }
+.workbench-form textarea { resize: vertical; }
+.workbench-form button { justify-self: start; }
+#workbench-result { grid-column: 1 / -1; }
+@media (max-width: 620px) { .workbench-form { grid-template-columns: 1fr; } }
+

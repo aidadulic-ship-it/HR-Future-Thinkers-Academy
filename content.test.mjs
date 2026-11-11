@@ -22,7 +22,6 @@ test('der Workshop ist über die Navigation erreichbar und enthält den ausgearb
   for (const step of ['Evidence Card', 'Gegenposition', 'UNLEARN-Frage', 'Automate', 'Augment', 'Keep Human', 'Stop', '30-Tage-Test', 'Review-Termin']) {
     assert.ok(workshop.includes(step), step);
   }
-  assert.match(workshop, /https:\/\/hr-unlearn-it-workbench\.a-dulic\.chatgpt\.site/);
 });
 
 
@@ -60,5 +59,14 @@ test('jeder Skill hat einen eigenen kopierbaren KI-Prompt vor seinem Workflow', 
     return prompt;
   });
   assert.equal(new Set(prompts).size, 20);
+});
+
+
+test('HR UNLEARN IT ist in der Academy ohne externen Anmeldelink nutzbar', () => {
+  const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
+  const workshop = html.split('<section id="workshops"')[1]?.split('</section>')[0];
+  assert.ok(workshop?.includes('id="workbench-form"'));
+  assert.ok(workshop.includes('id="literacy"'));
+  assert.ok(!workshop.includes('chatgpt.site'));
 });
 

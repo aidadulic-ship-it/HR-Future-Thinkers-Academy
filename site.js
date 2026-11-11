@@ -75,3 +75,21 @@ window.addEventListener('hashchange', openLinkedLesson);
 openLinkedLesson();
 
 
+
+const workbenchForm = document.getElementById('workbench-form');
+if (workbenchForm) {
+  workbenchForm.addEventListener('submit', event => {
+    event.preventDefault();
+    const fields = Array.from(workbenchForm.querySelectorAll('[name]'), field => {
+      const label = field.labels[0].firstChild.textContent.trim();
+      return label + '\n' + (field.value.trim() || 'Offen');
+    });
+    const record = document.getElementById('workbench-record');
+    record.value = ['HR UNLEARN IT · WORKSHOP-PROTOKOLL', ...fields].join('\n\n');
+    document.getElementById('workbench-download').href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(record.value);
+    document.getElementById('workbench-result').hidden = false;
+    record.focus();
+  });
+}
+
+
