@@ -109,3 +109,30 @@ test('die Workbench exportiert Thema, Entscheidung und Review ohne Server', () =
   assert.equal(decodeURIComponent(download.href.split(',')[1]), record.value);
 });
 
+
+test('die Lehrvorschau wechselt zwischen drei Ansichten und unterstützt Pfeiltasten', () => {
+  const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
+  const tabs = ['kurs', 'arbeiten', 'entwicklung'].map(id => ({
+    attributes: { 'aria-controls': 'lehrpanel-' + id },
+    getAttribute(key) { return this.attributes[key]; },
+    setAttribute(key, value) { this.attributes[key] = value; },
+    addEventListener(event, callback) { this[event] = callback; },
+    focus() { this.focused = true; },
+  }));
+  const panels = Object.fromEntries(tabs.map(tab => [tab.getAttribute('aria-controls'), {}]));
+  const nodes = { 'lehrvorschau-tabs': { querySelectorAll: () => tabs }, ...panels };
+  const context = {
+    window: { addEventListener() {} }, location: { hash: '' },
+    document: { querySelector: () => ({ addEventListener() {} }), querySelectorAll: () => [], getElementById: id => nodes[id] ?? null },
+  };
+  assert.ok(html.includes('id="lehrvorschau-tabs"'));
+  for (const id of Object.keys(panels)) assert.ok(html.includes('id="' + id + '"'));
+  for (const [, script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) runInNewContext(script, context);
+  tabs[1].click();
+  assert.deepEqual(Object.values(panels).map(panel => panel.hidden), [true, false, true]);
+  assert.equal(tabs[1].getAttribute('aria-selected'), 'true');
+  tabs[1].keydown({ key: 'ArrowRight', preventDefault() {} });
+  assert.deepEqual(Object.values(panels).map(panel => panel.hidden), [true, true, false]);
+  assert.equal(tabs[2].focused, true);
+});
+

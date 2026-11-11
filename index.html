@@ -555,8 +555,64 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
           <div><p class="eyebrow">FÜR LEHRENDE</p><h2>Executive Case Teaching</h2></div>
           <p>Ein Lehrformat für Hochschulen und Führungskräfteentwicklung. Ziel ist eine begründete Entscheidung unter Unsicherheit, die eine andere Gruppe anhand des Briefings überprüfen kann.</p>
         </div>
+        <div id="lehrvorschau" class="faculty-preview">
+          <header class="faculty-header">
+            <div>
+              <p class="eyebrow">LEHRENDENANSICHT · VORSCHAU</p>
+              <h3>Dein Kurs auf einen Blick.</h3>
+              <p>Sieh, wie du Aufgaben vorbereitest, eingereichte Arbeiten besprichst und die nächste Lehreinheit planst.</p>
+            </div>
+            <span class="faculty-demo">Fiktiver Kurs</span>
+          </header>
+          <div class="faculty-tabs" id="lehrvorschau-tabs" role="tablist" aria-label="Ansichten für Lehrende">
+            <button type="button" role="tab" id="lehrtab-kurs" aria-controls="lehrpanel-kurs" aria-selected="true">Kursübersicht</button>
+            <button type="button" role="tab" id="lehrtab-arbeiten" aria-controls="lehrpanel-arbeiten" aria-selected="false" tabindex="-1">Eingereichte Arbeiten</button>
+            <button type="button" role="tab" id="lehrtab-entwicklung" aria-controls="lehrpanel-entwicklung" aria-selected="false" tabindex="-1">Lehrentwicklung</button>
+          </div>
+          <div class="faculty-panel" id="lehrpanel-kurs" role="tabpanel" aria-labelledby="lehrtab-kurs" tabindex="0">
+            <div class="faculty-panel-heading">
+              <div><h4>KI im Recruiting</h4><p>Fallseminar · Entscheidung unter Unsicherheit</p></div>
+              <a href="#lehrplan">Lehrplan ansehen ↓</a>
+            </div>
+            <dl class="faculty-metrics">
+              <div><dt>Lernende</dt><dd>24</dd></div>
+              <div><dt>Gruppenabgaben</dt><dd>5 <small>von 6</small></dd></div>
+              <div><dt>Feedback ausstehend</dt><dd>2</dd></div>
+            </dl>
+            <div class="faculty-note">
+              <h5>Nächste Aufgabe · Briefing revidieren</h5>
+              <p>Die Gruppen vergleichen ihre Empfehlung mit der Bewertungsrubrik. Sie schärfen das Stoppkriterium und begründen, welche Hinweise sie übernehmen.</p>
+              <p><strong>Lernmodus</strong> · Human First. Erstentwurf vor dem Einsatz von KI, Änderungen in der Abgabe begründen.</p>
+            </div>
+          </div>
+          <div class="faculty-panel" id="lehrpanel-arbeiten" role="tabpanel" aria-labelledby="lehrtab-arbeiten" tabindex="0" hidden>
+            <div class="faculty-panel-heading"><div><h4>Entscheidungsbriefings</h4><p>Zwei Beispielabgaben aus dem Kurs. Öffne einen Eintrag für Auszug und Feedback.</p></div><a href="#lehr-rubrik">Rubrik ansehen ↓</a></div>
+            <div class="faculty-submissions">
+              <details><summary><span>Gruppe A · Begrenzter KI-Pilot</span><small>Feedback offen</small></summary>
+                <p><strong>Auszug.</strong> „Wir testen KI-Zusammenfassungen ausschließlich mit fiktiven Fällen. Das Recruiting-Team prüft jedes Ergebnis am Original.“</p>
+                <p><strong>Mögliches Feedback.</strong> Der Umfang ist klar. Lege noch fest, welcher Fehler den Test stoppt und wie ihr die Nachprüfzeit erfasst.</p>
+              </details>
+              <details><summary><span>Gruppe C · Prozess zuerst</span><small>Feedback erteilt</small></summary>
+                <p><strong>Auszug.</strong> „Wir schärfen zuerst Stellenprofil und Bewertungsraster. Die manuelle Bearbeitungszeit wird zur Vergleichsbasis.“</p>
+                <p><strong>Beispiel-Feedback.</strong> Die Alternative ist plausibel. Messt neben der Dauer auch die Vollständigkeit tätigkeitsrelevanter Angaben.</p>
+              </details>
+            </div>
+            <p class="faculty-caption">Die Ansicht zeigt eingereichte Arbeiten. Private Entwürfe und Chats sind für Lehrende nicht einsehbar.</p>
+          </div>
+          <div class="faculty-panel" id="lehrpanel-entwicklung" role="tabpanel" aria-labelledby="lehrtab-entwicklung" tabindex="0" hidden>
+            <div class="faculty-panel-heading"><div><h4>Von Feedback zur nächsten Lehreinheit</h4><p>Beispiel einer didaktischen Auswertung auf Kursebene.</p></div></div>
+            <ol class="faculty-cycle">
+              <li><strong>Beobachtung</strong><p>In mehreren Briefings wurde schnellere Sichtung als Beleg für bessere Auswahl interpretiert. Die Messgrößen beantworten unterschiedliche Fragen.</p></li>
+              <li><strong>Änderung</strong><p>Vor der Revision ordnen Lernende drei Belege den Größen Sichtungszeit, Gesamtzeit und Auswahlqualität zu und begründen ihre Zuordnung.</p></li>
+              <li><strong>Review</strong><p>Prüfe die überarbeiteten Briefings mit demselben Evidenzkriterium. Besprich, welche Begründungen konkreter geworden sind und welche Fragen offenbleiben.</p></li>
+            </ol>
+            <p class="faculty-caption">In kleinen Gruppen oder bei identifizierbaren Rückmeldungen bleibt die aggregierte Auswertung ausgeblendet.</p>
+          </div>
+          <footer class="faculty-footer">Öffentliche Vorschau · keine Anmeldung · keine echten Kurs- oder Personendaten</footer>
+        </div>
+
         <div class="tools">
-          <details open><summary>90-Minuten-Lehrplan</summary>
+          <details id="lehrplan" open><summary>90-Minuten-Lehrplan</summary>
             <ol>
               <li><strong>15 Min. · Einzelarbeit.</strong> Fall lesen, Empfehlung wählen und eine fehlende Information notieren.</li>
               <li><strong>25 Min. · Gruppenarbeit.</strong> Eine Gruppe vertritt HR, eine die Geschäftsführung, eine die Beschäftigtenperspektive. Jede prüft dieselbe Evidenz und formuliert eine Gegenposition.</li>
@@ -564,7 +620,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
               <li><strong>25 Min. · Feedback und Transfer.</strong> Briefings mit der Rubrik bewerten, eine Revision schreiben und eine ähnliche Entscheidung aus dem eigenen Arbeitsumfeld skizzieren.</li>
             </ol>
           </details>
-          <details><summary>Bewertungsrubrik · vier Kriterien, acht Punkte</summary>
+          <details id="lehr-rubrik"><summary>Bewertungsrubrik · vier Kriterien, acht Punkte</summary>
             <p>Bewerte jedes Kriterium mit 0 Punkten bei fehlender Angabe, 1 Punkt bei einer allgemeinen Aussage und 2 Punkten bei einem konkreten, überprüfbaren Nachweis.</p>
             <ul>
               <li><strong>Entscheidung.</strong> Eindeutige Empfehlung mit verworfener Alternative und Begründung.</li>
@@ -613,7 +669,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
           </div>
           <details><summary>Zugangsmodelle laut Briefing</summary><p><strong>Free</strong> sieht drei interaktive Demo-Skills und 20 KI-Nachrichten pro Kalendermonat vor. <strong>Premium</strong> sieht vollständige Workflows, Speicherung und zunächst 200 KI-Nachrichten im Monat vor. <strong>Campus</strong> verwendet Organisationsbudgets und Kurslimits. Die lokale Vorschau hat keine Konten, Abrechnung oder aktiven KI-Kontingente.</p></details>
         </div>
-        <p class="catalog-back"><a href="#lehre">Offenen Lehrplan und Bewertungsrubrik ansehen ↑</a></p>
+        <p class="catalog-back"><a href="#lehrvorschau">Lehrendenansicht und Lehrmaterial ansehen ↑</a></p>
       </div>
     </section>
 
@@ -621,6 +677,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
   <footer class="wrap"><span>Aida Dulic · HR Future Thinkers Academy</span><a href="#start">Nach oben ↑</a></footer>
 </body>
 </html>
+
 
 
 

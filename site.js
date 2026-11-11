@@ -91,3 +91,38 @@ if (workbenchForm) {
     record.focus();
   });
 }
+
+const teacherTabList = document.getElementById('lehrvorschau-tabs');
+if (teacherTabList) {
+  const tabs = Array.from(teacherTabList.querySelectorAll('[role="tab"]'));
+  const panels = tabs.map(tab => document.getElementById(tab.getAttribute('aria-controls')));
+
+  function selectTeacherTab(index) {
+    tabs.forEach((tab, position) => {
+      const selected = position === index;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+      panels[position].hidden = !selected;
+    });
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => selectTeacherTab(index));
+    tab.addEventListener('keydown', event => {
+      const last = tabs.length - 1;
+      const targets = {
+        ArrowLeft: index === 0 ? last : index - 1,
+        ArrowRight: index === last ? 0 : index + 1,
+        Home: 0,
+        End: last,
+      };
+      if (!Object.hasOwn(targets, event.key)) return;
+      event.preventDefault();
+      const next = targets[event.key];
+      selectTeacherTab(next);
+      tabs[next].focus();
+    });
+  });
+  selectTeacherTab(0);
+}
+
