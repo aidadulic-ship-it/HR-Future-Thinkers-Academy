@@ -1,0 +1,30 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: source/academy-core
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Vorschau bauen
+        run: node build-preview.mjs
+      - name: Tests ausführen
+        run: node --test "*.test.mjs"
+      - name: Prüfen, ob academy/index.html aktuell ist
+        run: |
+          if ! cmp -s ../Academy-Vorschau.html ../../academy/index.html; then
+            echo "academy/index.html ist veraltet. Bitte 'node build-preview.mjs' ausführen und source/Academy-Vorschau.html nach academy/index.html kopieren."
+            exit 1
+          fi

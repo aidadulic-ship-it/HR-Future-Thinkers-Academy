@@ -1,0 +1,261 @@
+# HR FUTURE THINKERS ACADEMY | CAMPUS EDITION
+## VERBINDLICHES CONTENT-MASTERBRIEFING FÜR WORK
+
+AUFTRAG
+Entwickle auf der bestehenden Website aidadulic.at im Bereich /academy die vollständige HR Future Thinkers Academy mit öffentlicher Academy und geschützter Campus Edition. Nicht nur UI-Demos, Karten oder Platzhalter erstellen. Implementiere echte fachliche Inhalte, vollständige Skill-Workflows, Lernaufgaben, wissenschaftliche Quellenverwaltung, Fallstudien, Reflexionsschritte und Ergebnisdokumentation.
+
+Der vollständige beschlossene Funktionsumfang gehört in den ersten Release. Keine Verschiebung auf einen späteren Pilot. Technische Implementierung mit RED/GREEN/REFACTOR und automatisierten Tests. Vor produktiver Freigabe Sicherheits-, Datenschutz- und Qualitätstests.
+
+BESTEHENDE WEBSITE
+aidadulic.at bleibt Grundlage. Academy ist ein Seitenbereich, keine Subdomain. Design: Navy #12295a und #1b3a7a; Magenta #d6288c und #b0116f; Tinte #16203a; Grau-Blau #5a6580; Hintergrund #f6f7fb; Karten #ffffff; Linien #e2e6f0. Keine grüne Primärmarkenfarbe.
+
+POSITIONIERUNG
+Name: HR Future Thinkers Academy
+Zusatz: Think critically. Challenge assumptions. Design better HR decisions.
+Deutsch: HR neu denken. Evidenz prüfen. Perspektiven wechseln. Bessere Entscheidungen treffen.
+
+HERO
+Headline: Die Zukunft von HR braucht mehr als neue Tools. Sie braucht neues Denken.
+Subheadline: Die HR Future Thinkers Academy verbindet wissenschaftliche Evidenz, kritisches Denken und künstliche Intelligenz. Mit 20 praxisorientierten HR-AI-Skills, zwölf wissenschaftlichen Perspektiven und interaktiven Lernlaboren entwickeln HR-Professionals, Lehrende und Studierende fundierte Entscheidungen für die Arbeitswelt von morgen.
+CTA 1: Academy entdecken
+CTA 2: Skills ausprobieren
+CTA 3: Campus Edition kennenlernen
+
+GRUNDPRINZIPIEN
+1. Human Judgment First: KI unterstützt, Menschen entscheiden.
+2. Evidence over Opinion: Behauptungen brauchen überprüfbare Quellen.
+3. Challenge Assumptions: Annahmen, Gegenpositionen und Alternativen sichtbar machen.
+4. Learn by Doing: Echte Lernaktivitäten mit synthetischen HR-Fällen.
+5. Privacy by Design: Keine personenbezogenen HR-Fälle in KI-Eingaben.
+6. Explainable Decisions: Ergebnisse und Entscheidungen nachvollziehbar dokumentieren.
+
+WEBSITE-NAVIGATION
+/academy – Startseite
+/academy/skills – alle 20 Skills
+/academy/skills/[slug] – einzelne Skillseiten
+/academy/thinkers – zwölf Forschungsprofile
+/academy/thinkers/[slug] – Profil mit Originalquellen und Modellen
+/academy/evidence – Evidence Engine
+/academy/labs – interaktive Lernlabore
+/academy/campus – Campus Edition
+/academy/competence-passport – Kompetenzpass
+/academy/method – didaktisches Konzept
+/academy/pricing – Free, Premium, Campus
+/academy/login – Anmeldung
+/academy/register – Registrierung
+/academy/dashboard – persönlicher Arbeitsbereich
+/academy/legal – erforderliche rechtliche Informationen
+
+ÖFFENTLICHE STARTSEITE – INHALTE
+Sektion 1: Hero mit drei CTAs.
+Sektion 2: Warum diese Academy? „HR hat nicht zu wenig Informationen. HR braucht bessere Methoden, Informationen kritisch zu prüfen und daraus Entscheidungen abzuleiten.“
+Sektion 3: 20 HR-AI-Skills – entdecken, hinterfragen, analysieren, entscheiden, reflektieren.
+Sektion 4: Zwölf wissenschaftliche Perspektiven – Forschungsansätze verstehen und vergleichen, ohne reale Personen durch KI zu imitieren.
+Sektion 5: Evidence Engine – Studien prüfen, Widersprüche erkennen, Unsicherheit benennen.
+Sektion 6: Human-AI Decision Lab – von der Ausgangsannahme zur dokumentierten Entscheidung.
+Sektion 7: Campus Edition – Lehre, Gruppenarbeiten, Aufgaben, Kompetenzentwicklung, Feedback.
+Sektion 8: Human-AI Competence Passport – dokumentierte Kompetenzentwicklung mit überprüfbaren Nachweisen.
+Sektion 9: Zugangsmöglichkeiten – Free, Premium, Campus; Preise nicht erfinden.
+Sektion 10: Über die Academy – unabhängige Initiative von Aida Đulić, B.A.; fachliche HR-Perspektive, Lern- und Organisationsentwicklung, KI-Enablement. Keine unbelegten Hochschulpartnerschaften behaupten.
+
+20 SKILLS – REDAKTIONELLE VOLLSTÄNDIGE TAXONOMIE
+Die folgenden Slugs und Arbeitstitel sind ein konsistenter redaktioneller Vorschlag. Bestehende Original-Skillnamen und Texte im Projekt haben Vorrang; Abweichungen dokumentieren.
+
+01 /grill-me – Annahmen kritisch hinterfragen
+Ziel: Die eigene Argumentation gegen kritische Fragen und Gegenpositionen prüfen.
+Eingabe: Entscheidung, Ausgangsannahme, Ziel, Kontext.
+Ablauf: These formulieren; Annahmen extrahieren; kritische Gegenfragen stellen; Gegenposition entwickeln; Risiken und blinde Flecken identifizieren; Entscheidung überarbeiten.
+Output: Annahmenliste, Gegenargumente, überarbeitete Entscheidung, offene Fragen.
+Praxisfall: „Wir brauchen mehr Recruiting, weil Stellen zu lange offen sind.“
+Qualitätsregel: Keine erfundenen Fakten; Fragen statt Scheingewissheit.
+
+02 /evidence-check – Wissenschaftliche Aussagen überprüfen
+Ziel: Aussagen nach Evidenz und Übertragbarkeit bewerten.
+Eingabe: HR-Behauptung und Kontext.
+Ablauf: Behauptung präzisieren; Evidenzbedarf definieren; Quellen suchen; Forschungsdesign prüfen; Gegenbefunde vergleichen; begründetes Fazit formulieren.
+Output: Evidence Card mit Quellen, Evidenzstatus, Grenzen und offenen Fragen.
+Praxisfall: „Vier-Tage-Woche erhöht die Produktivität.“
+Qualitätsregel: Originalquellen, Publikationsdaten und Prüfstatus dokumentieren.
+
+03 /hr-decision-lab – Fundierte HR-Entscheidungen
+Ziel: Optionen transparent bewerten.
+Eingabe: Problem, Entscheidungskriterien, Alternativen.
+Ablauf: Problem abgrenzen; Optionen erstellen; Kriterien gewichten; Evidenz prüfen; Risiken und Gegenpositionen bewerten; Entscheidung und Review definieren.
+Output: Decision Trace, Entscheidungsmatrix, 30-Tage-Test.
+Praxisfall: Priorisierung von Weiterbildungsinvestitionen.
+
+04 /human-ai-work-design – Arbeit zwischen Mensch und KI gestalten
+Ziel: Tätigkeiten sinnvoll zwischen Mensch, KI und Automatisierung aufteilen.
+Eingabe: Rolle, Aufgaben, Risiken, Anforderungen.
+Ablauf: Aufgaben zerlegen; Automatisierungspotenzial prüfen; Risiken bewerten; Automate/Augment/Keep Human/Stop zuordnen; Kontrollen definieren; neuen Workflow entwerfen.
+Output: Work-Design-Canvas.
+Praxisfall: HR-Service-Prozesse.
+
+05 /learning-review – Lerntransfer überprüfen
+Ziel: Nachvollziehen, ob eine Lernmaßnahme zu verändertem Verhalten führt.
+Eingabe: Lernziel, Maßnahme, Beobachtungen, Ergebnisse.
+Ablauf: Zielverhalten definieren; Indikatoren festlegen; Ausgangslage dokumentieren; Evidenz sammeln; Alternativerklärungen prüfen; nächste Maßnahme ableiten.
+Output: Learning Review mit Grenzen und Transfermaßnahmen.
+Praxisfall: Führungskräftetraining.
+
+06 /organization-diagnosis – Organisationsprobleme analysieren
+Ziel: Symptome von Ursachen unterscheiden.
+Eingabe: Organisationsproblem und synthetische Beobachtungen.
+Ablauf: Symptome erfassen; Hypothesen bilden; Stakeholder-Perspektiven vergleichen; Evidenzlücken markieren; Ursachen priorisieren; Interventionen testen.
+Output: Diagnosehypothesen und Interventionsplan.
+Praxisfall: Hohe Fluktuation in einem Team.
+
+07 /learning-design – Lernangebote entwickeln
+Ziel: Kompetenzorientierte Lernmaßnahmen gestalten.
+Eingabe: Zielgruppe, Kompetenzlücke, Lernziel.
+Ablauf: Bedarf analysieren; beobachtbare Ziele definieren; Lernaktivitäten auswählen; Transfer planen; Evaluation festlegen; Design kritisch prüfen.
+Output: Learning Design Canvas.
+Praxisfall: KI-Kompetenzentwicklung im HR-Team.
+
+08 /change-in-practice – Veränderung wirksam gestalten
+Ziel: Veränderungsmaßnahmen aus unterschiedlichen Perspektiven analysieren.
+Eingabe: Veränderungsvorhaben und Stakeholder.
+Ablauf: Zielbild; Betroffenheit; Widerstände und Interessen; Annahmen; Experimente; Feedback- und Anpassungsplan.
+Output: Change Experiment Plan.
+Praxisfall: Einführung eines neuen HR-Prozesses.
+
+09 /strategic-hr-value – Strategischen HR-Wertbeitrag entwickeln
+Ziel: HR-Initiativen mit Organisationszielen verbinden.
+Eingabe: Unternehmensziel, HR-Herausforderung, Ressourcen.
+Ablauf: Werttreiber identifizieren; Wirkungslogik entwickeln; Optionen prüfen; Kennzahlen definieren; Risiken bewerten; Entscheidungsvorlage erstellen.
+Output: HR Value Proposition und Wirkungsmodell.
+Praxisfall: Skills-Strategie für Wachstum.
+
+10 /safe-ai-hr – KI in HR verantwortungsvoll einsetzen
+Ziel: Datenschutz, Fairness, Governance und menschliche Kontrolle berücksichtigen.
+Eingabe: KI-Anwendungsfall.
+Ablauf: Zweck; Datenklassifizierung; Risikoanalyse; Rechts- und Governance-Prüfbedarf; Schutzmaßnahmen; menschliche Freigabe.
+Output: AI Use Case Risk Card.
+Praxisfall: KI-gestützte Analyse synthetischer Mitarbeiteranfragen.
+Regel: Keine Rechtsberatung oder pauschale Compliance-Zertifizierung behaupten.
+
+11 /workforce-skills-planning – Zukünftigen Kompetenzbedarf planen
+Ziel: Skills-Bedarf und Entwicklungsmöglichkeiten strukturiert untersuchen.
+Output: Skills-Gap-Hypothesen, Szenarien, Entwicklungsoptionen.
+Praxisfall: Digitalisierung in einem mittelständischen Unternehmen.
+
+12 /fair-selection – Auswahlentscheidungen kritisch prüfen
+Ziel: Auswahlkriterien, Bias-Risiken und Entscheidungstransparenz analysieren.
+Output: Kriterienmatrix, Fairness-Risiken, menschliche Prüfschritte.
+Praxisfall: Synthetische Bewerbungsfälle.
+Regel: Keine automatisierte echte Personalauswahl oder bindende Kandidatenbewertung.
+
+13 /hr-data-reasoning – HR-Daten richtig interpretieren
+Ziel: Datenqualität, Korrelation, Kausalität und Interpretationsgrenzen verstehen.
+Output: Datenqualitätscheck, Hypothesen, Visualisierungs- und Interpretationsbericht.
+Praxisfall: Synthetische Fluktuationsdaten.
+
+14 /hr-tech-evaluation – HR-Technologie auswählen
+Ziel: Tools nach Nutzen, Sicherheit, Integration und Gesamtkosten vergleichen.
+Output: Anforderungskatalog, Bewertungsmatrix, Beschaffungsempfehlung.
+Praxisfall: Auswahl eines Learning-Tools.
+
+15 /knowledge-transfer – Erfahrungswissen sichern
+Ziel: Kritisches Erfahrungswissen erkennen und transferierbar machen.
+Output: Wissenslandkarte, Transferinterview, Maßnahmenplan.
+Praxisfall: Pensionierung einer HR-Schlüsselperson.
+
+16 /stakeholder-negotiation – Interessenkonflikte und Verhandlungen
+Ziel: Interessen, Machtverhältnisse, Optionen und faire Lösungen analysieren.
+Output: Stakeholder Map, Verhandlungsoptionen, Kommunikationsplan.
+Praxisfall: Konflikt zwischen HR und Führungskraft.
+
+17 /culture-diagnosis – Organisationskultur kritisch untersuchen
+Ziel: Kulturelle Muster von Einzelmeinungen unterscheiden.
+Output: Kulturhypothesen, Gegenbefunde, Diagnose- und Testplan.
+Praxisfall: Fehlervermeidung und Schweigekultur.
+
+18 /executive-hr-brief – Entscheidungsvorlagen für Führungsgremien
+Ziel: Komplexe HR-Themen präzise und evidenzbasiert aufbereiten.
+Output: Executive Brief mit Entscheidung, Optionen, Risiken, Evidenz und Empfehlung.
+Praxisfall: Investition in Führungsentwicklung.
+
+19 /hr-experiment – HR-Maßnahmen experimentell testen
+Ziel: Annahmen mit kleinen, kontrollierten Experimenten überprüfen.
+Output: Hypothese, Messkriterien, 30-Tage-Test, Review.
+Praxisfall: Neue Onboarding-Methode.
+
+20 /hr-ai-offer-design – HR- und KI-Angebote entwickeln
+Ziel: Aus einer Problemhypothese ein überprüfbares Angebot entwickeln.
+Output: Zielgruppenproblem, Nutzenversprechen, Angebotsentwurf, Validierungstest.
+Praxisfall: KI-Enablement für KMU.
+
+JEDE SKILLSEITE MUSS ENTHALTEN
+Titel und Kurzbeschreibung; Problemstellung; Zielgruppe; Kompetenzen; Lernziele; Voraussetzungen; benötigte Eingaben; interaktiver Workflow mit mindestens sechs didaktisch sinnvollen Schritten; vollständige Anweisungen für den KI-Assistenten; mindestens eine synthetische Fallstudie; Musterantworten als Beispiele; kritische Gegenfragen; Evidenzprüfung; Sicherheitsregeln; Ergebnistyp; Reflexionsfragen; Speicherung und Export; Zuordnung zum Kompetenzmodell; didaktische Hinweise für Lehrende. Keine bloßen Prompt-Karten als Ersatz.
+
+ZWÖLF FORSCHUNGSPERSPEKTIVEN
+1 Dave Ulrich – HR-Wertbeitrag, HR-Kompetenzen, organisationale Fähigkeiten.
+2 Josh Bersin – HR-Transformation, Lernökosysteme, Skills und HR-Technologie.
+3 Ravin Jesuthasan – Work Redesign, Skills, Mensch-Technologie-Zusammenarbeit.
+4 Lynda Gratton – Zukunft der Arbeit, Arbeitsgestaltung, Zusammenarbeit.
+5 Amy Edmondson – psychologische Sicherheit, Teamlernen, Fehlerkultur.
+6 Peter Cappelli – Talentmanagement, Arbeitsmarkt, evidenzbasierte HR-Praxis.
+7 David Green – People Analytics, dateninformierte HR-Entscheidungen.
+8 Herminia Ibarra – Führungsentwicklung, berufliche Identität, Transformation.
+9 Tomas Chamorro-Premuzic – Talent, Führung, psychologische Beurteilung und KI.
+10 John Boudreau – HR-Entscheidungswissenschaft, Talent- und Workforce-Strategie.
+11 Tsedal Neeley – digitale Zusammenarbeit, globale Teams, Transformation.
+12 Stacia Garr – People Analytics, HR-Technologie, Organisationsforschung.
+
+PRO EXPERT:IN
+Biografisches Profil mit überprüften Angaben; zentrale Forschungsthemen; drei bis fünf belegte Modelle oder Kernaussagen; Originalquellen; kritische Einordnung; Grenzen; zwei HR-Praxisfälle; passende Skills; Vergleich mit anderen Perspektiven. Niemals erfundene Zitate oder KI-Identitätssimulationen. Bilder nur mit entsprechenden Nutzungsrechten. Keine offizielle Partnerschaft behaupten.
+
+PERSPEKTIVEN-LABOR
+Nutzer:in formuliert HR-Frage; System schlägt zwei bis vier relevante wissenschaftliche Perspektiven vor; Nutzer:in kann ändern; System stellt Modelle, Evidenz, Widersprüche und Grenzen gegenüber; Nutzer:in entwickelt eigene Entscheidung; Ergebnis wird im Human-AI Decision Trace gespeichert.
+
+EVIDENCE ENGINE
+Zwei Quellenkanäle: kuratierte Bibliothek und aktuelle Recherche. Quellenstatus: Neu, In Prüfung, Geprüft, Eingeschränkt verwendbar, Zurückgewiesen. Jede Evidence Card: Behauptung, Forschungsfrage, Quellenangaben, DOI/Original-Link soweit vorhanden, Publikationsjahr, Forschungsdesign, Population/Kontext, Ergebnisse, Einschränkungen, Gegenbefunde, Übertragbarkeit, Prüfstatus, Prüfer:in, Datum. Keine erfundenen Quellen. Kein Vortäuschen einer Volltextprüfung bei bloßem Abstract. Hochschulinterne und zentrale Freigaben getrennt.
+
+KOMPETENZMODELL
+Academy Core: kritisches Denken; Evidenzbewertung; HR-Entscheidungsqualität; KI-Kompetenz; Perspektivenwechsel. Hochschulen können eigene Kompetenzen ergänzen. Jede Kompetenz benötigt beobachtbare Indikatoren, Bewertungskriterien, Nachweise und Versionierung. Keine automatisch verbindlichen KI-Noten.
+
+HUMAN-AI DECISION TRACE
+Ausgangsposition; Annahmen; genutzte Skills; wesentliche KI-Gegenargumente; Evidenz; menschliche Bewertung; übernommene/verwarfene Vorschläge; Änderungen; finale Entscheidung; Reflexion. Nutzer:in prüft und bestätigt vor Einreichung. Private Chats nicht automatisch veröffentlichen.
+
+HUMAN-AI COMPETENCE PASSPORT
+Persönliches, organisationsübergreifendes Kompetenzportfolio. Dokumentierte Nachweise, Selbstreflexion, menschliche Bewertungen, Aussteller und Bewertungsgrundlage. Export, kontrollierte Freigabelinks, Widerruf. Digital signierte Nachweise und Ausstellerberechtigungen. Nicht mit Hochschulzeugnissen verwechseln.
+
+CAMPUS EDITION
+Eigene Academy-Konten, kein SSO. Keine Moodle-, Canvas- oder sonstige LMS-Integration. Vier Rollen: Plattformadmin, Organisationsadmin, Lehrende, Lernende. Strikte Organisationstrennung. Ein aktiver Login pro Konto. Hochschulen beantragen Zugang, Plattformadmin genehmigt, System richtet Campus automatisch ein. Kurse, Aufgaben, Fristen, Gruppenarbeit, getrennte private und gemeinsame KI-Räume, Lehrendenfeedback, Kompetenznachweise, KI-Budgets und Lizenzen. Lehrende sehen eingereichte Arbeiten, nicht private Chats. KI pro Aufgabe didaktisch steuerbar: Human First, Human × AI, Human Only.
+
+TEACHING INTELLIGENCE
+Lehrende sehen Kursfortschritt, bewertete Kompetenzen und datenschutzkonforme aggregierte Muster. Keine Überwachung, keine heimlichen Rankings, keine privaten Chatverläufe. Kleine Gruppen vor Re-Identifikation schützen.
+
+TEACHING IMPROVEMENT LAB
+Beobachtung; didaktische Hypothese; Experiment; Bewertungskriterien; Durchführung; Review; menschliche Entscheidung. Keine automatische Lehrendenbewertung. Keine unbelegten Kausalitätsbehauptungen.
+
+CAMPUS INNOVATION NETWORK
+Freiwillige organisationsübergreifende Freigabe von Lehrmethoden und Evaluationen. Rechteprüfung, Datenschutz, Qualitätsprüfung, Versionierung und zentrale Publikationsfreigabe. Keine ungeprüften personenbezogenen Lerndaten.
+
+LEARNING COACH
+Individuelle Lernempfehlungen anhand freigegebener Kompetenznachweise. Transparente Begründungen, Widerspruchsmöglichkeit, menschliche Kontrolle. KI-gestützte adaptive Funktionen nur nach regulatorischer Prüfung; dennoch als Bestandteil des ersten Release planen und vor Freigabe rechtskonform umsetzen.
+
+SYNTHETISCHE FALLSTUDIEN
+Fall 1: Weiterbildungsbudget in einem Unternehmen mit 180 Mitarbeitenden; Kompetenzlücken, strategische Prioritäten, Kurskosten, Zielkonflikte. Keine echten Beschäftigtendaten.
+Fall 2: Hohe Fluktuation in einer Abteilung; mehrere plausible Ursachen, keine vorweggenommene Diagnose.
+Fall 3: Recruitingprozess mit langen Besetzungszeiten; Prozessdaten und alternative Hypothesen.
+Fall 4: Einführung von KI im HR-Service; Automate/Augment/Keep Human/Stop.
+Fall 5: Führungskultur und psychologische Sicherheit; widersprüchliche Stakeholder-Perspektiven.
+Fall 6: Wirksamkeit eines Führungskräftetrainings; Transferdaten, alternative Erklärungen.
+Fall 7: Skills-basierte Workforce-Planung; Szenarien und Unsicherheit.
+Fall 8: HR-Technologieentscheidung; Kosten, Datenschutz, Funktion und Change-Aufwand.
+
+FÜR JEDE FALLSTUDIE ERSTELLEN
+Fallbeschreibung, synthetische Daten, Rollen, Lernziele, Aufgabenstellungen, geeignete Skills, Quellenbedarf, Musterlösungsstruktur, Bewertungskriterien, Reflexionsfragen, Feedbacklogik und mindestens eine alternative plausible Entscheidung. Synthetische Daten als solche kennzeichnen.
+
+FREE / PREMIUM / CAMPUS
+Öffentlich alle 20 Skillbeschreibungen, ausgewählte Demo-Workflows und Expert:innen-Profile. Free: drei interaktive Demo-Skills und 20 KI-Nachrichten pro Kalendermonat. Premium: zunächst 200 KI-Nachrichten pro Monat, vollständige Workflows und Speicherung. Campus: organisationsbezogene Budgets, Kurslimits und Lehrfunktionen. Keine Preise erfinden. Kostenkontrollen serverseitig.
+
+QUALITÄTS- UND SICHERHEITSREGELN
+Nur synthetische oder tatsächlich anonymisierte HR-Daten in KI-Workflows. Keine personenbezogenen Bewerber- oder Beschäftigtendaten. Eingabeprüfungen, Rechtekontrollen, Audit-Protokolle, geschützte API-Schlüssel, Limits, Mandantentrennung, Datenschutz- und Löschkonzept, sichere Backups. Prüfungen auf Prompt Injection und missbräuchliche Inhalte. EU AI Act und DSGVO für konkrete Anwendungsfälle rechtlich prüfen. Wissenschaftliche Inhalte nicht ohne Quellen erfinden.
+
+ABNAHME
+Keine leeren Seiten, Fake-Buttons oder dekorativen Skills ohne Funktion. Jeder Skill muss vom Einstieg bis zum nachvollziehbaren Ergebnis ausführbar sein. Jede Campus-Funktion braucht Rollen-, Daten- und Berechtigungstests. Alle zwölf Expert:innen benötigen echte überprüfte Quellen. Wo Recherche, Lizenz oder rechtliche Freigabe fehlt, Status transparent anzeigen statt Inhalt zu erfinden. Vollständige Funktions- und Sicherheitsprüfung vor Veröffentlichung.
+
+WICHTIG
+Die hier neu formulierten Skill-Slugs und redaktionellen Beschreibungen sind Vorschläge. Bestehende Originaltexte im Projekt zuerst suchen und unverändert übernehmen. Konflikte dokumentieren. Bereits bestätigte Architekturentscheidungen nicht eigenmächtig ändern. Keine weiteren allgemeinen Konzeptfragen; technische Detailentscheidungen nachvollziehbar dokumentieren. Arbeite die Inhalte direkt in das Projekt ein und berichte konkret, welche Seiten, Skills, Datensätze und Tests tatsächlich fertig sind.

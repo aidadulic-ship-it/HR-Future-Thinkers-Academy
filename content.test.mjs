@@ -8,7 +8,7 @@ test('beide Kataloge liefern aufklappbare Lerninhalte in der ausgelieferten Vors
     assert.ok(html.includes('href="#' + id + '"'));
     const section = html.split('<section id="' + id + '"')[1]?.split('</section>')[0];
     assert.ok(section);
-    assert.equal([...section.matchAll(/<details>/g)].length, count);
+    assert.equal([...section.matchAll(/<details(?: data-verb="[a-z]+")?>/g)].length, count);
     assert.equal([...section.matchAll(/<strong>Praxisaufgabe<\/strong>/g)].length, count);
   }
 });
@@ -19,7 +19,7 @@ test('der Workshop ist über die Navigation erreichbar und enthält den ausgearb
   assert.match(html, /href="#workshops"/);
   const workshop = html.split('<section id="workshops"')[1]?.split('</section>')[0];
   assert.ok(workshop);
-  for (const step of ['Evidence Card', 'Gegenposition', 'UNLEARN-Frage', 'Automate', 'Augment', 'Keep Human', 'Stop', '30-Tage-Test', 'Review-Termin']) {
+  for (const step of ['Evidence Card', 'Gegenposition', 'Umdenk-Frage', 'Automate', 'Augment', 'Keep Human', 'Stop', '30-Tage-Test', 'Review-Termin']) {
     assert.ok(workshop.includes(step), step);
   }
 });
@@ -40,7 +40,7 @@ test('Masterbriefing: 20 ausführbare Skill-Workflows und acht synthetische Fäl
 
 test('die didaktischen Modi sind einzeln aufklappbar und enthalten Ablauf, Beispiel und Bewertung', () => {
   const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
-  const modes = [...html.matchAll(/<details class="learning-mode"><summary>([^<]+)<\/summary>([\s\S]*?)<\/details>/g)];
+  const modes = [...html.matchAll(/<details class="learning-mode"><summary>[\s\S]*?<span class="card-title">([^<]+)<\/span>[\s\S]*?<\/summary>([\s\S]*?)<\/details>/g)];
   assert.deepEqual(modes.map(([, title]) => title), ['Human First', 'Human × AI', 'Human Only']);
   for (const [, title, body] of modes) {
     for (const label of ['Ablauf', 'HR-Beispiel', 'Bewertung']) assert.ok(body.includes(label), title + ' · ' + label);
@@ -48,9 +48,9 @@ test('die didaktischen Modi sind einzeln aufklappbar und enthalten Ablauf, Beisp
 });
 
 
-test('jeder Skill hat einen eigenen kopierbaren KI-Prompt vor seinem Workflow', () => {
+test('jeder Skill hat einen eigenen kopierbaren KI-Prompt in seinem Workflow', () => {
   const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
-  const skills = [...html.matchAll(/<summary id="([\w-]+)">[^<]+<\/summary><div class="lesson">([\s\S]*?)<form class="skill-workflow" data-skill="\1">/g)];
+  const skills = [...html.matchAll(/<form class="skill-workflow" data-skill="([\w-]+)">([\s\S]*?)<\/form>/g)];
   assert.equal(skills.length, 20);
   const prompts = skills.map(([, slug, content]) => {
     const prompt = content.match(/<textarea id="prompt-[\w-]+" rows="9" readonly>([\s\S]*?)<\/textarea>/)?.[1];
@@ -62,7 +62,7 @@ test('jeder Skill hat einen eigenen kopierbaren KI-Prompt vor seinem Workflow', 
 });
 
 
-test('HR UNLEARN IT ist in der Academy ohne externen Anmeldelink nutzbar', () => {
+test('Reality Check ist in der Academy ohne externen Anmeldelink nutzbar', () => {
   const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
   const workshop = html.split('<section id="workshops"')[1]?.split('</section>')[0];
   assert.ok(workshop?.includes('id="workbench-form"'));

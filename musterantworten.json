@@ -1,0 +1,242 @@
+{
+ "grill-me": {
+  "lens": "Talentmanagement unter Unsicherheit",
+  "profile": "Peter Cappelli",
+  "answers": [
+   "These: „Wir brauchen mehr Recruiting-Kapazität, weil Stellen im Median 74 Tage bis zur Zusage offen sind.“ Sie soll begründen, ob zusätzliche Stellen im Recruiting oder externe Unterstützung finanziert werden. Unter Unsicherheit gehört die Gegenfrage dazu: Müssen alle diese Stellen extern besetzt werden, oder lässt sich ein Teil intern entwickeln?",
+   "Bedarf: Die offenen Stellen müssen tatsächlich extern besetzt werden. Kapazität: Das Recruiting-Team ist der Engpass. Prozess: Die Wartezeit entsteht im Recruiting und nicht bei Freigabe oder Interviewkoordination. Wirkung: Kürzere Besetzungszeit verbessert das Geschäftsergebnis spürbar.",
+   "Bedarf: ein hoher Anteil intern besetzbarer Stellen. Kapazität: Erstkontakt dauert nur 9 Tage, also arbeitet das Recruiting vergleichsweise schnell. Prozess: Interviewkoordination mit 23 Tagen und Freigabe mit 12 Tagen liegen außerhalb des Recruitings. Vorsicht: Mediane einzelner Phasen lassen sich nicht einfach zu 74 Tagen addieren.",
+   "Aus Sicht der Fachbereiche: „Mehr Recruiterinnen und Recruiter beschleunigen nicht, solange Interviewtermine bei uns drei Wochen warten und Freigaben in der Budgetschleife hängen. Wir brauchen gebündelte Interviewfenster und eine schnellere Freigabe.“",
+   "Folgenreichstes Risiko: Geld in Kapazität zu stecken, die den Engpass nicht trifft, während gute Kandidat:innen in der Interviewphase abspringen. Größte Informationslücke: fallbezogene Zeitstempel, die zeigen, wo dieselben Fälle tatsächlich warten.",
+   "Überarbeitet: Vor einer Personalentscheidung vier Wochen lang fallbezogene Zeitstempel erheben und gebündelte Interviewfenster in zwei Fachbereichen testen. Offene Frage: Welcher Anteil der Stellen könnte intern besetzt werden, wenn Entwicklungswege früher geplant wären?"
+  ]
+ },
+ "evidence-check": {
+  "lens": "People Analytics und Entscheidungsnutzen",
+  "profile": "David Green",
+  "answers": [
+   "Präzisiert: „Eine Vier-Tage-Woche bei gleichem Gehalt erhöht in Wissensarbeitsteams die Produktivität, gemessen als erledigte Arbeitsergebnisse pro Person und Monat, im Vergleich zur Fünf-Tage-Woche über mindestens sechs Monate.“ Entscheidend ist, welche Entscheidung die Organisation damit treffen will.",
+   "Stützen könnten: kontrollierte oder quasi-experimentelle Vergleiche mit Kontrollgruppe, Messung von Ergebnissen statt nur Selbstauskunft und Daten aus vergleichbaren Tätigkeiten. Schwach sind Erfahrungsberichte einzelner Unternehmen ohne Vergleichsgruppe.",
+   "Musterformat: Autor:innen, Titel, Jahr, Link oder DOI, dazu ehrlich „Volltext gelesen“, „nur Abstract“ oder „nur Medienbericht“. Ohne geöffnete Originalquelle lautet der Eintrag: „Quelle noch nicht geprüft“. Erfinde keine Studie, um das Feld zu füllen.",
+   "Prüfraster: Wer hat freiwillig teilgenommen (Selbstselektion)? Wie wurde Produktivität gemessen, objektiv oder per Befragung? Wie lange lief der Versuch? Gab es eine Vergleichsgruppe? Grenze: Ergebnisse aus Wissensarbeit gelten nicht automatisch für Schicht- oder Kundendienst.",
+   "Prüfe gezielt, ob die gefundenen Berichte nur Zufriedenheit und Selbsteinschätzung messen oder auch Arbeitsergebnisse. Findest du keinen belastbaren Gegenbefund, gehört genau das ins Ergebnis: „Keine Ergebnismessung mit Vergleichsgruppe gefunden.“",
+   "Beispielurteil, falls deine Quellen vor allem Wohlbefinden messen: „Evidenzstatus: eingeschränkt verwendbar. Produktivitätseffekte für unsere Tätigkeiten nicht belegt. Übertragbarkeit nur nach eigenem Pilot mit Ergebnismessung und Vergleichsgruppe.“ Das Urteil richtet sich nach deinen tatsächlich geprüften Quellen."
+  ]
+ },
+ "hr-decision-lab": {
+  "lens": "HR-Wertbeitrag",
+  "profile": "Dave Ulrich",
+  "answers": [
+   "Budget: 120.000 €. Die drei Programme kosten zusammen 144.000 €, es fehlen also 24.000 €. Entscheidung: Wie verteilen wir 120.000 € so, dass Datenkompetenz (50 Personen) und Führung in neuen Rollen (24 Personen) den größten Nutzen für Kundschaft und Organisation stiften?",
+   "Option A: Datenprogramm 48.000 € + Führungsprogramm 60.000 €, dezentrales Budget auf 12.000 € gekürzt. Option B: Führungsprogramm 60.000 € + dezentrales Budget 36.000 €, Datenprogramm gestaffelt mit 24.000 € für die Hälfte der Gruppe. Option C: Datenprogramm 48.000 € + dezentrales Budget 36.000 €, Führungsprogramm verkleinert auf 36.000 €.",
+   "Gewichtung als Beispiel: Wirkung auf Geschäftsziele 40 %, Transfer in den Arbeitsalltag 25 %, Kapazität der Teilnehmenden 20 %, Kosten 15 %. Wer stärker gewichtet, braucht eine Begründung aus Sicht der Anspruchsgruppen, also Kundschaft, Führung und Mitarbeitende.",
+   "Annahmen markieren: Die Kompetenzlücke von 50 Personen ist aus einer Erhebung belegt und nicht geschätzt. Das Führungsprogramm wirkt auf Verhalten und nicht nur auf Zufriedenheit. Dezentrale Budgets werden zielgerichtet genutzt. Für jede Annahme notieren, welche Daten fehlen.",
+   "Risiko: Wer neue Führungskräfte ohne Unterstützung lässt, riskiert Fluktuation in deren Teams. Stärkste Gegenposition von Finance: „Ohne Transfernachweis ist jede Variante eine Wette. Erst einen kleinen Pilot finanzieren.“",
+   "Gewählt: Option A, weil sie beide strategischen Lücken adressiert und das dezentrale Budget als Kürzungspuffer dient. 30-Tage-Review: Die People-Development-Leitung prüft Teilnahme, erste Praxisaufgaben und Rückmeldungen der Führungskräfte. Danach wird über die restlichen Mittel entschieden."
+  ]
+ },
+ "human-ai-work-design": {
+  "lens": "Aufgaben und Work Redesign",
+  "profile": "Ravin Jesuthasan",
+  "answers": [
+   "Aufgaben: 1. Standardauskünfte (Urlaub, Formulare, Fristen). 2. Anfragen klassifizieren und weiterleiten. 3. Antwortentwürfe zu Richtlinien. 4. Sensible Einzelfälle (Krankheit, Konflikte, Trennung). 5. Eskalation und Rückfragen an Fachstellen. 6. Wissensbasis pflegen.",
+   "Standardauskünfte: rund 360 von 800 Anfragen im Monat (45 %), Eingabe ist eine Frage und Richtlinientext, Fähigkeit ist Auffinden und korrekt Wiedergeben. Sensible Fälle: rund 120 im Monat (15 %), Eingaben sind personenbezogen, Fähigkeiten sind Urteilsvermögen und Vertraulichkeit. Wissensbasis: laufend, Fähigkeit ist Fachkenntnis.",
+   "Im Test enthielten 4 von 60 KI-Antworten falsche Richtlinienangaben, also rund 7 %. Bei Standardauskünften ist ein Fehler ärgerlich, aber korrigierbar. Bei sensiblen Fällen ist er potenziell schädlich. Automatisierungspotenzial ist also hoch bei Auffinden und Klassifizieren, niedrig bei Urteil und Vertraulichkeit.",
+   "Augment: Standardauskünfte mit menschlicher Freigabe, solange die Fehlerquote über null liegt. Automate: Klassifizieren und Weiterleiten. Keep Human: sensible Einzelfälle und Eskalation. Augment: Pflege der Wissensbasis, mit KI-Vorschlägen zu veralteten Texten. Stop: nicht abgestimmte Antwortvorlagen in Postfächern.",
+   "Kontrollen: Jede KI-Antwort verweist auf die genutzte Richtlinie mit Datum. Erkennt das System sensible Stichworte, geht die Anfrage direkt an einen Menschen. Wöchentliche Stichprobe von 20 Antworten. Verantwortlich ist die Leitung HR-Service, für die Wissensbasis eine benannte Person.",
+   "Neuer Ablauf: Anfrage → Klassifizierung → bei Standard KI-Entwurf mit Quelle → menschliche Freigabe → Antwort. Sensible Fälle gehen direkt zur Fachkraft. Pilotkriterium: Nach 30 Tagen keine falsche Richtlinienangabe in freigegebenen Antworten und messbar kürzere Bearbeitungszeit."
+  ]
+ },
+ "learning-review": {
+  "lens": "Berufliche Identität und Rollenexperimente",
+  "profile": "Herminia Ibarra",
+  "answers": [
+   "Zielverhalten: Führungskräfte führen mit jedem Teammitglied mindestens einmal im Monat ein Feedbackgespräch, das eine konkrete Beobachtung und eine vereinbarte nächste Handlung enthält. Gelernt wird durch Ausprobieren in der neuen Rolle, nicht durch Teilnahme.",
+   "Indikatoren: Anzahl dokumentierter Gespräche pro Monat, Anteil mit vereinbarter Handlung, Rückmeldung der Teammitglieder. Vergleichszeitraum: drei Monate vor und drei Monate nach dem Training, dazu ein Vergleichsteam.",
+   "Ausgangswerte: Vor dem Training wurden Gespräche nicht systematisch erfasst. Das ist die zentrale Messlücke. Vorhanden sind nur die Befragung danach (18 von 24, also 75 %) und die Selbstauskunft von 14 Personen.",
+   "Selbstauskunft: 14 von 18 Antwortenden (rund 78 %) berichten mehr Gespräche. Beobachtung und Teamrückmeldung fehlen. Wer eine neue Rolle erprobt, überschätzt leicht den eigenen Wandel. Ohne Sicht der Teammitglieder bleibt die Wirkung offen.",
+   "Selektion: Wer antwortet, ist oft motivierter. Über die 6 Personen ohne Antwort wissen wir nichts. Kontext: Im Vergleichsteam änderten sich gleichzeitig Ziele und Personal, der Vergleich ist damit verzerrt.",
+   "Nächste Maßnahme: Jede Führungskraft plant zwei kleine Probehandlungen, etwa ein Feedbackgespräch mit einer Beobachtung aus dieser Woche. Transferprüfung nach 30 Tagen: kurze anonyme Rückmeldung der Teammitglieder und Vergleich mit einer Ausgangsmessung, die jetzt startet."
+  ]
+ },
+ "organization-diagnosis": {
+  "lens": "Zukunft der Arbeit und Arbeitsgestaltung",
+  "profile": "Lynda Gratton",
+  "answers": [
+   "Symptome: 12 von durchschnittlich 80 Personen gingen in sechs Monaten (15 %), in der Vergleichsabteilung 5 von 70 (rund 7 %). Zeitverlauf: Gleichzeitig änderten sich Schichtpläne und Teamleitung. Die Austritte sollten nach Monat aufgetragen werden, um zu sehen, ob sie nach einer der Änderungen ansteigen.",
+   "1. Die neuen Schichtpläne sind schlechter planbar und mit dem Privatleben vereinbar. 2. Der Führungswechsel hat Vertrauen oder Unterstützung reduziert. 3. Externe Arbeitsmarktsignale, etwa bessere Angebote in der Region, wirken in dieser Abteilung stärker.",
+   "Team: erlebt Arbeitszeit und Planbarkeit. Führung: sieht vielleicht Leistungs- oder Einstellungsfragen. HR: sieht Zahlen und Austrittsgründe von sieben Personen. Aus Sicht der Arbeitsgestaltung ist die Frage, wie viel Gestaltungsspielraum die Beschäftigten bei ihren Schichten haben.",
+   "Fehlend: Austrittsgründe der 5 Personen ohne Rückmeldung, Zeitpunkt der Austritte relativ zu den Änderungen und Vergleichsdaten zu Schichtmodellen. Gegenbefund prüfen: Hat die Vergleichsabteilung ähnliche Schichtänderungen ohne höhere Fluktuation?",
+   "Zuerst Hypothese 1: Sie ist schnell prüfbar (Zeitverlauf, Gespräche) und hat große Folgen, weil sie alle Beschäftigten betrifft. Danach Hypothese 2 über Gespräche mit Bleibenden. Hypothese 3 ist schwerer zu prüfen und wird beobachtet.",
+   "Intervention: Für zwei Monate ein Schichtmodell mit früher veröffentlichten Plänen und Tauschmöglichkeit in einem Teil der Abteilung testen. Entscheidungspunkt nach acht Wochen: Kündigungsabsichten im Pulscheck und tatsächliche Austritte im Vergleich zum Rest der Abteilung."
+  ]
+ },
+ "learning-design": {
+  "lens": "Lernen im Arbeitsfluss und HR-Technologie",
+  "profile": "Josh Bersin",
+  "answers": [
+   "Zielgruppe: 50 Beschäftigte mit Datenkompetenzlücke aus verschiedenen Bereichen. Lücke: Berichte lesen, Kennzahlen richtig interpretieren, einfache Auswertungen selbst erstellen. Arbeitskontext: wenig Zeit, Daten liegen in bestehenden Tools, Lernen muss in den Arbeitsalltag passen.",
+   "1. Die Teilnehmenden erstellen aus einem eigenen Bereichsbericht eine Auswertung mit korrekt gewähltem Nenner und erklären sie in drei Sätzen. 2. Sie erkennen in einem vorgelegten Bericht zwei Fehlinterpretationen und begründen die Korrektur.",
+   "Authentische Aufgabe: der eigene Monatsbericht des Bereichs, anonymisiert oder synthetisch nachgebaut. Gelernt wird genau dort, wo die Arbeit passiert, nicht an generischen Übungsdaten.",
+   "Feedback: Nach jeder Übungsaufgabe sofort eine Musterlösung zum Vergleichen, alle zwei Wochen ein Peer-Review. Wiederholung: kurze Abrufaufgaben an Tag 7, 14 und 30, eingebettet in den Kalender und nicht in ein separates Lernportal.",
+   "Transferaufgabe: Nach 30 Tagen präsentieren die Teilnehmenden im Teammeeting eine eigene Auswertung. Bewertungsmaßstab: Nenner korrekt, Grenzen benannt, eine Entscheidung abgeleitet. Bewertet wird durch die Führungskraft und eine Person aus dem Datenteam.",
+   "Ressourcen: Das Datenprogramm mit 48.000 € entspricht knapp 1.000 € pro Person. Prüfen, ob ein Teil als Lernen am Arbeitsplatz mit Coaching statt Kursen günstiger ist. Evaluation: Anteil korrekter Auswertungen in der Transferaufgabe statt Zufriedenheitsbefragung."
+  ]
+ },
+ "change-in-practice": {
+  "lens": "Digitale Zusammenarbeit und Transformation",
+  "profile": "Tsedal Neeley",
+  "answers": [
+   "Zielbild: Beschäftigte erhalten Standardauskünfte schneller und korrekt, HR-Fachkräfte gewinnen Zeit für sensible Fälle. Betroffene Abläufe: Anfrageeingang, Beantwortung von Standardfragen, Pflege der Wissensbasis und Eskalation.",
+   "HR-Service: Entlastung, aber Sorge um Qualität und eigene Rolle. IT: Integration und Betrieb. Datenschutz: Datenflüsse und Zweckbindung. Beschäftigte: wollen schnelle, richtige und vertrauliche Antworten. Am stärksten betroffen ist der HR-Service, am wenigsten gehört werden oft die Beschäftigten.",
+   "Widerstände: „Die KI macht Fehler“ (belegt: 4 von 60 Testantworten), „Wir verlieren Kompetenz“, „Niemand weiß, wer bei Fehlern haftet“. Prüfbare Annahme: Mit menschlicher Freigabe sinkt die Fehlerquote in ausgelieferten Antworten auf null.",
+   "Pilot: vier Wochen, nur Standardauskünfte, nur ein Standort, jede KI-Antwort wird vor dem Versand von einer Fachkraft freigegeben. Sensible Fälle sind ausgeschlossen.",
+   "Rückmeldung: wöchentliche 20-Minuten-Runde mit dem HR-Service-Team, dazu eine Ein-Klick-Bewertung der Antwort durch Beschäftigte. Schutz: Stichwortliste für sensible Fälle, Freigabepflicht. Anpassung: Regeln und Wissensbasis wöchentlich nachschärfen.",
+   "Verantwortlich ist die Leitung HR-Service. Messgrößen: Fehlerquote freigegebener Antworten und Bearbeitungszeit. Abbruchpunkt: eine falsche Richtlinienangabe, die trotz Freigabe ausgeliefert wird, oder ein Datenschutzvorfall."
+  ]
+ },
+ "strategic-hr-value": {
+  "lens": "Talententscheidungen und Workforce-Strategie",
+  "profile": "John Boudreau",
+  "answers": [
+   "Unternehmensziel: Automatisierung ausbauen. Werttreiber: Verfügbarkeit von Automatisierungskompetenz zum richtigen Zeitpunkt. Entscheidend ist, wo ein fehlender Skill die größte Wirkung auf das Ergebnis hat. Dort lohnt sich die Investition am meisten.",
+   "Ausgangslage: In zwölf Monaten werden je nach Szenario 4, 8 oder 12 zusätzliche Personen mit Automatisierungskompetenz gebraucht. Intern könnten 4 Personen in sechs Monaten qualifiziert werden. Die Lücke beträgt also 0, 4 oder 8 Personen.",
+   "Kette: Interne Qualifizierung von 4 Personen → Kompetenz nach sechs Monaten verfügbar → Automatisierungsprojekte starten ohne Wartezeit → Ziel erreicht. Ergänzend: externe Beschaffung bei Bedarf über 4 Personen.",
+   "1. Nur intern entwickeln: günstig, deckt aber nur das kleinste Szenario. 2. Sofort 8 extern einstellen: schnell, aber teuer und riskant, falls das kleine Szenario eintritt. 3. Intern 4 entwickeln und externe Kapazität vertraglich vorhalten: flexibel. Opportunitätskosten: Die internen Personen fehlen während der Qualifizierung in ihren bisherigen Aufgaben.",
+   "Frühindikatoren: Fortschritt der internen Qualifizierung nach drei Monaten, Projektpipeline der Automatisierung. Risiken: Abwanderung qualifizierter Personen, Fehleinschätzung des Szenarios. Annahme: Die vier internen Kandidat:innen schließen die Qualifizierung erfolgreich ab.",
+   "Vorlage: „Wir empfehlen Option 3: vier interne Qualifizierungen sofort starten und externe Unterstützung für bis zu acht Personen als Option vereinbaren. Nächster Prüfpunkt in drei Monaten: Welches Szenario zeichnet sich ab, und wie weit ist die Qualifizierung?“"
+  ]
+ },
+ "safe-ai-hr": {
+  "lens": "Psychologische Sicherheit und Teamlernen",
+  "profile": "Amy Edmondson",
+  "answers": [
+   "Zweck: KI entwirft Antworten auf Standardauskünfte im HR-Service, Menschen geben frei. Grenzen: keine Entscheidungen über Personen, keine sensiblen Einzelfälle und keine Antworten ohne Quellenangabe. Wichtig ist, dass Fehler gemeldet werden dürfen und sollen.",
+   "Zulässig: anonyme Frage und Richtlinientext. Zu entfernen: Namen, Personalnummern, Gesundheitsangaben und alles, was eine Person identifizierbar macht. Sensible Kategorien wie Gesundheit oder Konflikte gehen nicht an die KI, sondern direkt an eine Fachkraft.",
+   "Fehlerfolgen: Falsche Richtlinienangaben (4 von 60 im Test) können zu falschen Entscheidungen der Beschäftigten führen. Fairness: Unterschiedliche Antwortqualität je nach Formulierung oder Sprache. Betroffen sind Beschäftigte, HR-Fachkräfte und Führungskräfte, die sich auf Antworten verlassen.",
+   "Offen: Rechtsgrundlage und Zweckbindung der Datenverarbeitung, Einordnung nach EU AI Act für diesen konkreten Anwendungsfall, Beteiligung der Beschäftigtenvertretung und Auftragsverarbeitung mit dem Anbieter. Die Risk Card ersetzt keine rechtliche Prüfung.",
+   "Schutz: Freigabepflicht vor Versand, Quellenangabe in jeder Antwort, Stichwortfilter für sensible Themen. Dazu ein einfacher Weg, auf dem Fachkräfte und Beschäftigte Fehler ohne Schuldzuweisung melden. Gemeldete Fehler werden wöchentlich im Team besprochen.",
+   "Stopp, wenn eine falsche Angabe trotz Freigabe ausgeliefert wird oder sensible Daten in die KI gelangen. Zuständig ist die Leitung HR-Service mit dem Datenschutz. Nachprüfung nach 30 Tagen anhand der gemeldeten Fehler und einer Stichprobe von 50 Antworten."
+  ]
+ },
+ "workforce-skills-planning": {
+  "lens": "Talentmanagement unter Unsicherheit",
+  "profile": "Peter Cappelli",
+  "answers": [
+   "Zeithorizont: zwölf Monate. Ausgangskapazität: vorhandene Personen mit Automatisierungskompetenz (Zahl erheben) sowie 4 interne Kandidat:innen, die in sechs Monaten qualifiziert sein könnten. Planung unter Unsicherheit heißt, Szenarien statt einer Prognose zu nutzen.",
+   "Szenario klein: wenige Prozesse automatisiert, 4 Personen für Betrieb und Wartung. Mittel: zusätzliche Projekte, 8 Personen für Entwicklung und Betrieb. Groß: breite Automatisierung, 12 Personen inklusive Prozessanalyse und Schulung anderer.",
+   "Bedarf: 4, 8 oder 12 Personen. Unsicher sind die Eintrittswahrscheinlichkeit der Szenarien, die Produktivität neu Qualifizierter und die Erfolgsquote der Qualifizierung. Diese Unsicherheiten offen ausweisen statt eine Zahl zu setzen.",
+   "Nach sechs Monaten sind intern 4 Personen verfügbar, sofern alle bestehen. Lücke: klein 0, mittel 4, groß 8 Personen. Bis Monat sechs besteht in jedem Szenario eine Lücke, weil die Qualifizierung noch läuft.",
+   "Entwicklung: deckt das kleine Szenario, ist langsamer und bindet Personen. Einstellung: schnell, aber teuer und unumkehrbar. Externe Unterstützung: flexibel für die Spitze. Empfehlung: intern entwickeln, extern flexibel überbrücken, erst bei klarem Signal fest einstellen.",
+   "Maßnahmen: 4 Qualifizierungen sofort starten, Rahmenvertrag mit externem Dienstleister vorbereiten. Auslöser für Neuplanung: Projektpipeline überschreitet die Kapazität für 8 Personen, oder eine interne Qualifizierung bricht ab. Überprüfung quartalsweise."
+  ]
+ },
+ "fair-selection": {
+  "lens": "Talent und Führungsbeurteilung",
+  "profile": "Tomas Chamorro-Premuzic",
+  "answers": [
+   "Fiktive Rolle: Recruiter:in im Inhouse-Recruiting. Aufgaben: Anforderungsgespräche führen, Profile sichten, strukturierte Interviews koordinieren und führen, Kandidat:innen beraten. Kriterien: Gesprächsführung, Urteilsgenauigkeit, Organisation und Dienstleistungsorientierung.",
+   "Gesprächsführung: stellt im Rollenspiel offene Fragen und fasst Anforderungen korrekt zusammen. Urteilsgenauigkeit: begründet die Bewertung eines Arbeitsprobenprofils mit konkreten Belegen. Organisation: plant drei Interviews ohne Terminkonflikt. Jeweils mit einer Skala von 1 bis 4 und beschriebenen Ankerbeispielen.",
+   "Unklar oder indirekt: „überzeugendes Auftreten“, „Cultural Fit“ und „souveräne Präsentation“. Sie messen eher Selbstsicherheit als Kompetenz und begünstigen Personen, die sich gut verkaufen. Ersetzen durch beobachtbare Verhaltensbelege aus der Arbeitsprobe.",
+   "Beurteilende A und B bewerten denselben synthetischen Fall: A gibt „Gesprächsführung 4“ wegen sicherem Auftreten, B gibt „2“, weil Anforderungen falsch zusammengefasst wurden. Die Abweichung zeigt, dass Anker fehlen oder ignoriert werden. Lösung: gemeinsame Kalibrierung an Beispielen.",
+   "Risiken: Eindruck statt Beleg, Ähnlichkeitseffekt, Reihenfolgeeffekte, unterschiedliche Fragen pro Person. Kontrolle: gleiche Fragen für alle, unabhängige Bewertung vor der Diskussion, Begründungspflicht pro Kriterium, menschliche Endentscheidung ohne automatisches Ranking.",
+   "Prüfplan: drei synthetische Fälle durch zwei Beurteilende bewerten lassen, Übereinstimmung pro Kriterium vergleichen, Anker nachschärfen und erneut prüfen. Ergebnis ist eine geprüfte Kriterienmatrix, keine Bewertung realer Kandidat:innen."
+  ]
+ },
+ "hr-data-reasoning": {
+  "lens": "People Analytics und Entscheidungsnutzen",
+  "profile": "David Green",
+  "answers": [
+   "Kennzahl: Austrittsquote. Zeitraum: sechs Monate. Nenner: durchschnittlicher Personalstand im Zeitraum, also 80 in der Abteilung und 70 in der Vergleichsabteilung. Analysefrage: Ist die Fluktuation hier so viel höher, dass HR eingreifen sollte?",
+   "Lücken: Nur 7 von 12 Austretenden gaben Rückmeldung (58 %). Freiwillige und unfreiwillige Austritte sind nicht getrennt. Vergleichbarkeit: Haben beide Abteilungen ähnliche Tätigkeiten, Schichtmodelle und Arbeitsmarktbedingungen?",
+   "Austrittsquote Abteilung: 12 / 80 = 15 % in sechs Monaten. Vergleichsabteilung: 5 / 70 ≈ 7,1 %. Die Quote ist also etwa doppelt so hoch. Hochgerechnet auf ein Jahr wären es rund 30 % gegenüber 14 %, sofern das Tempo gleich bleibt.",
+   "Visualisierung: Austritte pro Monat für beide Abteilungen als Linien, mit markierten Zeitpunkten für Schichtplanänderung und Führungswechsel. Keine Tortendiagramme. Sichtbar sein muss, ob die Austritte nach einer Änderung ansteigen.",
+   "Alternativen: 1. Schichtplanänderung. 2. Führungswechsel. 3. Zufällige Häufung bei kleinen Zahlen. Bei 12 Austritten können wenige Fälle das Bild stark verändern. Gegenbefund prüfen: Stiegen die Austritte schon vor beiden Änderungen?",
+   "Fazit: „Die Austrittsquote ist mit 15 % gegenüber rund 7 % auffällig erhöht. Eine Ursache lässt sich aus den Daten nicht ableiten. Benötigt werden der monatliche Verlauf, die Trennung nach Austrittsart und die Gründe der fünf Personen ohne Rückmeldung, bevor eine Maßnahme gewählt wird.“"
+  ]
+ },
+ "hr-tech-evaluation": {
+  "lens": "People Analytics und HR-Technologie",
+  "profile": "Stacia Garr",
+  "answers": [
+   "Problem: Lernangebote sind verstreut, Teilnahme und Wirkung nicht nachvollziehbar. Nutzer:innen: Lernende, Lehrende, HR und IT. Muss-Kriterien: nachgewiesener Datenexport, DSGVO-konforme Auftragsverarbeitung, Rollen- und Rechtekonzept und Integration in die bestehende Anmeldung.",
+   "Gleicher Anwendungsfall für beide: „Eine Lehrende legt einen Kurs an, 20 Lernende bearbeiten eine Aufgabe, HR exportiert Teilnahme und Ergebnisse.“ Bei A wurde der Export gezeigt, bei B nicht. Das ist eine Lücke, kein Vorteil von A in allen Punkten.",
+   "Über drei Jahre: A = 25.000 € + 3 × 42.000 € = 151.000 €. B = 12.000 € + 3 × 55.000 € = 177.000 €. Hinzu kommt bei B der Wechselaufwand für den verlangten Prozesswechsel, bei A der Aufwand für Anpassungen, die gepflegt werden müssen.",
+   "Offen: Speicherort und Unterauftragsverarbeiter, Löschkonzept, Export in offenen Formaten, Schnittstellen zum HR-System, Supportzeiten und Sprache, Verantwortung bei Updates, die eigene Anpassungen brechen.",
+   "Stärkste Alternative: B, falls der Prozesswechsel ohnehin sinnvoll ist und Anpassungen bei A hohe Folgekosten erzeugen. Sensitivität: Wird Prozessstandardisierung höher gewichtet als Anpassbarkeit, kann B trotz höherer Kosten vorne liegen.",
+   "Empfehlung: A bedingt empfehlen. Bedingungen vor Vertragsfreigabe: vollständiger Exporttest mit eigenen synthetischen Daten, unterschriebene Auftragsverarbeitung, Kostenschätzung für Anpassungen über drei Jahre und ein Ausstiegsrecht bei nicht erfülltem Export."
+  ]
+ },
+ "knowledge-transfer": {
+  "lens": "Aufgaben und Work Redesign",
+  "profile": "Ravin Jesuthasan",
+  "answers": [
+   "Arbeit in Aufgaben zerlegen: Automatisierungsprozesse konfigurieren, Fehler in laufenden Abläufen diagnostizieren, Prozessaufnahme mit Fachbereichen, Abstimmung mit IT-Sicherheit. Kritisch sind Fehlerdiagnose und Prozessaufnahme, weil sie auf Erfahrung beruhen und kaum dokumentiert sind.",
+   "Höchste Priorität: Fehlerdiagnose (hohes Ausfallrisiko, schwer ersetzbar). Danach Prozessaufnahme (mittleres Risiko, teilweise erlernbar). Konfiguration hat ein niedrigeres Risiko, weil sie dokumentiert und schulbar ist.",
+   "„Erzähl vom letzten schwierigen Fehler: Woran hast du ihn erkannt?“ „Welche Warnzeichen siehst du, die andere übersehen?“ „Was würdest du nie tun, und warum?“ „Wen fragst du, wenn du nicht weiterweißt?“",
+   "Formate: Begleitung im Echtbetrieb (Shadowing), gemeinsame Fehleranalyse an früheren, anonymisierten Fällen, eine Checkliste mit Warnzeichen. Übung: Die zweite Person diagnostiziert drei vorbereitete Fehlerfälle, die erfahrene Person beobachtet.",
+   "Nachweis: Die zweite Person diagnostiziert und behebt zwei reale Fehler selbstständig. Die erfahrene Person ist anwesend, greift aber nicht ein. Ergebnis und Vorgehen werden kurz dokumentiert.",
+   "Verantwortlich ist die Teamleitung Operations. Termin für den Nachweis: innerhalb von drei Monaten. Nachbesserung: Wer den Nachweis nicht erbringt, bekommt zwei weitere begleitete Fälle und einen neuen Termin."
+  ]
+ },
+ "stakeholder-negotiation": {
+  "lens": "HR-Wertbeitrag",
+  "profile": "Dave Ulrich",
+  "answers": [
+   "Streitpunkt: HR schlägt eine moderierte Fehlerrückschau vor, die Führungskraft hält Meetings für offen und lehnt sie ab. Entscheidungsrahmen: Die Führungskraft entscheidet über ihr Team, HR berät. Eine Einigung braucht Zustimmung beider.",
+   "Positionen: HR will die Rückschau, die Führung will keine. Interessen: HR will, dass Fehler früh gemeldet werden. Die Führung will nicht bloßgestellt werden und die Kontrolle über ihr Team behalten. Gemeinsam ist beiden das Interesse an guter Teamleistung.",
+   "Einfluss: Die Führung hat direkten Einfluss, HR indirekten über Daten und Geschäftsleitung. Abhängigkeit: Die Führung braucht HR bei Personalthemen. Informationslücke: Die Führung kennt die Pulscheck-Ergebnisse (8 von 25 melden Bedenken früh) vielleicht nicht im Detail.",
+   "1. Die Führung moderiert selbst eine Rückschau, HR coacht im Hintergrund. 2. Externe Moderation, Ergebnisse gehen zuerst nur an die Führungskraft. 3. Kleiner Start mit einem Projektthema statt Teamverhalten. Alle Optionen lassen der Führung die Gestaltungshoheit.",
+   "Ohne Einigung: HR hält an der Analyse fest und beobachtet den nächsten Pulscheck, die Führung behält den Status quo. Risiko für alle: Bedenken bleiben unausgesprochen, Fehler werden später teurer. Die beste Alternative ist für beide Seiten schwächer als eine Einigung.",
+   "Vereinbarung: „Die Führungskraft führt im nächsten Monat eine selbst moderierte Rückschau durch, HR bereitet vor. Review in drei Monaten: Anteil der Personen, die Bedenken früh melden, im nächsten Pulscheck.“"
+  ]
+ },
+ "culture-diagnosis": {
+  "lens": "Psychologische Sicherheit und Teamlernen",
+  "profile": "Amy Edmondson",
+  "answers": [
+   "Beobachtbar: Fehler werden in Meetings selten angesprochen. Wenn doch, folgen nach Aussagen aus dem Team abwertende Reaktionen. Im Pulscheck melden 8 von 25 Antwortenden, Bedenken früh zu äußern (32 %). Beschreibe Verhalten, nicht Charakter.",
+   "Führung: „Unsere Meetings sind offen“, aus der Sicht dessen, der das Wort führt. Teammitglieder: erleben Reaktionen auf Fehler als abwertend und reden weniger. Moderation: sieht vielleicht beides. Die Wahrnehmung hängt von Rolle und Machtposition ab.",
+   "Musterhypothese: Im Team fehlt psychologische Sicherheit, Fehler werden aus Angst vor Abwertung verschwiegen. Gegenbefunde suchen: Gibt es Situationen, in denen Fehler offen besprochen werden? Gilt das Muster für alle oder nur für bestimmte Gruppen?",
+   "Erhebung: anonyme, kurze Befragung zu konkreten Situationen („Als ich zuletzt einen Fehler bemerkt habe, habe ich …“). Gruppen unter fünf Personen werden nicht ausgewertet. Die Rücklaufquote von 56 % ist zu berücksichtigen, Nichtantwortende sind möglicherweise die Stillsten.",
+   "Intervention: Die Führungskraft beginnt jedes Teammeeting vier Wochen lang mit einem eigenen kleinen Fehler oder einer offenen Frage. Warnsignal: Nach einer Fehlermeldung folgt Schweigen oder Spott, und die Moderation notiert das.",
+   "Review nach acht Wochen mit Pulscheck und Beobachtung zweier Meetings. Grenze der Interpretation: Die Daten beschreiben das Team, nicht einzelne Personen. Eine Veränderung kann auch andere Gründe haben."
+  ]
+ },
+ "executive-hr-brief": {
+  "lens": "Talententscheidungen und Workforce-Strategie",
+  "profile": "John Boudreau",
+  "answers": [
+   "„Die Geschäftsleitung entscheidet, ob das Führungskräftetraining unverändert fortgesetzt, mit Praxisaufgaben und Beobachtung nachgeschärft oder bis zu einer besseren Datengrundlage pausiert wird.“",
+   "Ausgangslage: 24 Führungskräfte trainiert. 18 haben geantwortet (75 %), 14 davon berichten mehr Feedbackgespräche. Entscheidungsrelevant: Das ist Selbstauskunft ohne Ausgangsmessung. Der Vergleich mit dem Kontrollteam ist durch dessen Ziel- und Personalwechsel verzerrt.",
+   "Option 1, fortsetzen: gleiche Kosten, Wirkung unbelegt. Option 2, nachschärfen: geringe Mehrkosten für Beobachtung und Praxisaufgaben, Wirkung messbar. Option 3, pausieren: spart Kosten, verzögert aber Unterstützung für neue Führungskräfte. Zahlen zu Kosten aus dem Budget ergänzen.",
+   "Unsicher: tatsächliche Verhaltensänderung, Einfluss der Nichtantwortenden. Verworfen: Ausweitung des Trainings auf weitere Gruppen, weil die Wirkung nicht belegt ist, und ein sofortiger Stopp, weil das positive Signal nicht ignoriert werden sollte.",
+   "Empfehlung: Option 2. Verantwortlich ist die People-Development-Leitung. Stoppregel: Zeigt die Teamrückmeldung nach drei Monaten keine Veränderung gegenüber der neuen Ausgangsmessung, wird das Format grundlegend überarbeitet.",
+   "Lesbarkeit: Beschlussbedarf und Empfehlung stehen in den ersten drei Zeilen, maximal eine Seite, Zahlen mit Nenner. Nächste Entscheidung: in drei Monaten auf Basis der Teamrückmeldung."
+  ]
+ },
+ "hr-experiment": {
+  "lens": "People Analytics und HR-Technologie",
+  "profile": "Stacia Garr",
+  "answers": [
+   "Hypothese: „Wenn Führungskräfte nach dem Training zwei begleitete Praxisaufgaben bearbeiten, führen sie in den folgenden 30 Tagen mehr Feedbackgespräche mit konkreter Handlung als Führungskräfte ohne Praxisaufgaben.“ Widerlegbar, weil eine Gleichheit oder ein Rückgang sie widerlegt.",
+   "Intervention: zwei Praxisaufgaben mit kurzer Rückmeldung durch People Development. Vergleich: Die Hälfte der nächsten Trainingsgruppe erhält die Aufgaben, die andere Hälfte nicht. Die Zuteilung erfolgt per Los, nicht nach Interesse.",
+   "Ausgangswert: Anzahl Feedbackgespräche im Monat vor dem Training, erhoben über eine kurze Teamrückmeldung. Zielgröße: Anteil der Teammitglieder, die ein Gespräch mit vereinbarter Handlung bestätigen. Beobachtungsdauer: 30 Tage.",
+   "Störfaktoren: Ziel- oder Personalwechsel in einzelnen Teams, unterschiedliche Teamgrößen, Motivation der Teilnehmenden. Schutzgrenzen: Ergebnisse nur auf Gruppenebene, keine Bewertung einzelner Führungskräfte, Teams unter fünf Personen werden nicht ausgewertet.",
+   "Durchführung: People Development teilt zu und begleitet die Praxisaufgaben. HR Analytics erhebt und wertet aus. Die Führungskräfte werden vorab informiert, wozu die Daten dienen.",
+   "Vorab festgelegt: Fortsetzen, wenn die Aufgabengruppe mindestens 15 Prozentpunkte mehr bestätigte Gespräche zeigt. Ändern, wenn der Unterschied kleiner ist, aber die Rückmeldungen positiv sind. Stoppen, wenn kein Unterschied oder Mehrbelastung ohne Nutzen sichtbar wird."
+  ]
+ },
+ "hr-ai-offer-design": {
+  "lens": "People Analytics und HR-Technologie",
+  "profile": "Stacia Garr",
+  "answers": [
+   "Zielgruppe: HR-Service-Leitungen in KMU mit 200 bis 1.000 Beschäftigten. Aufgabe: wiederkehrende Standardanfragen beantworten, ohne sensible Fälle zu gefährden. Im synthetischen Fall: 800 Anfragen im Monat, davon 45 % Standard.",
+   "Belegt im Fall: hoher Anteil Standardanfragen, Fehlerquote eines KI-Tests (4 von 60). Vermutung: KMU haben keine Kapazität, KI sicher einzuführen. Vermutung: Sie würden für Begleitung bezahlen. Vermutungen werden als solche markiert und getestet.",
+   "„In vier Wochen führen wir mit eurem HR-Service einen begrenzten KI-Pilot für Standardauskünfte ein, mit Freigabeprozess, Stoppregel und Risk Card. Ziel: kürzere Bearbeitungszeit ohne falsche Richtlinienangabe in ausgelieferten Antworten.“",
+   "Leistung: Aufgabenanalyse, Risk Card, Pilotdesign, wöchentliche Begleitung, Abschlussreview. Grenzen: keine Rechtsberatung, keine Haftung für Richtlinieninhalte, keine Verarbeitung personenbezogener Daten durch die Beratung. Aufwand: geschätzt in Tagen, Preis offen lassen, bis er kalkuliert ist.",
+   "Validierungstest: Fünf Gespräche mit HR-Service-Leitungen über ihre aktuelle Lösung, die Hürden und den Wert eines Piloten. Erfolgskriterium: Mindestens drei von fünf bestätigen das Problem unabhängig und zwei sind bereit, einen Pilot konkret zu besprechen.",
+   "Das Angebot ändert sich grundlegend, wenn KMU das Problem bereits mit einer vorhandenen Software lösen oder wenn der Engpass nicht Wissen, sondern Freigabe durch Datenschutz oder Beschäftigtenvertretung ist. Dann wäre das Angebot eher Governance-Begleitung."
+  ]
+ }
+}

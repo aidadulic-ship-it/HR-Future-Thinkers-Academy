@@ -1,0 +1,162 @@
+{
+  "type": "hrfta-zeitkapsel",
+  "version": 1,
+  "capsules": [
+    {
+      "id": "test-01",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 80,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Interviewfenster in zwei Fachbereichen bündeln",
+      "vorhersage": "Die mediane Besetzungszeit sinkt unter 60 Tage",
+      "kriterium": "Median Freigabe bis Zusage im Recruiting-Report",
+      "thema": "Recruiting und Auswahl"
+    },
+    {
+      "id": "test-02",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 90,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Strukturiertes Interviewraster einführen",
+      "vorhersage": "Mindestens 9 von 10 Bewertungen verweisen auf beobachtbares Verhalten",
+      "kriterium": "Stichprobe von 10 Bewertungsbögen",
+      "thema": "Recruiting und Auswahl"
+    },
+    {
+      "id": "test-03",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 90,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Freigabeprozess auf eine Unterschrift verkürzen",
+      "vorhersage": "Freigabe dauert im Median unter 7 Tage",
+      "kriterium": "Zeitstempel Freigabe",
+      "thema": "Recruiting und Auswahl"
+    },
+    {
+      "id": "test-04",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 70,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Active Sourcing für Datenrollen testen",
+      "vorhersage": "Mindestens 3 Einstellungen aus Active Sourcing",
+      "kriterium": "Herkunft der Einstellungen",
+      "thema": "Recruiting und Auswahl"
+    },
+    {
+      "id": "test-05",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 70,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Praxisaufgaben nach dem Führungstraining",
+      "vorhersage": "Mehr als die Hälfte der Teams bestätigt monatliche Feedbackgespräche",
+      "kriterium": "Anonyme Teamrückmeldung",
+      "thema": "Lernen und Entwicklung"
+    },
+    {
+      "id": "test-06",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 80,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Datenprogramm gestaffelt starten",
+      "vorhersage": "Mindestens 20 von 25 Teilnehmenden schließen die Transferaufgabe ab",
+      "kriterium": "Abgaben der Transferaufgabe",
+      "thema": "Lernen und Entwicklung"
+    },
+    {
+      "id": "test-07",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 60,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Lernzeit fest im Kalender blocken",
+      "vorhersage": "Teilnahme an Lerneinheiten steigt um 20 Prozentpunkte",
+      "kriterium": "Teilnahmeliste",
+      "thema": "Lernen und Entwicklung"
+    },
+    {
+      "id": "test-08",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 70,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Fehlerrückschau im Teammeeting",
+      "vorhersage": "Anteil der Personen, die Bedenken früh melden, steigt im Pulscheck",
+      "kriterium": "Pulscheck-Frage 3",
+      "thema": "Führung und Kultur"
+    },
+    {
+      "id": "test-09",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 80,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Schichtpläne vier Wochen im Voraus veröffentlichen",
+      "vorhersage": "Keine weiteren Kündigungen in der Abteilung",
+      "kriterium": "Austritte laut HR-System",
+      "thema": "Organisation und Workforce"
+    },
+    {
+      "id": "test-10",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 90,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Vier interne Personen zu Automatisierung qualifizieren",
+      "vorhersage": "Alle vier bestehen die Abschlussprüfung",
+      "kriterium": "Prüfungsergebnisse",
+      "thema": "Organisation und Workforce"
+    },
+    {
+      "id": "test-11",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 80,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "KI-Antworten nur mit Freigabe versenden",
+      "vorhersage": "Keine falsche Richtlinienangabe in ausgelieferten Antworten",
+      "kriterium": "Stichprobe von 50 Antworten",
+      "thema": "HR-Technologie und KI"
+    },
+    {
+      "id": "test-12",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-01",
+      "sicherheit": 60,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Learning-Tool A bedingt beauftragen",
+      "vorhersage": "Datenexport funktioniert im Test vollständig",
+      "kriterium": "Exporttest mit synthetischen Daten",
+      "thema": "HR-Technologie und KI"
+    },
+    {
+      "id": "test-13",
+      "erstellt": "2026-08-01",
+      "faellig": "2026-11-05",
+      "sicherheit": 70,
+      "ergebnis": null,
+      "notiz": "",
+      "entscheidung": "Onboarding-Buddy-Programm pilotieren",
+      "vorhersage": "Neue Mitarbeitende bewerten das Onboarding mit mindestens 4 von 5",
+      "kriterium": "Kurzbefragung nach 30 Tagen",
+      "thema": "Lernen und Entwicklung"
+    }
+  ]
+}

@@ -7,7 +7,7 @@ test('die eigenständige Executive-Vorschau führt vom Entscheidungsfall zum Bri
   const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
   assert.doesNotMatch(html, /<script[^>]+src=|<link[^>]+stylesheet|id="campus-form"/i);
   assert.match(html, /<img src="data:image\/jpeg;base64,/);
-  for (const anchor of ['decision-lab', 'lehre', 'workshops', 'lernangebot']) {
+  for (const anchor of ['decision-lab', 'lehre', 'workshops', 'einstieg']) {
     assert.ok(html.includes('href="#' + anchor + '"') && html.includes('id="' + anchor + '"'), anchor);
   }
   const fields = new Map([
@@ -36,16 +36,16 @@ test('ein Skill protokolliert die sechs Antworten und stellt sie als Textdatei b
   const fields = Array.from({ length: 6 }, (_, i) => ({ labels: [{ textContent: 'Schritt ' + (i + 1) }], value: 'Antwort ' + (i + 1) }));
   const record = { focus() {} };
   const download = {};
-  const result = { hidden: true, querySelector: selector => selector === '.skill-record' ? record : download };
+  const result = { hidden: true, querySelector: selector => ({ '.skill-record': record, '.skill-download': download })[selector] ?? {} };
   const workflow = {
-    addEventListener(_, handler) { this.submit = handler; },
+    addEventListener(event, handler) { this[event] = handler; },
     querySelector: selector => selector === '.skill-result' ? result : { textContent: 'Evidence Card' },
-    querySelectorAll: () => fields,
+    querySelectorAll: selector => selector === 'textarea[name]' ? fields : [],
   };
   const context = {
     window: { addEventListener() {} },
     location: { hash: '' },
-    document: { querySelector: () => ({ addEventListener() {} }), querySelectorAll: () => [workflow], getElementById: () => null },
+    document: { querySelector: () => ({ addEventListener() {} }), querySelectorAll: selector => selector === '.skill-workflow' ? [workflow] : [], getElementById: () => null },
   };
   for (const [, script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) runInNewContext(script, context);
   workflow.submit({ preventDefault() {} });

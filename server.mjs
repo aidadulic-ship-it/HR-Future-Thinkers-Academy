@@ -9,6 +9,12 @@ const assets = new Map([
   ['/academy/academy-browser.js', ['academy-browser.js', 'text/javascript; charset=utf-8']],
   ['/academy/site.js', ['site.js', 'text/javascript; charset=utf-8']],
   ['/academy/hero.png', ['hero.png', 'image/png']],
+  ['/academy/fonts/dm-sans-latin-wght-normal.woff2', ['fonts/dm-sans-latin-wght-normal.woff2', 'font/woff2']],
+  ['/academy/fonts/dm-sans-latin-ext-wght-normal.woff2', ['fonts/dm-sans-latin-ext-wght-normal.woff2', 'font/woff2']],
+  ['/academy/fonts/instrument-serif-latin-400-normal.woff2', ['fonts/instrument-serif-latin-400-normal.woff2', 'font/woff2']],
+  ['/academy/fonts/instrument-serif-latin-ext-400-normal.woff2', ['fonts/instrument-serif-latin-ext-400-normal.woff2', 'font/woff2']],
+  ['/academy/fonts/instrument-serif-latin-400-italic.woff2', ['fonts/instrument-serif-latin-400-italic.woff2', 'font/woff2']],
+  ['/academy/fonts/instrument-serif-latin-ext-400-italic.woff2', ['fonts/instrument-serif-latin-ext-400-italic.woff2', 'font/woff2']],
 ]);
 
 function json(response, status, value) {

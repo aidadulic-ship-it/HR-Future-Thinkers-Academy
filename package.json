@@ -1,0 +1,12 @@
+{
+  "name": "hr-future-thinkers-academy",
+  "version": "0.7.0",
+  "private": true,
+  "description": "HR Future Thinkers Academy – statische Vorschau für aidadulic.at/academy",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "build": "node build-preview.mjs",
+    "test": "node --test \"*.test.mjs\"",
+    "serve": "node server.mjs"
+  }
+}
