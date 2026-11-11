@@ -250,3 +250,30 @@ footer { justify-content: space-between; gap: 16px; min-height: 72px; color: var
 .retrieval-feedback p { margin: 0; }
 @media (max-width: 610px) { .learning-timeline div { grid-template-columns: 1fr; } }
 
+
+.faculty-practice h5 { margin: 24px 0 7px; color: var(--navy); font-size: 1.05rem; }
+.faculty-practice details > p { margin: 0 0 10px; }
+.faculty-practice details > label { display: block; color: var(--navy); font-size: .9rem; font-weight: 650; }
+.faculty-practice textarea { display: block; width: 100%; margin: 5px 0 12px; padding: 8px; resize: vertical; color: var(--ink); background: var(--background); border: 1px solid var(--blue-muted); font: inherit; }
+.faculty-practice .role-brief { margin: 4px 0 8px; padding-inline: 12px; background: var(--blue-soft); }
+.faculty-practice .role-brief summary { padding-block: 8px; font-size: .9rem; }
+
+
+.faculty-avatar-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 9px; margin-top: 16px; }
+.faculty-avatar-card { min-width: 0; border: 1px solid var(--line); background: var(--white); }
+.faculty-avatar-card[open] { grid-column: 1 / -1; border-color: var(--blue-muted); }
+.faculty-avatar-card > summary { display: flex; align-items: center; gap: 10px; min-height: 63px; padding: 8px 10px; list-style: none; }
+.faculty-avatar-card > summary::-webkit-details-marker { display: none; }
+.faculty-avatar-card > summary::after { content: "＋"; margin-left: auto; color: var(--magenta-text); }
+.faculty-avatar-card[open] > summary::after { content: "−"; }
+.faculty-avatar-card > summary:hover { background: var(--background); }
+.faculty-avatar { display: grid; flex: none; width: 40px; height: 40px; place-items: center; border-radius: 50%; background: var(--navy); color: var(--white); font-size: .72rem; letter-spacing: .04em; }
+.faculty-avatar-card[open] .faculty-avatar { background: var(--magenta-text); }
+.faculty-avatar-title { display: grid; min-width: 0; line-height: 1.25; }
+.faculty-avatar-title small { margin-top: 3px; color: var(--muted); font-size: .78rem; font-weight: 500; }
+.faculty-avatar-body { padding: 12px 14px 2px; border-top: 1px solid var(--line); }
+.faculty-avatar-body label { color: var(--navy); font-size: .9rem; font-weight: 650; }
+.faculty-avatar-body .role-brief { margin-block: 10px; }
+.faculty-grill-end { margin-top: 16px; }
+@media (max-width: 590px) { .faculty-avatar-grid { grid-template-columns: 1fr; } }
+

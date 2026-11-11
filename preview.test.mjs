@@ -110,9 +110,9 @@ test('die Workbench exportiert Thema, Entscheidung und Review ohne Server', () =
 });
 
 
-test('die Lehrvorschau wechselt zwischen drei Ansichten und unterstützt Pfeiltasten', () => {
+test('die Lehrvorschau wechselt zwischen fünf Ansichten und unterstützt Pfeiltasten', () => {
   const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
-  const tabs = ['kurs', 'arbeiten', 'entwicklung'].map(id => ({
+  const tabs = ['kurs', 'arbeiten', 'entwicklung', 'praxis', 'grill'].map(id => ({
     attributes: { 'aria-controls': 'lehrpanel-' + id },
     getAttribute(key) { return this.attributes[key]; },
     setAttribute(key, value) { this.attributes[key] = value; },
@@ -129,11 +129,15 @@ test('die Lehrvorschau wechselt zwischen drei Ansichten und unterstützt Pfeilta
   for (const id of Object.keys(panels)) assert.ok(html.includes('id="' + id + '"'));
   for (const [, script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) runInNewContext(script, context);
   tabs[1].click();
-  assert.deepEqual(Object.values(panels).map(panel => panel.hidden), [true, false, true]);
+  assert.deepEqual(Object.values(panels).map(panel => panel.hidden), [true, false, true, true, true]);
   assert.equal(tabs[1].getAttribute('aria-selected'), 'true');
   tabs[1].keydown({ key: 'ArrowRight', preventDefault() {} });
-  assert.deepEqual(Object.values(panels).map(panel => panel.hidden), [true, true, false]);
+  assert.deepEqual(Object.values(panels).map(panel => panel.hidden), [true, true, false, true, true]);
   assert.equal(tabs[2].focused, true);
+  tabs[3].click();
+  assert.deepEqual(Object.values(panels).map(panel => panel.hidden), [true, true, true, false, true]);
+  tabs[4].click();
+  assert.deepEqual(Object.values(panels).map(panel => panel.hidden), [true, true, true, true, false]);
 });
 
 
@@ -160,4 +164,6 @@ test('Lehre ist ein Tab derselben Academy und unterstützt Direktlinks und Rück
   assert.equal(teaching.hidden, true);
   assert.equal(nav['aria-current'], undefined);
 });
+
+
 

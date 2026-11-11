@@ -89,3 +89,31 @@ test('der Lernpfad enthält alle Lerntermine, drei Abrufe mit Feedback und den 4
   assert.ok(path.includes('Zwei Erklärfragen') && path.includes('Durchgearbeitetes Beispiel'));
 });
 
+
+test('Lehrpraxis bündelt Beispiele, Lehrenden-Skills und Rollenspiele im Lehrenden-Tab', () => {
+  const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
+  const teaching = html.split('<section id="lehre"')[1]?.split('</section>')[0];
+  assert.ok(teaching?.includes('aria-controls="lehrpanel-praxis"'));
+  assert.equal([...teaching.matchAll(/class="faculty-example"/g)].length, 2);
+  assert.equal([...teaching.matchAll(/class="faculty-skill"/g)].length, 3);
+  assert.equal([...teaching.matchAll(/class="faculty-roleplay"/g)].length, 2);
+  assert.equal([...teaching.matchAll(/Beobachtungsbogen und Auswertung/g)].length, 2);
+});
+
+
+test('zwölf Perspektiv-Avatare bieten Grill-me-Fragen und prüfen die fünf Lernprinzipien', () => {
+  const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
+  const area = html.split('<div id="lehr-grill-me"')[1]?.split('<div class="faculty-grill-end"')[0];
+  assert.ok(area);
+  const cards = [...area.matchAll(/class="faculty-avatar-card"/g)];
+  const prompts = [...area.matchAll(/<textarea id="grill-[^"]+"[^>]*readonly>([\s\S]*?)<\/textarea>/g)];
+  assert.equal(cards.length, 12);
+  assert.equal(prompts.length, 12);
+  assert.equal(new Set(prompts.map(([, prompt]) => prompt)).size, 12);
+  for (const [, prompt] of prompts) {
+    for (const marker of ['genau eine Frage', 'Tag 7', 'Tag 14', 'Tag 30', '48 Stunden', 'drei Abruffragen', 'zwei vertiefende', 'durchgearbeitetes Beispiel', 'unmittelbar']) {
+      assert.ok(prompt.includes(marker), marker);
+    }
+  }
+});
+
