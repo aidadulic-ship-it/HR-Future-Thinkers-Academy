@@ -181,18 +181,7 @@ footer { justify-content: space-between; gap: 16px; min-height: 72px; color: var
 @media (max-width: 620px) { .workbench-form { grid-template-columns: 1fr; } }
 
 
-.context-help { position: relative; display: inline-flex; margin-top: 6px; vertical-align: middle; }
-.help-toggle { display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border-radius: 50%; border: 1px solid var(--blue-muted); color: var(--navy); background: var(--white); font-weight: 750; cursor: help; }
-.help-text { position: absolute; z-index: 4; top: 100%; left: 0; width: min(300px, calc(100vw - 52px)); padding: 11px 13px; border-radius: 6px; color: var(--white); background: var(--navy); box-shadow: 0 6px 20px #12295a33; font-size: .9rem; font-weight: 400; line-height: 1.5; visibility: hidden; }
-.context-help:not(.help-dismissed):is(:hover, :focus-within) .help-text, .help-toggle[aria-expanded="true"] + .help-text { visibility: visible; }
-.workbench-field { position: relative; min-width: 0; }
-.workbench-field label { padding-top: 4px; }
-.workbench-field label::first-line { line-height: 1.4; }
-.workbench-field .context-help { position: absolute; top: 0; right: 0; margin: 0; }
-.workbench-field .help-toggle { width: 26px; height: 26px; }
-.workbench-field .help-text { left: auto; right: 0; }
-.workbench-field label :is(input, textarea, select) { margin-top: 10px; }
-@media (max-width: 380px) { .workbench-field label { font-size: .87rem; } }
-
-.workbench-field { container-type: inline-size; }
-.workbench-field .help-text { width: min(300px, 100cqw); }
+.workbench-field { min-width: 0; }
+.workbench-field .field-note { margin: 5px 0 2px; color: var(--muted); font-size: .84rem; line-height: 1.4; }
+.workbench-form { row-gap: 16px; }
+.workbench-form label :is(input, textarea, select) { margin-top: 6px; }
