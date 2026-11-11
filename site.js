@@ -93,3 +93,25 @@ if (workbenchForm) {
 }
 
 
+
+const helpArea = document.getElementById('inhalt');
+if (helpArea) {
+  for (const button of helpArea.querySelectorAll('.help-toggle')) {
+    button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!expanded));
+      button.closest('.context-help').classList.toggle('help-dismissed', expanded);
+    });
+    button.addEventListener('pointerleave', () => button.closest('.context-help').classList.remove('help-dismissed'));
+    button.addEventListener('blur', () => {
+      button.setAttribute('aria-expanded', 'false');
+      button.closest('.context-help').classList.remove('help-dismissed');
+    });
+    button.addEventListener('keydown', event => {
+      if (event.key !== 'Escape') return;
+      button.setAttribute('aria-expanded', 'false');
+      button.closest('.context-help').classList.add('help-dismissed');
+    });
+  }
+}
+

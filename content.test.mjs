@@ -70,3 +70,12 @@ test('HR UNLEARN IT ist in der Academy ohne externen Anmeldelink nutzbar', () =>
   assert.ok(!workshop.includes('chatgpt.site'));
 });
 
+
+test('die Workbench erklärt alle Eingabefelder und zentrale Academy-Bereiche', () => {
+  const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
+  const fields = html.split('id="workbench-form"')[1]?.split('</form>')[0];
+  assert.equal([...fields.matchAll(/id="help-w\d+"/g)].length, 14);
+  for (const id of ['skills', 'decision-lab', 'literacy', 'lehre', 'campus']) assert.ok(html.includes('id="help-' + id + '"'), id);
+  assert.ok(html.includes('class="help-toggle"'));
+});
+
