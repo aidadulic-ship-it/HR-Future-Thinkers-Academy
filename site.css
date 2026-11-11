@@ -218,3 +218,4 @@ footer { justify-content: space-between; gap: 16px; min-height: 72px; color: var
 .faculty-footer { display: block; min-height: 0; padding: 12px clamp(18px, 4vw, 42px); border-top: 1px solid var(--line); color: var(--muted); background: var(--background); font-size: .8rem; }
 @media (max-width: 650px) { .faculty-header { flex-direction: column; } .faculty-cycle { grid-template-columns: 1fr; } .faculty-metrics div { padding: 8px; } }
 
+.nav-teaching[aria-current="page"] { background: var(--navy); border-color: var(--navy); color: var(--white); }

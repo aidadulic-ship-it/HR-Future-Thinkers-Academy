@@ -9,7 +9,7 @@ const sections = [
   ['review', 'VERANTWORTUNG UND REVIEW'],
 ];
 
-form.addEventListener('submit', event => {
+form?.addEventListener('submit', event => {
   event.preventDefault();
   const data = new FormData(form);
   const paragraphs = sections.map(([key, title]) => title + '\n' + data.get(key).trim());
@@ -63,12 +63,25 @@ if (skillSearch) {
 
 function openLinkedLesson() {
   const target = document.getElementById(location.hash.slice(1));
+  const wasHidden = target?.closest('[hidden]');
+  const teaching = document.getElementById('lehre');
+  const main = document.getElementById('inhalt');
+  if (teaching && main && target !== main) {
+    const teachingActive = target?.closest('#lehre') === teaching;
+    for (const section of main.children) {
+      section.hidden = (section === teaching) !== teachingActive;
+    }
+    const nav = document.getElementById('nav-lehre');
+    if (teachingActive) nav.setAttribute('aria-current', 'page');
+    else nav.removeAttribute('aria-current');
+  }
   const lesson = target?.closest('details');
   if (lesson?.hidden && skillSearch) {
     skillSearch.value = '';
     skillSearch.dispatchEvent(new Event('input'));
   }
   if (lesson) lesson.open = true;
+  if (wasHidden) target.scrollIntoView();
 }
 
 window.addEventListener('hashchange', openLinkedLesson);
@@ -125,4 +138,6 @@ if (teacherTabList) {
   });
   selectTeacherTab(0);
 }
+
+
 

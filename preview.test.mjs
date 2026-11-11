@@ -136,3 +136,28 @@ test('die Lehrvorschau wechselt zwischen drei Ansichten und unterstützt Pfeilta
   assert.equal(tabs[2].focused, true);
 });
 
+
+test('Lehre ist ein Tab derselben Academy und unterstützt Direktlinks und Rückkehr', () => {
+  const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
+  assert.ok(!html.includes('Zugangsmodelle laut Briefing'));
+  assert.match(html, /id="nav-lehre"[^>]*href="#lehre"/);
+  assert.ok(!html.includes('Lehrendenansicht.html'));
+  const home = { hidden: false, closest: () => null };
+  const teaching = { hidden: false, closest: selector => selector === '#lehre' ? teaching : null };
+  const rubric = { closest: selector => selector === '#lehre' ? teaching : null };
+  const nav = { setAttribute(key, value) { this[key] = value; }, removeAttribute(key) { delete this[key]; } };
+  const nodes = { start: home, lehre: teaching, 'lehr-rubrik': rubric, inhalt: { children: [home, teaching] }, 'nav-lehre': nav };
+  const location = { hash: '#lehr-rubrik' };
+  const window = { addEventListener(event, handler) { this[event] = handler; } };
+  const document = { querySelector: () => null, querySelectorAll: () => [], getElementById: id => nodes[id] ?? null };
+  for (const [, script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) runInNewContext(script, { document, window, location });
+  assert.equal(home.hidden, true);
+  assert.equal(teaching.hidden, false);
+  assert.equal(nav['aria-current'], 'page');
+  location.hash = '#start';
+  window.hashchange();
+  assert.equal(home.hidden, false);
+  assert.equal(teaching.hidden, true);
+  assert.equal(nav['aria-current'], undefined);
+});
+

@@ -23,6 +23,3 @@ for (const [marker, replacement] of replacements) {
 }
 
 await writeFile(new URL('../Academy-Vorschau.html', import.meta.url), preview);
-
-
-
