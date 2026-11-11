@@ -157,3 +157,8 @@ footer { justify-content: space-between; gap: 16px; min-height: 72px; color: var
 .learning-modes details[open] { background: var(--background); }
 .learning-modes summary { color: var(--magenta-text); }
 .learning-modes .mode-note { margin-top: 16px; font-size: .9rem; }
+
+.skill-prompt { margin-block: 14px; padding: 0 14px 12px; background: var(--blue-soft); border: 1px solid var(--blue-line); }
+.skill-prompt summary { color: var(--magenta-text); }
+.skill-prompt label { display: block; font-size: .9rem; font-weight: 700; }
+.skill-prompt textarea { width: 100%; margin-top: 6px; padding: 10px; resize: vertical; border: 1px solid var(--blue-muted); background: var(--white); color: var(--ink); font: inherit; }

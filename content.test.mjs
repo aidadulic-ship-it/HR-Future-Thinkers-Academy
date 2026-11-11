@@ -48,3 +48,17 @@ test('die didaktischen Modi sind einzeln aufklappbar und enthalten Ablauf, Beisp
   }
 });
 
+
+test('jeder Skill hat einen eigenen kopierbaren KI-Prompt vor seinem Workflow', () => {
+  const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
+  const skills = [...html.matchAll(/<summary id="([\w-]+)">[^<]+<\/summary><div class="lesson">([\s\S]*?)<form class="skill-workflow" data-skill="\1">/g)];
+  assert.equal(skills.length, 20);
+  const prompts = skills.map(([, slug, content]) => {
+    const prompt = content.match(/<textarea id="prompt-[\w-]+" rows="9" readonly>([\s\S]*?)<\/textarea>/)?.[1];
+    assert.ok(prompt, slug);
+    for (const marker of ['[Fall oder Kontext]', '[Meine Vorarbeit]', 'Prüffrage', 'Ergebnisformat']) assert.ok(prompt.includes(marker), slug + ' · ' + marker);
+    return prompt;
+  });
+  assert.equal(new Set(prompts).size, 20);
+});
+
