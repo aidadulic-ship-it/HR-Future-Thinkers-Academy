@@ -162,3 +162,8 @@ footer { justify-content: space-between; gap: 16px; min-height: 72px; color: var
 .skill-prompt summary { color: var(--magenta-text); }
 .skill-prompt label { display: block; font-size: .9rem; font-weight: 700; }
 .skill-prompt textarea { width: 100%; margin-top: 6px; padding: 10px; resize: vertical; border: 1px solid var(--blue-muted); background: var(--white); color: var(--ink); font: inherit; }
+
+.skill-search { display: grid; gap: 5px; max-width: 38rem; margin-bottom: 24px; }
+.skill-search label { color: var(--navy); font-weight: 700; }
+.skill-search input { width: 100%; min-height: 46px; padding: 8px 12px; color: var(--ink); background: var(--white); border: 1px solid var(--blue-muted); }
+.skill-search p { color: var(--muted); font-size: .9rem; }

@@ -36,12 +36,42 @@ for (const workflow of document.querySelectorAll('.skill-workflow')) {
   });
 }
 
+
+function normalizeSkillSearch(value) {
+  return value.toLocaleLowerCase('de').normalize('NFKD').replace(/\p{M}/gu, '').replace(/ß/g, 'ss');
+}
+
+const skillSearch = document.getElementById('skill-search');
+if (skillSearch) {
+  const status = document.getElementById('skill-search-status');
+  const skills = Array.from(document.querySelectorAll('#skills .tools > details'), element => ({
+    element,
+    text: normalizeSkillSearch(element.textContent.replace(/\s+/g, ' ')),
+  }));
+  const filterSkills = () => {
+    const terms = normalizeSkillSearch(skillSearch.value).trim().split(/\s+/).filter(Boolean);
+    let matches = 0;
+    for (const { element, text } of skills) {
+      element.hidden = !terms.every(term => text.includes(term));
+      if (!element.hidden) matches++;
+    }
+    status.textContent = matches ? matches + ' von ' + skills.length + ' Skills' : 'Keine Skills gefunden. Probiere einen anderen Suchbegriff.';
+  };
+  skillSearch.addEventListener('input', filterSkills);
+  filterSkills();
+}
+
 function openLinkedLesson() {
   const target = document.getElementById(location.hash.slice(1));
   const lesson = target?.closest('details');
+  if (lesson?.hidden && skillSearch) {
+    skillSearch.value = '';
+    skillSearch.dispatchEvent(new Event('input'));
+  }
   if (lesson) lesson.open = true;
 }
 
 window.addEventListener('hashchange', openLinkedLesson);
 openLinkedLesson();
+
 

@@ -55,3 +55,36 @@ test('ein Skill protokolliert die sechs Antworten und stellt sie als Textdatei b
 });
 
 
+
+test('die Skill-Suche filtert Titel und Prompt-Text und zeigt die Trefferzahl', () => {
+  const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
+  const input = { value: '', addEventListener(_, handler) { this.onInput = handler; } };
+  const status = {};
+  const cards = [{ textContent: 'HR-Technologie auswählen Mehrjahresvergleich' }, { textContent: 'Kultur untersuchen Führung' }];
+  const items = { 'skill-search': input, 'skill-search-status': status };
+  const context = {
+    window: { addEventListener() {} },
+    location: { hash: '' },
+    document: {
+      querySelector: () => ({ addEventListener() {} }),
+      querySelectorAll: selector => selector === '#skills .tools > details' ? cards : [],
+      getElementById: id => items[id] ?? null,
+    },
+  };
+  assert.ok(html.includes('id="skill-search"'));
+  for (const [, script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) runInNewContext(script, context);
+  input.value = 'fuhrung';
+  input.onInput();
+  assert.deepEqual(cards.map(card => card.hidden), [true, false]);
+  assert.equal(status.textContent, '1 von 2 Skills');
+  input.value = 'mehrjahresvergleich';
+  input.onInput();
+  assert.deepEqual(cards.map(card => card.hidden), [false, true]);
+  input.value = 'unbekannt';
+  input.onInput();
+  assert.match(status.textContent, /Keine Skills/);
+  input.value = '';
+  input.onInput();
+  assert.deepEqual(cards.map(card => card.hidden), [false, false]);
+});
+
