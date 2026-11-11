@@ -58,3 +58,12 @@ test('die drei Lernmodi zeigen schon geschlossen, wofür sie gedacht sind', () =
   const modes = [...section('campus').matchAll(/<details class="learning-mode"><summary><span class="card-kicker">Lernmodus<\/span><span class="card-title">([^<]+)<\/span><span class="card-goal">([^<]{30,})<\/span><span class="card-cta" aria-hidden="true"><\/span><\/summary>/g)];
   assert.deepEqual(modes.map(([, title]) => title), ['Human First', 'Human × AI', 'Human Only']);
 });
+
+test('die Academy sagt klar, dass kein KI-Konto nötig ist', () => {
+  assert.match(section('einstieg'), /class="privacy-note"[^>]*>[^<]*ohne KI-Konto/);
+  assert.match(html, /<p class="prompt-where">KI-Prompt \(optional\)/);
+});
+
+test('die Academy spricht für sich: keine Werbebegriffe auf der Seite', () => {
+  assert.doesNotMatch(html.replace(/data:[^"')]+/g, ''), /masterclass|high[\s-]?end|executive[\s-]?level|premium/i);
+});

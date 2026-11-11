@@ -1,5 +1,6 @@
 # Build-Zwischenergebnis (wird von build-preview.mjs erzeugt)
 source/Academy-Vorschau.html
+source/Spiel-Vorschau.html
 node_modules/
 .DS_Store
 Thumbs.db

@@ -28,6 +28,9 @@ Statische Academy-Seite für **aidadulic.at/academy**. Eine unabhängige Initiat
 - Entscheidungs-Zeitkapsel mit Urteilsprofil
 - Lehrendenbereich mit Kursarbeitsplatz, 30-Tage-Lernpfad, Lehrpraxis und Grill-me (12 Perspektiven)
 - Campus Edition (geplant) mit drei Lernmodi
+- Spiel „HR-Mastermind“ direkt auf der Seite (#spiel): fünf Level, Fallakten finden, Prompt-Joker, Feuerwerk und Urkunde
+- Profi-Stufe mit Sicherheitsangabe vor jeder Antwort, 60 Spielfragen
+- Krisenmodus: drei frei erfundene, verzweigte Unternehmenskrisen in je vier Phasen mit Anzeigen für Vertrauen und Risiko, Rückblick und Vertiefung in der Academy (`#spiel-krise`)
 - Ohne Konto, ohne Anmeldung, ohne Datenübertragung, ohne Tracking, ohne externe Abrufe beim Laden
 
 ## Lokal ansehen
@@ -41,7 +44,7 @@ Voraussetzung: Node.js 24 oder neuer.
 ```bash
 cd source/academy-core
 node build-preview.mjs        # erzeugt source/Academy-Vorschau.html
-node --test "*.test.mjs"      # 55 Tests
+node --test "*.test.mjs"      # 87 Tests
 ```
 
 Danach die gebaute Datei übernehmen:

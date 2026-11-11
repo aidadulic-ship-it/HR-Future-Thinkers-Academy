@@ -33,7 +33,7 @@ test('eine Einstiegsweiche nach dem Hero führt zu Skills, Lehre und Workshop', 
   assert.ok(entry > start && entry < html.indexOf('<section id="decision-lab"'));
   const block = section('einstieg');
   const targets = [...block.matchAll(/<a class="entry-card" href="#([\w-]+)"/g)].map(([, target]) => target);
-  assert.deepEqual(targets, ['skills', 'lehre', 'workshops', 'zeitkapsel']);
+  assert.deepEqual(targets, ['skills', 'lehre', 'workshops', 'zeitkapsel', 'krisen']);
   for (const target of targets) assert.ok(html.includes('id="' + target + '"'), target);
 });
 

@@ -479,3 +479,17 @@ fieldset { min-width: 0; }
 .library-all { margin: 0 0 20px; }
 #prompts textarea { display: block; width: 100%; margin-top: 6px; padding: 10px; resize: vertical; border: 1px solid var(--blue-muted); background: var(--white); color: var(--ink); font: inherit; font-size: .9rem; }
 #prompts label { color: var(--navy); font-weight: 700; font-size: .9rem; }
+.entry-game { background: var(--navy); border-color: var(--navy); color: #fff; }
+.entry-game strong { color: #fff; }
+.entry-game .card-kicker { color: var(--pink-light); }
+.entry-game .card-goal { color: #d5daf0; }
+.entry-game .card-cta-static { color: #ff9fd3; }
+.entry-game:hover { background: var(--navy-light); }
+.crises { border-top: 1px solid var(--line); }
+.crisis-phases { margin: 0 0 18px; padding-left: 22px; }
+.crisis-phases li { margin-bottom: 10px; color: var(--muted); }
+.crisis-phases strong { display: block; color: var(--navy); }
+.crises .lesson .button { color: #fff; }
+.crisis-disclaimer { margin-top: 12px; font-size: .88rem; }
+.crisis-grid { grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); }
+@media (min-width: 980px) { .crisis-grid { grid-template-columns: repeat(3, 1fr); } }
