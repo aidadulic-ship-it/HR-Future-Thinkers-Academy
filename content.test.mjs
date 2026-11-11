@@ -78,3 +78,14 @@ test('Workbench-Felder haben direkt zugeordnete Hinweise ohne Fragezeichen-Schal
   assert.equal([...fields.matchAll(/aria-describedby="help-w\d+"/g)].length, 14);
   assert.ok(!html.includes('class="help-toggle"'));
 });
+
+test('der Lernpfad enthält alle Lerntermine, drei Abrufe mit Feedback und den 48-Stunden-Check', () => {
+  const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 'utf8');
+  const path = html.split('<article id="lernfahrplan"')[1]?.split('</article>')[0];
+  assert.ok(path);
+  for (const milestone of ['Tag 1', 'Tag 7', 'Tag 14', 'Tag 30', '48 Stunden']) assert.ok(path.includes(milestone), milestone);
+  assert.equal([...path.matchAll(/<details class="retrieval-feedback">/g)].length, 3);
+  assert.equal([...path.matchAll(/class="retrieval-answer"/g)].length, 3);
+  assert.ok(path.includes('Zwei Erklärfragen') && path.includes('Durchgearbeitetes Beispiel'));
+});
+

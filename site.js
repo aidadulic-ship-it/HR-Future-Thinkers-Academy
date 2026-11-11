@@ -126,6 +126,8 @@ if (teacherTabList) {
       const targets = {
         ArrowLeft: index === 0 ? last : index - 1,
         ArrowRight: index === last ? 0 : index + 1,
+        ArrowUp: index === 0 ? last : index - 1,
+        ArrowDown: index === last ? 0 : index + 1,
         Home: 0,
         End: last,
       };
@@ -138,6 +140,7 @@ if (teacherTabList) {
   });
   selectTeacherTab(0);
 }
+
 
 
 
