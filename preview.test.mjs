@@ -122,12 +122,14 @@ test('die Lehrvorschau wechselt zwischen fünf Ansichten und unterstützt Pfeilt
   const panels = Object.fromEntries(tabs.map(tab => [tab.getAttribute('aria-controls'), {}]));
   const nodes = { 'lehrvorschau-tabs': { querySelectorAll: () => tabs }, ...panels };
   const context = {
-    window: { addEventListener() {} }, location: { hash: '' },
+    window: { addEventListener() {} }, location: { hash: '#lehr-grill-me' },
     document: { querySelector: () => ({ addEventListener() {} }), querySelectorAll: () => [], getElementById: id => nodes[id] ?? null },
   };
   assert.ok(html.includes('id="lehrvorschau-tabs"'));
   for (const id of Object.keys(panels)) assert.ok(html.includes('id="' + id + '"'));
   for (const [, script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) runInNewContext(script, context);
+  assert.ok(html.includes('id="grill-einstieg"'));
+  assert.equal(tabs[4].getAttribute('aria-selected'), 'true');
   tabs[1].click();
   assert.deepEqual(Object.values(panels).map(panel => panel.hidden), [true, false, true, true, true]);
   assert.equal(tabs[1].getAttribute('aria-selected'), 'true');
@@ -164,6 +166,7 @@ test('Lehre ist ein Tab derselben Academy und unterstützt Direktlinks und Rück
   assert.equal(teaching.hidden, true);
   assert.equal(nav['aria-current'], undefined);
 });
+
 
 
 

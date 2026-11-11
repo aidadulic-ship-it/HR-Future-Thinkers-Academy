@@ -138,8 +138,21 @@ if (teacherTabList) {
       tabs[next].focus();
     });
   });
+  function showGrillFromLink() {
+    if (location.hash !== '#lehr-grill-me') return;
+    const index = panels.indexOf(document.getElementById('lehrpanel-grill'));
+    if (index < 0) return;
+    selectTeacherTab(index);
+    document.getElementById('lehr-grill-me')?.scrollIntoView();
+  }
+
   selectTeacherTab(0);
+  showGrillFromLink();
+  window.addEventListener('hashchange', showGrillFromLink);
+  document.getElementById('grill-einstieg')?.addEventListener('click', showGrillFromLink);
 }
+
+
 
 
 

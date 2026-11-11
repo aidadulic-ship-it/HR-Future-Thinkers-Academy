@@ -189,7 +189,7 @@ footer { justify-content: space-between; gap: 16px; min-height: 72px; color: var
 #lehre { background: var(--background); }
 .faculty-intro { display:flex; flex-wrap:wrap; align-items:end; justify-content:space-between; gap:12px 24px; margin-bottom:24px; }
 .faculty-intro h2 { margin-top:5px; font-size:clamp(2.5rem,5vw,4.6rem); }
-.faculty-intro > p { color:var(--muted); font-size:.9rem; }
+.faculty-intro-actions p { color:var(--muted); font-size:.9rem; }
 .faculty-preview { margin-bottom:38px; border:1px solid var(--blue-line); background:var(--white); scroll-margin-top:20px; }
 .faculty-header { display:flex; align-items:center; justify-content:space-between; gap:12px 20px; flex-wrap:wrap; padding:18px clamp(16px,3vw,32px); background:var(--navy); color:var(--white); }
 .faculty-header .eyebrow { color:var(--pink-light); }
@@ -277,3 +277,6 @@ footer { justify-content: space-between; gap: 16px; min-height: 72px; color: var
 .faculty-grill-end { margin-top: 16px; }
 @media (max-width: 590px) { .faculty-avatar-grid { grid-template-columns: 1fr; } }
 
+
+.faculty-intro-actions { display: grid; gap: 8px; justify-items: start; }
+#lehr-grill-me { scroll-margin-top: 20px; }
