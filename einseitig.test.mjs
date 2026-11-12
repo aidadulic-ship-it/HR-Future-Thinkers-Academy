@@ -12,7 +12,7 @@ test('das Spiel ist Teil der Academy-Seite, ohne eigene Datei', () => {
   assert.doesNotMatch(html, /href="spiel\.html/);
   assert.doesNotMatch(game, /href="index\.html/);
   assert.doesNotMatch(game, /target="_blank"/);
-  assert.match(html, /<nav[\s\S]*?<a href="#spiel">Spiel<\/a>[\s\S]*?<\/nav>/);
+  assert.match(html, /<nav[\s\S]*?<a class="side-link" href="#spiel">[\s\S]*?HR-Mastermind<\/span><\/a>[\s\S]*?<\/nav>/);
   assert.match(html, /<a class="entry-card entry-game" href="#spiel">/);
   assert.equal((html.match(/<h1[ >]/g) ?? []).length, 1, 'genau eine Hauptüberschrift');
 });

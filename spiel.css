@@ -269,3 +269,4 @@
 #spiel details { border-bottom: 0; }
 #spiel summary { padding: 0; font-size: inherit; }
 #spiel details p { margin-bottom: 0; }
+#spiel .hud { top: var(--nav-height); }

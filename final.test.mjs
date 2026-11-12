@@ -101,8 +101,8 @@ test('Perspektiven und Fälle sind Karten mit sichtbarem Thema', () => {
   assert.equal(cases.length, 8);
 });
 
-test('Layout: einzeilige Navigation, Kartenraster und Klickflächen ab 44 Pixel', () => {
-  assert.match(css, /\.top-inner nav\s*{[^}]*overflow-x:\s*auto[^}]*flex-wrap:\s*nowrap/);
+test('Layout: Seitenleiste, Kartenraster und Klickflächen ab 44 Pixel', () => {
+  assert.match(css, /\.sidebar nav\s*{[^}]*flex-direction:\s*column/);
   assert.match(css, /\.card-grid\s*{[^}]*display:\s*grid/);
   assert.match(css, /\.card-grid > details\[open\]\s*{[^}]*grid-column:\s*1 \/ -1/);
   assert.match(css, /summary\s*{[^}]*min-height:\s*44px/);

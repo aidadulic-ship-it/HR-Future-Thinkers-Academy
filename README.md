@@ -44,7 +44,7 @@ Voraussetzung: Node.js 24 oder neuer.
 ```bash
 cd source/academy-core
 node build-preview.mjs        # erzeugt source/Academy-Vorschau.html
-node --test "*.test.mjs"      # 87 Tests
+node --test "*.test.mjs"      # 97 Tests
 ```
 
 Danach die gebaute Datei übernehmen:

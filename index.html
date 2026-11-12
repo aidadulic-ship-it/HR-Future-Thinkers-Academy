@@ -12,22 +12,45 @@
 </head>
 <body>
   <a class="skip" href="#inhalt">Zum Inhalt</a>
-  <header class="top">
-    <div class="wrap top-inner">
-      <a class="brand" href="#start"><span class="mark" aria-hidden="true">AD</span><span>AIDA <b>ĐULIĆ</b><small>HR FUTURE THINKERS</small></span></a>
-      <nav aria-label="Hauptnavigation">
-        <a href="#skills">Skills</a>
-        <a href="#prompts">Prompts</a>
-        <a href="#spiel">Spiel</a>
-        <a href="#decision-lab">Decision Lab</a>
-        <a href="#fallstudien">Fälle</a>
-        <a href="#workshops">Reality Check</a>
-        <a class="nav-teaching" id="nav-lehre" href="#lehre">Für Lehrende</a>
-      </nav>
-    </div>
-  </header>
+  <div class="app">
+  <aside class="sidebar" id="sidebar" aria-label="Seitenleiste">
+    <a class="brand" href="#start"><span class="mark" aria-hidden="true">AD</span><span>AIDA <b>ĐULIĆ</b><small>HR FUTURE THINKERS</small></span></a>
+    <nav aria-label="Hauptnavigation">
+      <a class="side-link side-home" href="#start"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg><span>Home</span></a>
+      <p class="side-group">Lernen</p>
+      <a class="side-link" href="#skills"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/></svg><span>Skills</span></a>
+      <a class="side-link" href="#prompts"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg><span>Prompt-Bibliothek</span></a>
+      <a class="side-link" href="#perspektiven"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20c0-3 3-5 6-5s6 2 6 5M16 5.5a3 3 0 0 1 0 5.5M18 15c2 .6 3 2.3 3 5"/></svg><span>Perspektiven</span></a>
+      <p class="side-group">Üben</p>
+      <a class="side-link" href="#fallstudien"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span>Fallstudien</span></a>
+      <a class="side-link" href="#krisen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l10 18H2zM12 10v4M12 17.5v.5"/></svg><span>Krisenfälle</span></a>
+      <a class="side-link" href="#spiel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L3.4 9.3l6-.8z"/></svg><span>HR-Mastermind</span></a>
+      <p class="side-group">Anwenden</p>
+      <a class="side-link" href="#decision-lab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M6 20h12M4 8h16M6 8l-3 6a3 3 0 0 0 6 0zM18 8l-3 6a3 3 0 0 0 6 0z"/></svg><span>Decision Lab</span></a>
+      <a class="side-link" href="#zeitkapsel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2"/></svg><span>Zeitkapsel</span></a>
+      <a class="side-link" href="#workshops"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM8 12l3 3 5-6"/></svg><span>Reality Check</span></a>
+      <p class="side-group">Lehren</p>
+      <a class="side-link" id="nav-lehre" href="#lehre"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11v5c3 2 9 2 12 0v-5"/></svg><span>Für Lehrende</span></a>
+      <details class="side-more"><summary class="side-group">Mehr</summary>
+      <a class="side-link" href="#campus"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6"/></svg><span>Campus Edition</span></a>
+      <a class="side-link" href="#arbeitsweise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6.5l3 3M4 20l8.5-8.5M15 3.5l5.5 5.5-3 3L12 6.5z"/></svg><span>In Entwicklung</span></a>
+      <a class="side-link" href="#ueber"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 11v6M12 7.5v.5"/></svg><span>Über die Academy</span></a>
+      </details>
+    </nav>
+    <p class="side-note">Ohne Anmeldung. Eingaben bleiben im Browser.</p>
+  </aside>
+  <div class="sidebar-backdrop" data-action="close-menu" hidden></div>
+  <div class="app-main">
+  <div class="topbar">
+    <button class="topbar-button" type="button" data-action="menu" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menü</span></button>
+    <button class="topbar-button" type="button" data-action="back" title="Zurück zur vorherigen Ansicht"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg><span>Zurück</span></button>
+    <button class="topbar-button" type="button" data-action="home" title="Zur Startseite"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg><span>Home</span></button>
+    <div class="pathbar" aria-hidden="true"><span class="path-step" data-step="Lernen">Lernen</span><span class="path-step" data-step="Üben">Üben</span><span class="path-step" data-step="Anwenden">Anwenden</span><span class="path-step" data-step="Lehren">Lehren</span></div>
+    <p class="crumb" id="crumb" aria-live="polite">Home</p>
+    <span class="topbar-progress" aria-hidden="true"></span>
+  </div>
   <main id="inhalt">
-    <section class="hero wrap" id="start" aria-labelledby="hero-title">
+    <section class="hero wrap" id="start" data-view="home" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow"><span></span> HR FUTURE THINKERS ACADEMY</p>
         <h1 id="hero-title">Die Zukunft von HR braucht mehr als neue Tools. <em>Sie braucht neues Denken.</em></h1>
@@ -35,13 +58,13 @@
         <p class="intro">Die HR Future Thinkers Academy verbindet wissenschaftliche Evidenz, kritisches Denken und künstliche Intelligenz. Mit 20 praxisorientierten HR-AI-Skills, zwölf wissenschaftlichen Perspektiven und interaktiven Lernlaboren entwickeln HR-Professionals, Lehrende und Studierende fundierte Entscheidungen für die Arbeitswelt von morgen.</p>
         <div class="actions">
           <a class="button" href="#einstieg">Academy entdecken <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="#skills">Skills ausprobieren ↓</a><a class="text-link" href="#campus">Campus Edition kennenlernen ↓</a>
+          <a class="text-link" href="#skills">Skills ausprobieren →</a><a class="text-link" href="#campus">Campus Edition kennenlernen →</a>
         </div>
       </div>
       <figure class="hero-image"><img src="hero.png" alt="Person steigt eine geschwungene Treppe in einem lichtdurchfluteten Gebäude hinauf" width="1024" height="1536"></figure>
     </section>
 
-        <section id="einstieg" class="entry">
+    <section id="einstieg" data-view="home" class="entry">
       <div class="wrap">
         <div class="section-heading">
           <div><p class="eyebrow">EINSTIEG</p><h2>Wo möchtest du starten?</h2></div>
@@ -59,7 +82,7 @@
       </div>
     </section>
 
-    <section id="decision-lab" class="executive-case">
+    <section id="decision-lab" data-view="decision-lab" class="executive-case">
       <div class="wrap">
         <div class="section-heading">
           <div><p class="eyebrow">DECISION LAB</p><h2>Wer entscheidet,<br>wenn KI vorsortiert?</h2></div>
@@ -115,12 +138,13 @@
       </div>
     </section>
 
-    <section id="skills" class="wrap catalog"><h2>20 HR-AI-Skills</h2><p class="catalog-intro">Wähle nach Tätigkeit oder suche nach Thema. Jeder Skill führt in sechs Schritten zu einem Arbeitsprotokoll, das du als Textdatei speicherst. Nach deiner eigenen Antwort kannst du jeden Schritt mit einer Musterantwort vergleichen. Nur die KI-Prompts? <a href="#prompts">Zur Prompt-Bibliothek →</a></p><p class="model-note">Musterantworten sind Lernbeispiele der Academy. Sie wenden den Blickwinkel eines Forschungsprofils auf die synthetischen Fälle an. Sie sind keine Aussagen der genannten Personen und nicht die einzig richtige Lösung.</p><div class="skill-search" role="search" aria-label="Skill-Katalog">
+    <section id="skills" data-view="skills" class="wrap catalog"><p class="eyebrow">LERNEN · SKILLS</p><h2>20 HR-AI-Skills</h2><p class="catalog-intro">Jeder Skill führt in sechs Schritten zu einem Arbeitsprotokoll, mit Musterantwort nach jedem Schritt. Nur die KI-Prompts? <a href="#prompts">Zur Prompt-Bibliothek →</a></p><p class="model-note">Musterantworten sind Lernbeispiele der Academy. Sie wenden den Blickwinkel eines Forschungsprofils auf die synthetischen Fälle an. Sie sind keine Aussagen der genannten Personen und nicht die einzig richtige Lösung.</p><div class="subnav" role="tablist" aria-label="Skills"><button type="button" role="tab" data-subview-tab="alle" aria-selected="true">Alle Skills</button><button type="button" role="tab" data-subview-tab="wahl" aria-selected="false">Welcher Skill passt?</button></div>
+      <div data-subview="alle"><div class="skill-search" role="search" aria-label="Skill-Katalog">
         <label for="skill-search">Skills und Prompts suchen</label>
         <input type="search" id="skill-search" placeholder="z. B. Recruiting, Evidenz oder Führung" aria-describedby="skill-search-status">
         <p id="skill-search-status" role="status">20 von 20 Skills</p>
       </div>
-      <div id="methodenwahl" class="method-choice"><h3>Welcher Skill passt?</h3><p>Sechs gemischte Fälle. Wähle die Methode, die du zuerst einsetzen würdest, und prüfe sofort. Die Unterscheidung zwischen ähnlichen Methoden ist der eigentliche Lernschritt.</p><div class="choice-grid"><fieldset class="choice" data-correct="organization-diagnosis" data-correct-label="Organisationsprobleme analysieren" data-case="2"><legend><span class="card-kicker">Fall 2 · synthetisch</span><span class="card-title">Fluktuation in einer Abteilung</span></legend><p class="card-goal">12 von durchschnittlich 80 Personen gingen in sechs Monaten, in einer Vergleichsabteilung 5 von 70. Gleichzeitig änderten sich Schichtpläne und Teamleitung.</p><label><input type="radio" name="wahl-2" value="hr-tech-evaluation"> HR-Technologie auswählen</label><label><input type="radio" name="wahl-2" value="organization-diagnosis"> Organisationsprobleme analysieren</label><label><input type="radio" name="wahl-2" value="learning-design"> Lernangebote entwickeln</label><label><input type="radio" name="wahl-2" value="hr-ai-offer-design"> HR- und KI-Angebote entwickeln</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-2">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset><fieldset class="choice" data-correct="grill-me" data-correct-label="Annahmen kritisch hinterfragen" data-case="3"><legend><span class="card-kicker">Fall 3 · synthetisch</span><span class="card-title">Lange Besetzungszeiten</span></legend><p class="card-goal">Median 74 Tage ab Freigabe bis Zusage. Die Geschäftsführung ist überzeugt: Es braucht mehr Recruiting-Kapazität.</p><label><input type="radio" name="wahl-3" value="learning-review"> Lerntransfer überprüfen</label><label><input type="radio" name="wahl-3" value="knowledge-transfer"> Erfahrungswissen sichern</label><label><input type="radio" name="wahl-3" value="grill-me"> Annahmen kritisch hinterfragen</label><label><input type="radio" name="wahl-3" value="strategic-hr-value"> Strategischen HR-Wertbeitrag entwickeln</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-3">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset><fieldset class="choice" data-correct="safe-ai-hr" data-correct-label="KI in HR verantwortungsvoll einsetzen" data-case="4"><legend><span class="card-kicker">Fall 4 · synthetisch</span><span class="card-title">KI im HR-Service</span></legend><p class="card-goal">800 Anfragen pro Monat, 15 % sensible Einzelfälle. Im Test enthielten vier von 60 KI-Antworten falsche Richtlinienangaben.</p><label><input type="radio" name="wahl-4" value="safe-ai-hr"> KI in HR verantwortungsvoll einsetzen</label><label><input type="radio" name="wahl-4" value="fair-selection"> Auswahlentscheidungen kritisch prüfen</label><label><input type="radio" name="wahl-4" value="learning-review"> Lerntransfer überprüfen</label><label><input type="radio" name="wahl-4" value="culture-diagnosis"> Organisationskultur kritisch untersuchen</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-4">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset><fieldset class="choice" data-correct="culture-diagnosis" data-correct-label="Organisationskultur kritisch untersuchen" data-case="5"><legend><span class="card-kicker">Fall 5 · synthetisch</span><span class="card-title">Führungskultur und psychologische Sicherheit</span></legend><p class="card-goal">Führung nennt Meetings offen, Teammitglieder berichten über abwertende Reaktionen auf Fehler. 8 von 25 Personen melden Bedenken früh.</p><label><input type="radio" name="wahl-5" value="executive-hr-brief"> Entscheidungsvorlagen für Führungsgremien</label><label><input type="radio" name="wahl-5" value="hr-tech-evaluation"> HR-Technologie auswählen</label><label><input type="radio" name="wahl-5" value="workforce-skills-planning"> Zukünftigen Kompetenzbedarf planen</label><label><input type="radio" name="wahl-5" value="culture-diagnosis"> Organisationskultur kritisch untersuchen</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-5">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset><fieldset class="choice" data-correct="learning-review" data-correct-label="Lerntransfer überprüfen" data-case="6"><legend><span class="card-kicker">Fall 6 · synthetisch</span><span class="card-title">Transfer eines Führungskräftetrainings</span></legend><p class="card-goal">18 von 24 Teilnehmenden antworteten, 14 berichten mehr Feedbackgespräche. Im Vergleichsteam änderten sich gleichzeitig Ziele und Personal.</p><label><input type="radio" name="wahl-6" value="fair-selection"> Auswahlentscheidungen kritisch prüfen</label><label><input type="radio" name="wahl-6" value="learning-review"> Lerntransfer überprüfen</label><label><input type="radio" name="wahl-6" value="hr-tech-evaluation"> HR-Technologie auswählen</label><label><input type="radio" name="wahl-6" value="stakeholder-negotiation"> Interessenkonflikte und Verhandlungen</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-6">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset><fieldset class="choice" data-correct="hr-tech-evaluation" data-correct-label="HR-Technologie auswählen" data-case="8"><legend><span class="card-kicker">Fall 8 · synthetisch</span><span class="card-title">Auswahl einer HR-Technologie</span></legend><p class="card-goal">Angebot A kostet 42.000 € jährlich plus 25.000 € Einführung, Angebot B 55.000 € plus 12.000 €. Datenexport wurde nur für A demonstriert.</p><label><input type="radio" name="wahl-8" value="learning-review"> Lerntransfer überprüfen</label><label><input type="radio" name="wahl-8" value="culture-diagnosis"> Organisationskultur kritisch untersuchen</label><label><input type="radio" name="wahl-8" value="hr-tech-evaluation"> HR-Technologie auswählen</label><label><input type="radio" name="wahl-8" value="knowledge-transfer"> Erfahrungswissen sichern</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-8">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset></div><p id="methodenwahl-score" role="status"></p></div><!-- /methodenwahl -->
+
 <div class="skill-start"><span class="card-kicker">Empfohlener Einstieg</span><a href="#grill-me">Annahmen kritisch hinterfragen</a><a href="#evidence-check">Wissenschaftliche Aussagen überprüfen</a><a href="#hr-decision-lab">Fundierte HR-Entscheidungen</a></div>
 <div class="skill-filter" id="skill-filter" role="group" aria-label="Skills nach Tätigkeit filtern"><button type="button" data-filter="alle" aria-pressed="true">Alle</button><button type="button" data-filter="entdecken" aria-pressed="false">Entdecken</button><button type="button" data-filter="hinterfragen" aria-pressed="false">Hinterfragen</button><button type="button" data-filter="analysieren" aria-pressed="false">Analysieren</button><button type="button" data-filter="entscheiden" aria-pressed="false">Entscheiden</button><button type="button" data-filter="reflektieren" aria-pressed="false">Reflektieren</button></div>
       <div class="tools card-grid">
@@ -464,9 +488,14 @@ Prüffrage: Welche beobachtbare Reaktion der Zielgruppe würde zeigen, dass das 
 Ergebnisformat: Angebotsentwurf und Validierungstest. Gliedere das Ergebnis nach Arbeitsschritten. Kennzeichne Befunde, Annahmen und offene Fragen. Markiere, was ich vor einer Entscheidung prüfen muss.
 
 Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine Daten, Quellen oder Zitate. Kennzeichne nicht verifizierte Aussagen. Die abschließende Beurteilung und Entscheidung liegen bei mir.</textarea><div class="prompt-actions"><button type="button" class="prompt-copy" data-target="prompt-hr-ai-offer-design">Prompt kopieren</button><a class="prompt-download" data-target="prompt-hr-ai-offer-design" download="prompt-hr-ai-offer-design.txt" href="#">Als Textdatei speichern ↓</a><span class="prompt-status" role="status"></span></div></details><label>3. Formuliere ein überprüfbares Nutzenversprechen.<textarea name="step-3" rows="2" required maxlength="3000"></textarea></label><details class="model-answer" data-step="3"><summary>Mit Musterantwort vergleichen</summary><p class="model-lens">Blickwinkel: People Analytics und HR-Technologie, angelehnt an das Academy-Profil Stacia Garr</p><p>„In vier Wochen führen wir mit eurem HR-Service einen begrenzten KI-Pilot für Standardauskünfte ein, mit Freigabeprozess, Stoppregel und Risk Card. Ziel: kürzere Bearbeitungszeit ohne falsche Richtlinienangabe in ausgelieferten Antworten.“</p></details><label>4. Skizziere Leistung, Grenzen und Aufwand.<textarea name="step-4" rows="2" required maxlength="3000"></textarea></label><details class="model-answer" data-step="4"><summary>Mit Musterantwort vergleichen</summary><p class="model-lens">Blickwinkel: People Analytics und HR-Technologie, angelehnt an das Academy-Profil Stacia Garr</p><p>Leistung: Aufgabenanalyse, Risk Card, Pilotdesign, wöchentliche Begleitung, Abschlussreview. Grenzen: keine Rechtsberatung, keine Haftung für Richtlinieninhalte, keine Verarbeitung personenbezogener Daten durch die Beratung. Aufwand: geschätzt in Tagen, Preis offen lassen, bis er kalkuliert ist.</p></details><label>5. Entwirf einen Validierungstest mit Erfolgskriterium.<textarea name="step-5" rows="2" required maxlength="3000"></textarea></label><details class="model-answer" data-step="5"><summary>Mit Musterantwort vergleichen</summary><p class="model-lens">Blickwinkel: People Analytics und HR-Technologie, angelehnt an das Academy-Profil Stacia Garr</p><p>Validierungstest: Fünf Gespräche mit HR-Service-Leitungen über ihre aktuelle Lösung, die Hürden und den Wert eines Piloten. Erfolgskriterium: Mindestens drei von fünf bestätigen das Problem unabhängig und zwei sind bereit, einen Pilot konkret zu besprechen.</p></details><label>6. Benenne die Erkenntnis, die das Angebot ändern würde.<textarea name="step-6" rows="2" required maxlength="3000"></textarea></label><details class="model-answer" data-step="6"><summary>Mit Musterantwort vergleichen</summary><p class="model-lens">Blickwinkel: People Analytics und HR-Technologie, angelehnt an das Academy-Profil Stacia Garr</p><p>Das Angebot ändert sich grundlegend, wenn KMU das Problem bereits mit einer vorhandenen Software lösen oder wenn der Engpass nicht Wissen, sondern Freigabe durch Datenschutz oder Beschäftigtenvertretung ist. Dann wäre das Angebot eher Governance-Begleitung.</p></details><fieldset class="skill-rubric"><legend>Selbstbewertung vor dem Export</legend><p class="field-note">Hake ab, was dein Ergebnis erfüllt. Offene Punkte erscheinen im Protokoll.</p><label><input type="checkbox" name="rubric" value="Annahmen sind als Annahmen gekennzeichnet, mindestens eine ist hinterfragt. · Kritisches Denken"> Annahmen sind als Annahmen gekennzeichnet, mindestens eine ist hinterfragt. <small>Kritisches Denken</small></label><label><input type="checkbox" name="rubric" value="Jede zentrale Aussage hat eine Quelle oder ist als unbelegt markiert. · Evidenzbewertung"> Jede zentrale Aussage hat eine Quelle oder ist als unbelegt markiert. <small>Evidenzbewertung</small></label><label><input type="checkbox" name="rubric" value="Entscheidung, Verantwortung und Review-Termin sind benannt. · HR-Entscheidungsqualität"> Entscheidung, Verantwortung und Review-Termin sind benannt. <small>HR-Entscheidungsqualität</small></label><label><input type="checkbox" name="rubric" value="KI-Beiträge sind am Original geprüft, übernommene und verworfene Vorschläge sind erkennbar. · KI-Kompetenz"> KI-Beiträge sind am Original geprüft, übernommene und verworfene Vorschläge sind erkennbar. <small>KI-Kompetenz</small></label><label><input type="checkbox" name="rubric" value="Mindestens eine Gegenposition aus einer anderen Rolle ist berücksichtigt. · Perspektivenwechsel"> Mindestens eine Gegenposition aus einer anderen Rolle ist berücksichtigt. <small>Perspektivenwechsel</small></label></fieldset><fieldset class="skill-transfer"><legend>Transfer bis Tag 30</legend><label>Was setzt du bis Tag 30 in deiner eigenen Arbeit um?<textarea name="transfer-action" rows="2" maxlength="1000"></textarea></label><label>Woran merkt wer, dass es wirkt?<textarea name="transfer-evidence" rows="2" maxlength="1000"></textarea></label></fieldset><button class="button" type="submit">Arbeitsprotokoll erstellen</button><div class="skill-result" hidden><label>Arbeitsprotokoll<textarea class="skill-record" rows="9" readonly></textarea></label><a class="skill-download" download="hr-ai-offer-design.txt">Als Textdatei speichern ↓</a><a class="skill-ics" download="hr-ai-offer-design-wiederholung.ics">Wiederholung in den Kalender (.ics) ↓</a><a class="skill-mail">Gegenrede per E-Mail anfragen →</a></div></form><p><strong>Reflexion</strong> · Welche Evidenz würde dein Ergebnis ändern?</p></div></details>
-</div><p class="catalog-back"><a href="#einstieg">Zur Übersicht ↑</a></p></section>
+</div><p class="catalog-back"><a href="#einstieg">Zur Übersicht →</a></p>
+      </div>
+      <div data-subview="wahl">
+      <div id="methodenwahl" class="method-choice"><h3>Welcher Skill passt?</h3><p>Sechs gemischte Fälle. Wähle die Methode, die du zuerst einsetzen würdest, und prüfe sofort. Die Unterscheidung zwischen ähnlichen Methoden ist der eigentliche Lernschritt.</p><div class="choice-grid"><fieldset class="choice" data-correct="organization-diagnosis" data-correct-label="Organisationsprobleme analysieren" data-case="2"><legend><span class="card-kicker">Fall 2 · synthetisch</span><span class="card-title">Fluktuation in einer Abteilung</span></legend><p class="card-goal">12 von durchschnittlich 80 Personen gingen in sechs Monaten, in einer Vergleichsabteilung 5 von 70. Gleichzeitig änderten sich Schichtpläne und Teamleitung.</p><label><input type="radio" name="wahl-2" value="hr-tech-evaluation"> HR-Technologie auswählen</label><label><input type="radio" name="wahl-2" value="organization-diagnosis"> Organisationsprobleme analysieren</label><label><input type="radio" name="wahl-2" value="learning-design"> Lernangebote entwickeln</label><label><input type="radio" name="wahl-2" value="hr-ai-offer-design"> HR- und KI-Angebote entwickeln</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-2">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset><fieldset class="choice" data-correct="grill-me" data-correct-label="Annahmen kritisch hinterfragen" data-case="3"><legend><span class="card-kicker">Fall 3 · synthetisch</span><span class="card-title">Lange Besetzungszeiten</span></legend><p class="card-goal">Median 74 Tage ab Freigabe bis Zusage. Die Geschäftsführung ist überzeugt: Es braucht mehr Recruiting-Kapazität.</p><label><input type="radio" name="wahl-3" value="learning-review"> Lerntransfer überprüfen</label><label><input type="radio" name="wahl-3" value="knowledge-transfer"> Erfahrungswissen sichern</label><label><input type="radio" name="wahl-3" value="grill-me"> Annahmen kritisch hinterfragen</label><label><input type="radio" name="wahl-3" value="strategic-hr-value"> Strategischen HR-Wertbeitrag entwickeln</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-3">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset><fieldset class="choice" data-correct="safe-ai-hr" data-correct-label="KI in HR verantwortungsvoll einsetzen" data-case="4"><legend><span class="card-kicker">Fall 4 · synthetisch</span><span class="card-title">KI im HR-Service</span></legend><p class="card-goal">800 Anfragen pro Monat, 15 % sensible Einzelfälle. Im Test enthielten vier von 60 KI-Antworten falsche Richtlinienangaben.</p><label><input type="radio" name="wahl-4" value="safe-ai-hr"> KI in HR verantwortungsvoll einsetzen</label><label><input type="radio" name="wahl-4" value="fair-selection"> Auswahlentscheidungen kritisch prüfen</label><label><input type="radio" name="wahl-4" value="learning-review"> Lerntransfer überprüfen</label><label><input type="radio" name="wahl-4" value="culture-diagnosis"> Organisationskultur kritisch untersuchen</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-4">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset><fieldset class="choice" data-correct="culture-diagnosis" data-correct-label="Organisationskultur kritisch untersuchen" data-case="5"><legend><span class="card-kicker">Fall 5 · synthetisch</span><span class="card-title">Führungskultur und psychologische Sicherheit</span></legend><p class="card-goal">Führung nennt Meetings offen, Teammitglieder berichten über abwertende Reaktionen auf Fehler. 8 von 25 Personen melden Bedenken früh.</p><label><input type="radio" name="wahl-5" value="executive-hr-brief"> Entscheidungsvorlagen für Führungsgremien</label><label><input type="radio" name="wahl-5" value="hr-tech-evaluation"> HR-Technologie auswählen</label><label><input type="radio" name="wahl-5" value="workforce-skills-planning"> Zukünftigen Kompetenzbedarf planen</label><label><input type="radio" name="wahl-5" value="culture-diagnosis"> Organisationskultur kritisch untersuchen</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-5">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset><fieldset class="choice" data-correct="learning-review" data-correct-label="Lerntransfer überprüfen" data-case="6"><legend><span class="card-kicker">Fall 6 · synthetisch</span><span class="card-title">Transfer eines Führungskräftetrainings</span></legend><p class="card-goal">18 von 24 Teilnehmenden antworteten, 14 berichten mehr Feedbackgespräche. Im Vergleichsteam änderten sich gleichzeitig Ziele und Personal.</p><label><input type="radio" name="wahl-6" value="fair-selection"> Auswahlentscheidungen kritisch prüfen</label><label><input type="radio" name="wahl-6" value="learning-review"> Lerntransfer überprüfen</label><label><input type="radio" name="wahl-6" value="hr-tech-evaluation"> HR-Technologie auswählen</label><label><input type="radio" name="wahl-6" value="stakeholder-negotiation"> Interessenkonflikte und Verhandlungen</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-6">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset><fieldset class="choice" data-correct="hr-tech-evaluation" data-correct-label="HR-Technologie auswählen" data-case="8"><legend><span class="card-kicker">Fall 8 · synthetisch</span><span class="card-title">Auswahl einer HR-Technologie</span></legend><p class="card-goal">Angebot A kostet 42.000 € jährlich plus 25.000 € Einführung, Angebot B 55.000 € plus 12.000 €. Datenexport wurde nur für A demonstriert.</p><label><input type="radio" name="wahl-8" value="learning-review"> Lerntransfer überprüfen</label><label><input type="radio" name="wahl-8" value="culture-diagnosis"> Organisationskultur kritisch untersuchen</label><label><input type="radio" name="wahl-8" value="hr-tech-evaluation"> HR-Technologie auswählen</label><label><input type="radio" name="wahl-8" value="knowledge-transfer"> Erfahrungswissen sichern</label><div class="choice-actions"><button type="button" class="choice-check">Prüfen</button><a href="#fall-8">Zur Fallstudie</a></div><p class="choice-feedback" role="status"></p></fieldset></div><p id="methodenwahl-score" role="status"></p></div><!-- /methodenwahl -->
+      </div>
+    </section>
 
-    <section id="prompts" class="wrap catalog">
+    <section id="prompts" data-view="prompts" class="wrap catalog">
       <div class="section-heading">
         <div><p class="eyebrow">KI-PROMPTS</p><h2>Prompt-Bibliothek</h2></div>
         <p>Alle 20 Skill-Prompts auf einen Blick, sofort kopierbar. Ersetze die Angaben in eckigen Klammern und nutze nur synthetische oder tatsächlich anonymisierte Daten. Zum Lernen gilt Human First: zuerst den eigenen Entwurf, dann die KI.</p>
@@ -816,7 +845,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
       </div>
     </section>
 
-    <section id="perspektiven" class="wrap catalog">
+    <section id="perspektiven" data-view="perspektiven" class="wrap catalog">
       <h2>12 wissenschaftliche Perspektiven</h2>
       <p class="catalog-intro">Zwölf quellenverlinkte Einstiegsprofile. Vergleiche Ansätze und Grenzen anhand konkreter HR-Fälle.</p>
       <form id="duell-form" class="duel"><h3>Perspektiven-Duell</h3><p>Stelle deine HR-Frage und lass sie aus zwei Forschungsperspektiven analysieren. Die Synthese schreibst du selbst.</p><label class="duel-question">Deine HR-Frage<textarea name="frage" rows="2" required maxlength="600"></textarea></label><label>Perspektive A<select name="a"><option value="Dave Ulrich|HR-Wertbeitrag" selected>Dave Ulrich · HR-Wertbeitrag</option><option value="Josh Bersin|Lernökosysteme und HR-Technologie">Josh Bersin · Lernökosysteme und HR-Technologie</option><option value="Ravin Jesuthasan|Aufgaben und Work Redesign">Ravin Jesuthasan · Aufgaben und Work Redesign</option><option value="Lynda Gratton|Zukunft der Arbeit und Arbeitsgestaltung">Lynda Gratton · Zukunft der Arbeit und Arbeitsgestaltung</option><option value="Amy Edmondson|Psychologische Sicherheit und Teamlernen">Amy Edmondson · Psychologische Sicherheit und Teamlernen</option><option value="Peter Cappelli|Talentmanagement unter Unsicherheit">Peter Cappelli · Talentmanagement unter Unsicherheit</option><option value="David Green|People Analytics und Entscheidungsnutzen">David Green · People Analytics und Entscheidungsnutzen</option><option value="Herminia Ibarra|Berufliche Identität und Führung">Herminia Ibarra · Berufliche Identität und Führung</option><option value="Tomas Chamorro-Premuzic|Talent und Führungsbeurteilung">Tomas Chamorro-Premuzic · Talent und Führungsbeurteilung</option><option value="John Boudreau|Talententscheidungen und Workforce-Strategie">John Boudreau · Talententscheidungen und Workforce-Strategie</option><option value="Tsedal Neeley|Digitale Zusammenarbeit und globale Teams">Tsedal Neeley · Digitale Zusammenarbeit und globale Teams</option><option value="Stacia Garr|People Analytics und HR-Technologie">Stacia Garr · People Analytics und HR-Technologie</option></select></label><label>Perspektive B<select name="b"><option value="Dave Ulrich|HR-Wertbeitrag">Dave Ulrich · HR-Wertbeitrag</option><option value="Josh Bersin|Lernökosysteme und HR-Technologie">Josh Bersin · Lernökosysteme und HR-Technologie</option><option value="Ravin Jesuthasan|Aufgaben und Work Redesign">Ravin Jesuthasan · Aufgaben und Work Redesign</option><option value="Lynda Gratton|Zukunft der Arbeit und Arbeitsgestaltung">Lynda Gratton · Zukunft der Arbeit und Arbeitsgestaltung</option><option value="Amy Edmondson|Psychologische Sicherheit und Teamlernen">Amy Edmondson · Psychologische Sicherheit und Teamlernen</option><option value="Peter Cappelli|Talentmanagement unter Unsicherheit">Peter Cappelli · Talentmanagement unter Unsicherheit</option><option value="David Green|People Analytics und Entscheidungsnutzen">David Green · People Analytics und Entscheidungsnutzen</option><option value="Herminia Ibarra|Berufliche Identität und Führung">Herminia Ibarra · Berufliche Identität und Führung</option><option value="Tomas Chamorro-Premuzic|Talent und Führungsbeurteilung">Tomas Chamorro-Premuzic · Talent und Führungsbeurteilung</option><option value="John Boudreau|Talententscheidungen und Workforce-Strategie" selected>John Boudreau · Talententscheidungen und Workforce-Strategie</option><option value="Tsedal Neeley|Digitale Zusammenarbeit und globale Teams">Tsedal Neeley · Digitale Zusammenarbeit und globale Teams</option><option value="Stacia Garr|People Analytics und HR-Technologie">Stacia Garr · People Analytics und HR-Technologie</option></select></label><button class="button" type="submit">Vergleichsprompt erstellen</button><p id="duell-status" role="status"></p><div id="duell-result" hidden><label for="duell-prompt">Prompt für dein KI-Tool</label><textarea id="duell-prompt" rows="10" readonly></textarea><div class="prompt-actions"><button type="button" class="prompt-copy" data-target="duell-prompt">Prompt kopieren</button><a class="prompt-download" data-target="duell-prompt" download="duell-prompt.txt" href="#">Als Textdatei speichern ↓</a><span class="prompt-status" role="status"></span></div><label>Deine Synthese: Was übernimmst du, was verwirfst du, und warum?<textarea id="duell-synthese" rows="4"></textarea></label></div></form>
@@ -834,10 +863,10 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
 <details><summary><span class="card-title">Tsedal Neeley</span><span class="card-goal">Digitale Zusammenarbeit und globale Teams</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p>Remote Work Revolution untersucht die Gestaltung digitaler und hybrider Zusammenarbeit. Ihre weiteren Arbeiten betrachten Sprache und digitale Fähigkeiten in Organisationen.</p><p><strong>Grenzen</strong> · Anforderungen unterscheiden sich nach Zeitzone, Tätigkeit und technischer Ausstattung.</p><p><strong>Praxisaufgabe</strong><br><a href="#fall-5">Fall 5</a>: Prüfe, wer in hybriden Besprechungen gehört wird. <a href="#fall-4">Fall 4</a>: Entwirf Übergaben über Standorte.</p><p><strong>Vergleich</strong> · Vergleiche mit Lynda Gratton zur Gestaltung von Arbeitsort und Arbeitszeit.</p><p><a href="https://www.hbs.edu/about/leadership/tsedal-neeley" target="_blank" rel="noopener noreferrer">Tsedal Neeley · Harvard Business School</a></p></div></details>
 <details><summary><span class="card-title">Stacia Garr</span><span class="card-goal">People Analytics und HR-Technologie</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p>RedThread Research untersucht den Markt für People-Analytics-Technologie und ihre Anwendung in Organisationen.</p><p><strong>Grenzen</strong> · Marktbeobachtungen zeigen Angebote und Trends. Ob ein Produkt im eigenen Kontext wirkt, erfordert eine Prüfung.</p><p><strong>Praxisaufgabe</strong><br><a href="#fall-8">Fall 8</a>: Übersetze Markttrends in überprüfbare Anforderungen. <a href="#fall-2">Fall 2</a>: Prüfe, welche Daten für eine Analyse genügen.</p><p><strong>Vergleich</strong> · Vergleiche mit David Green zur Verbindung von Analyse und Entscheidungsnutzen.</p><p><a href="https://landing.redthreadresearch.com/pat-market-trends-2026" target="_blank" rel="noopener noreferrer">People Analytics Technology Market Trends · RedThread Research</a></p></div></details>
 </div>
-      <p class="catalog-back"><a href="#einstieg">Zur Übersicht ↑</a></p>
+      <p class="catalog-back"><a href="#einstieg">Zur Übersicht →</a></p>
     </section>
 
-    <section id="fallstudien" class="learning"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">FALLSTUDIEN</p><h2>Acht Entscheidungen aus der HR-Praxis.</h2></div><p>Vergleiche Optionen, dokumentiere Unsicherheit und begründe deinen nächsten Schritt. Alle Fälle und Zahlen sind synthetisch. Für Ausnahmesituationen gibt es die <a href="#krisen">Krisenfälle</a>.</p></div><div class="tools card-grid">
+    <section id="fallstudien" data-view="fallstudien" class="learning"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">FALLSTUDIEN</p><h2>Acht Entscheidungen aus der HR-Praxis.</h2></div><p>Vergleiche Optionen, dokumentiere Unsicherheit und begründe deinen nächsten Schritt. Alle Fälle und Zahlen sind synthetisch. Für Ausnahmesituationen gibt es die <a href="#krisen">Krisenfälle</a>.</p></div><div class="tools card-grid">
 <details id="fall-1"><summary><span class="card-kicker">Fall 1</span><span class="card-title">Weiterbildungsbudget für 180 Mitarbeitende</span><span class="card-goal">Budget zwischen mindestens zwei Optionen aufteilen und Zielkonflikte offenlegen.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Synthetische Ausgangsdaten</strong><br>120.000 € Budget, 50 Personen mit Datenkompetenzlücke und 24 Führungskräfte in neuen Rollen. Datenprogramm 48.000 €, Führungsprogramm 60.000 €, dezentrales Lernbudget 36.000 €.</p><p><strong>Rollen</strong> · Geschäftsführung, People Development, Bereichsleitung</p><p><strong>Aufgabe und Lernziel</strong> · Budget zwischen mindestens zwei Optionen aufteilen und Zielkonflikte offenlegen.</p><p><strong>Quellenbedarf</strong> · Interne Skill-Erhebung, Kurskosten und Evidenz zum Lerntransfer.</p><p><strong>Mögliche Entscheidungen</strong> · Ein gestaffeltes Datenprogramm mit Transfermessung oder zuerst Führungsentwicklung bei dringender Rollenbesetzung.</p><p><strong>Ergebnisstruktur</strong> · Ausgangslage → Optionen → Empfehlung → Risiken → Review.</p><p><strong>Bewertung und Feedback</strong> · Kosten vollständig, Entscheidungskriterien gewichtet, Transfer sichtbar. Überarbeite die Passage mit der größten Begründungslücke.</p><p><strong>Reflexion</strong> · Welche Annahme würde deine Budgetverteilung umkehren?</p><p><strong>Passende Skills</strong> · <a href="#evidence-check">Wissenschaftliche Aussagen überprüfen</a> · <a href="#hr-decision-lab">Fundierte HR-Entscheidungen</a> · <a href="#learning-design">Lernangebote entwickeln</a></p></div></details>
 <details id="fall-2"><summary><span class="card-kicker">Fall 2</span><span class="card-title">Fluktuation in einer Abteilung</span><span class="card-goal">Drei Hypothesen bilden und eine Intervention unter Unsicherheit wählen.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Synthetische Ausgangsdaten</strong><br>12 von durchschnittlich 80 Personen gingen in sechs Monaten. In einer Vergleichsabteilung waren es 5 von 70. Sieben von zwölf Austretenden gaben Rückmeldung. Gleichzeitig änderten sich Schichtpläne und Teamleitung.</p><p><strong>Rollen</strong> · HR Analytics, Teamleitung, Beschäftigtenvertretung</p><p><strong>Aufgabe und Lernziel</strong> · Drei Hypothesen bilden und eine Intervention unter Unsicherheit wählen.</p><p><strong>Quellenbedarf</strong> · Verlauf nach Schicht, Informationen über Arbeitsmarkt und vergleichbare Teams.</p><p><strong>Mögliche Entscheidungen</strong> · Planbarkeit der Schichten testen oder zuerst Austrittsdaten und Vergleichsgruppen verbessern.</p><p><strong>Ergebnisstruktur</strong> · Ausgangslage → Optionen → Empfehlung → Risiken → Review.</p><p><strong>Bewertung und Feedback</strong> · Quoten korrekt, Selektionsverzerrung sichtbar, Ursachenhypothesen prüfbar. Überarbeite die Passage mit der größten Begründungslücke.</p><p><strong>Reflexion</strong> · Welche Information fehlt von den fünf Personen ohne Rückmeldung?</p><p><strong>Passende Skills</strong> · <a href="#organization-diagnosis">Organisationsprobleme analysieren</a> · <a href="#hr-data-reasoning">HR-Daten richtig interpretieren</a></p></div></details>
 <details id="fall-3"><summary><span class="card-kicker">Fall 3</span><span class="card-title">Lange Besetzungszeiten</span><span class="card-goal">Engpasshypothese testen und zwei Änderungen vergleichen.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Synthetische Ausgangsdaten</strong><br>Median 74 Tage ab Freigabe bis Zusage. Freigabe 12 Tage, Erstkontakt 9 Tage, Interviewkoordination 23 Tage. Je Phase liegen unterschiedliche Fallzahlen vor.</p><p><strong>Rollen</strong> · Recruiting, Fachbereich, Geschäftsführung</p><p><strong>Aufgabe und Lernziel</strong> · Engpasshypothese testen und zwei Änderungen vergleichen.</p><p><strong>Quellenbedarf</strong> · Fallbezogene Zeitstempel, Fälle je Phase und Quellen zu strukturierter Auswahl.</p><p><strong>Mögliche Entscheidungen</strong> · Gebündelte Interviewfenster testen oder die Freigabeschritte vereinfachen.</p><p><strong>Ergebnisstruktur</strong> · Ausgangslage → Optionen → Empfehlung → Risiken → Review.</p><p><strong>Bewertung und Feedback</strong> · Medianwerte nicht unkritisch addiert, Qualität und Fairness berücksichtigt. Überarbeite die Passage mit der größten Begründungslücke.</p><p><strong>Reflexion</strong> · Warum könnte die längste Phase trotzdem nicht der größte Hebel sein?</p><p><strong>Passende Skills</strong> · <a href="#grill-me">Annahmen kritisch hinterfragen</a> · <a href="#fair-selection">Auswahlentscheidungen kritisch prüfen</a></p></div></details>
@@ -848,7 +877,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
 <details id="fall-8"><summary><span class="card-kicker">Fall 8</span><span class="card-title">Auswahl einer HR-Technologie</span><span class="card-goal">Gesamtkosten über drei Jahre vergleichen und Muss-Kriterien prüfen.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Synthetische Ausgangsdaten</strong><br>Angebot A kostet 42.000 € jährlich plus 25.000 € Einführung, Angebot B 55.000 € plus 12.000 €. A bietet mehr Anpassungen. B verlangt einen Prozesswechsel. Datenexport wurde nur für A demonstriert.</p><p><strong>Rollen</strong> · HR, IT, Einkauf, Datenschutz, Lehrende</p><p><strong>Aufgabe und Lernziel</strong> · Gesamtkosten über drei Jahre vergleichen und Muss-Kriterien prüfen.</p><p><strong>Quellenbedarf</strong> · Vertragsunterlagen, Datenflüsse, Funktionsdemo und Migrationsplan.</p><p><strong>Mögliche Entscheidungen</strong> · A bedingt empfehlen oder beide Anbieter bis zu einem nachgewiesenen Export zurückstellen.</p><p><strong>Ergebnisstruktur</strong> · Ausgangslage → Optionen → Empfehlung → Risiken → Review.</p><p><strong>Bewertung und Feedback</strong> · Kostenhorizont, Datenschutzfragen, Wechselkosten und Bedingungen dokumentiert. Überarbeite die Passage mit der größten Begründungslücke.</p><p><strong>Reflexion</strong> · Welche Gewichtung oder Vertragsbedingung würde deine Empfehlung drehen?</p><p><strong>Passende Skills</strong> · <a href="#hr-tech-evaluation">HR-Technologie auswählen</a></p></div></details>
 </div></div></section>
 
-    <section id="krisen" class="wrap catalog crises">
+    <section id="krisen" data-view="krisen" class="wrap catalog crises">
       <div class="section-heading">
         <div><p class="eyebrow">KRISENFÄLLE</p><h2>Wenn alles kippt: Wie reagiert HR?</h2></div>
         <div><p>Wenn Vorstand, Medien und Belegschaft gleichzeitig Antworten verlangen, zählt jede HR-Entscheidung. Jeder Fall zeigt vier Phasen mit Rollen, Leitfrage und Lehren. Im Spiel entscheidest du selbst und siehst die Folgen: Eine schwache Entscheidung verschärft die nächste Lage.</p><p class="crisis-disclaimer">Frei erfunden und an Muster bekannter Unternehmenskrisen angelehnt. Keine realen Unternehmen oder Personen. Keine Rechtsberatung.</p></div>
@@ -860,7 +889,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
       </div>
     </section>
 
-  <div id="spiel" class="game" aria-label="HR-Mastermind, das Academy-Spiel">
+    <div id="spiel" data-view="spiel" class="game" aria-label="HR-Mastermind, das Academy-Spiel">
     <span id="spiel-krise" class="game-anchor"></span><span id="spiel-krise-1" class="game-anchor"></span><span id="spiel-krise-2" class="game-anchor"></span><span id="spiel-krise-3" class="game-anchor"></span>
     <header class="hud" id="hud" hidden>
       <a class="hud-brand" href="#einstieg" aria-label="Zur Übersicht der Academy"><span class="mark" aria-hidden="true">AD</span><span class="hud-name">HR-MASTERMIND</span></a>
@@ -1040,7 +1069,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
   </div><!-- /SPIEL -->
 
 
-    <section id="zeitkapsel" class="capsule">
+    <section id="zeitkapsel" data-view="zeitkapsel" class="capsule">
       <div class="wrap">
         <div class="section-heading">
           <div><p class="eyebrow">ENTSCHEIDUNGS-ZEITKAPSEL</p><h2>Wie gut ist dein Urteil wirklich?</h2></div>
@@ -1090,21 +1119,8 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
       </div>
     </section>
 
-    <section id="arbeitsweise" class="wrap methods">
-      <div class="section-heading">
-        <div><p class="eyebrow">AUSBLICK</p><h2>In Entwicklung</h2></div>
-        <p>Diese Werkzeuge sind geplant und noch nicht nutzbar. Die Arbeitsbeispiele zeigen, wofür sie gedacht sind.</p>
-      </div>
-      <div class="tools card-grid tools-compact">
-        <details><summary><span class="card-kicker">In Entwicklung</span><span class="card-title">Evidence Engine</span><span class="card-goal">Quellen, Aussagekraft und Übertragbarkeit auf den konkreten HR-Fall prüfen.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Arbeitsbeispiel</strong><br>Ein Unternehmen möchte wissen, ob strukturierte Interviews die Auswahl verbessern. Formuliere die Frage, vergleiche Studiendesign und Zielgruppe zweier Quellen und halte fest, welche Aussage für die eigene Organisation belastbar ist.</p></div></details>
-        <details><summary><span class="card-kicker">In Entwicklung</span><span class="card-title">Human-AI Decision Trace</span><span class="card-goal">Festhalten, welche Vorschläge von KI kamen und wie Menschen die endgültige Entscheidung begründet haben.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Arbeitsbeispiel</strong><br>Ein KI-Entwurf empfiehlt ein automatisches Ranking. Protokolliere den Vorschlag, seine unbelegten Annahmen und die menschliche Entscheidung. Halte fest, wer entschieden hat und wann die Entscheidung überprüft wird.</p></div></details>
-        <details><summary><span class="card-kicker">In Entwicklung</span><span class="card-title">Competence Passport</span><span class="card-goal">Reflexionen und Kompetenznachweise im persönlichen Lernverlauf zusammenführen.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Arbeitsbeispiel</strong><br>Dokumentiere nach der Interviewübung den Skill, deine Arbeitsprobe, erhaltenes Feedback und eine konkrete Verbesserung für das nächste Interview.</p></div></details>
-        <details><summary><span class="card-kicker">In Entwicklung</span><span class="card-title">Teaching Intelligence &amp; Improvement Lab</span><span class="card-goal">Rückmeldungen zur Lehre auswerten und Verbesserungen erproben.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Arbeitsbeispiel</strong><br>Mehrere Gruppen verwechseln Korrelation mit Kausalität. Ergänze im nächsten Durchlauf zwei Gegenbeispiele und prüfe anhand derselben Bewertungsrubrik, ob die Begründungen präziser werden.</p></div></details>
-        <details><summary><span class="card-kicker">In Entwicklung</span><span class="card-title">Innovation Network</span><span class="card-goal">Ansätze und Erfahrungen zwischen Hochschulen und HR-Praxis austauschen.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Arbeitsbeispiel</strong><br>Erstelle eine Fallkarte zum Onboarding ohne personenbezogene Daten. Beschreibe Ausgangslage, Intervention, beobachtetes Ergebnis und eine offene Frage an eine Partnerhochschule.</p></div></details>
-      </div>
-    </section>
 
-    <section id="workshops" class="learning">
+    <section id="workshops" data-view="workshops" class="learning">
       <div class="wrap">
         <div class="section-heading">
           <div><p class="eyebrow">WORKSHOP</p><h2>Reality Check</h2></div>
@@ -1118,6 +1134,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
               <li><strong>Aufgaben und Rollen einordnen.</strong> Entscheide zwischen Automate, Augment, Keep Human und Stop. Notiere für jede Einordnung eine Begründung und die Annahme, von der sie abhängt.</li>
               <li><strong>30-Tage-Test vereinbaren.</strong> Benenne Verantwortung, nächsten Schritt, Erfolgskriterium und Review-Termin. Liste offene Entscheidungen für die Nachbereitung.</li>
             </ol>
+            <p><a class="text-link" href="#workbench">Protokoll in diesen vier Schritten ausfüllen ↓</a></p>
           </div></details>
           <details><summary><span class="card-kicker">Fiktiver Befund</span><span class="card-title">Übungsfall · Recruiting</span><span class="card-goal">Ein durchgespielter Workshop vom Befund bis zum 30-Tage-Test.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson">
             <p><strong>Fiktiver Befund.</strong> In zwei Testinterviews fehlten zu mehreren Bewertungen Begründungen.</p>
@@ -1126,28 +1143,33 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
             <p><strong>Einordnung.</strong> Automate für Terminbestätigungen, Augment für Entwürfe von Interviewfragen, Keep Human für die Beurteilung von Arbeitsproben und Stop für unbegründete Rankings.</p>
             <p><strong>30-Tage-Test.</strong> Die Recruiting-Leitung definiert drei Bewertungskriterien und testet sie mit fiktiven Fällen. Beim Review am Tag 30 prüft das Team, ob mindestens neun von zehn Einzelbewertungen auf beobachtbares Verhalten verweisen.</p>
           </div></details>
-          <details><summary><span class="card-kicker">14 Felder</span><span class="card-title">Protokollvorlage</span><span class="card-goal">Alle Felder, die ihr im Workshop gemeinsam festhaltet.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson">
-            <p>Thema · Evidence Card und Quelle · Befund · Interpretation · Gegenposition · Umdenk-Frage · Aufgabe und Rolle · Einordnung · Annahme · 30-Tage-Test · Verantwortung · nächster Schritt · Erfolgskriterium · Review-Termin.</p>
-          </div></details>
         </div>
-        <details class="workbench-details"><summary>Workbench öffnen · Protokoll ausfüllen und exportieren</summary><div class="workbench-box">
+        <details class="workbench-details" id="workbench"><summary>Workbench öffnen · Protokoll in vier Schritten ausfüllen und exportieren</summary><div class="workbench-box">
           <h3>Workshop-Workbench</h3>
-          <p>Halte deine Entscheidung fest und exportiere das Protokoll. Die Eingaben bleiben auf deinem Gerät.</p>
+          <p>Die 14 Felder folgen den vier Schritten des Workshop-Ablaufs. Am Ende erstellst du daraus ein Protokoll zum Herunterladen. Die Eingaben bleiben auf deinem Gerät.</p>
           <form id="workbench-form" class="workbench-form">
-            <div class="workbench-field"><label>Thema<input name="w0" aria-describedby="help-w0" type="input" required maxlength="200"></label><p class="field-note" id="help-w0">Welche Entscheidung soll der Workshop vorbereiten?</p></div>
-            <div class="workbench-field"><label>Evidence Card und Quelle<textarea name="w1" aria-describedby="help-w1" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w1">Nenne den Beleg, das Jahr und möglichst den Original-Link.</p></div>
-            <div class="workbench-field"><label>Befund<textarea name="w2" aria-describedby="help-w2" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w2">Beschreibe, was die Daten tatsächlich zeigen.</p></div>
-            <div class="workbench-field"><label>Interpretation<textarea name="w3" aria-describedby="help-w3" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w3">Was könnte der Befund für eure Entscheidung bedeuten?</p></div>
-            <div class="workbench-field"><label>Gegenposition<textarea name="w4" aria-describedby="help-w4" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w4">Welche andere Erklärung passt zu denselben Daten?</p></div>
-            <div class="workbench-field"><label>Umdenk-Frage<textarea name="w5" aria-describedby="help-w5" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w5">Welche vertraute Annahme solltet ihr überprüfen?</p></div>
-            <div class="workbench-field"><label>Aufgabe oder Rolle<input name="w6" aria-describedby="help-w6" type="input" maxlength="200"></label><p class="field-note" id="help-w6">Benenne die konkrete Tätigkeit oder Rolle, über die ihr entscheidet.</p></div>
-            <div class="workbench-field"><label>Einordnung<select name="w7" aria-describedby="help-w7"><option value="">Offen</option><option>Automate</option><option>Augment</option><option>Keep Human</option><option>Stop</option></select></label><p class="field-note" id="help-w7">Automatisieren, unterstützen, beim Menschen belassen oder einstellen.</p></div>
-            <div class="workbench-field"><label>Begründung und Annahme<textarea name="w8" aria-describedby="help-w8" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w8">Warum diese Einordnung? Welche Annahme muss dafür stimmen?</p></div>
-            <div class="workbench-field"><label>30-Tage-Test<textarea name="w9" aria-describedby="help-w9" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w9">Was erprobt ihr in 30 Tagen und womit vergleicht ihr es?</p></div>
-            <div class="workbench-field"><label>Verantwortung<input name="w10" aria-describedby="help-w10" type="input" maxlength="200"></label><p class="field-note" id="help-w10">Wer verantwortet den Test und legt das Ergebnis vor?</p></div>
-            <div class="workbench-field"><label>Nächster Schritt<input name="w11" aria-describedby="help-w11" type="input" maxlength="200"></label><p class="field-note" id="help-w11">Was tut ihr als Erstes?</p></div>
-            <div class="workbench-field"><label>Erfolgskriterium<input name="w12" aria-describedby="help-w12" type="input" maxlength="200"></label><p class="field-note" id="help-w12">Woran erkennt ihr, ob der Test erfolgreich war?</p></div>
-            <div class="workbench-field"><label>Review-Termin<input name="w13" aria-describedby="help-w13" type="date"></label><p class="field-note" id="help-w13">Wann entscheidet ihr über Fortsetzen, Anpassen oder Stoppen?</p></div>
+            <fieldset class="workbench-step"><legend>Schritt 1 · Thema und Evidence Card wählen</legend>
+              <div class="workbench-field"><label>Thema<input name="w0" aria-describedby="help-w0" type="input" required maxlength="200"></label><p class="field-note" id="help-w0">Welche Entscheidung soll der Workshop vorbereiten?</p></div>
+              <div class="workbench-field"><label>Evidence Card und Quelle<textarea name="w1" aria-describedby="help-w1" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w1">Nenne den Beleg, das Jahr und möglichst den Original-Link.</p></div>
+            </fieldset>
+            <fieldset class="workbench-step"><legend>Schritt 2 · Evidenz besprechen</legend>
+              <div class="workbench-field"><label>Befund<textarea name="w2" aria-describedby="help-w2" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w2">Beschreibe, was die Daten tatsächlich zeigen.</p></div>
+              <div class="workbench-field"><label>Interpretation<textarea name="w3" aria-describedby="help-w3" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w3">Was könnte der Befund für eure Entscheidung bedeuten?</p></div>
+              <div class="workbench-field"><label>Gegenposition<textarea name="w4" aria-describedby="help-w4" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w4">Welche andere Erklärung passt zu denselben Daten?</p></div>
+              <div class="workbench-field"><label>Umdenk-Frage<textarea name="w5" aria-describedby="help-w5" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w5">Welche vertraute Annahme solltet ihr überprüfen?</p></div>
+            </fieldset>
+            <fieldset class="workbench-step"><legend>Schritt 3 · Aufgaben und Rollen einordnen</legend>
+              <div class="workbench-field"><label>Aufgabe oder Rolle<input name="w6" aria-describedby="help-w6" type="input" maxlength="200"></label><p class="field-note" id="help-w6">Benenne die konkrete Tätigkeit oder Rolle, über die ihr entscheidet.</p></div>
+              <div class="workbench-field"><label>Einordnung<select name="w7" aria-describedby="help-w7"><option value="">Offen</option><option>Automate</option><option>Augment</option><option>Keep Human</option><option>Stop</option></select></label><p class="field-note" id="help-w7">Automatisieren, unterstützen, beim Menschen belassen oder einstellen.</p></div>
+              <div class="workbench-field"><label>Begründung und Annahme<textarea name="w8" aria-describedby="help-w8" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w8">Warum diese Einordnung? Welche Annahme muss dafür stimmen?</p></div>
+            </fieldset>
+            <fieldset class="workbench-step"><legend>Schritt 4 · 30-Tage-Test vereinbaren</legend>
+              <div class="workbench-field"><label>30-Tage-Test<textarea name="w9" aria-describedby="help-w9" rows="2" maxlength="4000"></textarea></label><p class="field-note" id="help-w9">Was erprobt ihr in 30 Tagen und womit vergleicht ihr es?</p></div>
+              <div class="workbench-field"><label>Verantwortung<input name="w10" aria-describedby="help-w10" type="input" maxlength="200"></label><p class="field-note" id="help-w10">Wer verantwortet den Test und legt das Ergebnis vor?</p></div>
+              <div class="workbench-field"><label>Nächster Schritt<input name="w11" aria-describedby="help-w11" type="input" maxlength="200"></label><p class="field-note" id="help-w11">Was tut ihr als Erstes?</p></div>
+              <div class="workbench-field"><label>Erfolgskriterium<input name="w12" aria-describedby="help-w12" type="input" maxlength="200"></label><p class="field-note" id="help-w12">Woran erkennt ihr, ob der Test erfolgreich war?</p></div>
+              <div class="workbench-field"><label>Review-Termin<input name="w13" aria-describedby="help-w13" type="date"></label><p class="field-note" id="help-w13">Wann entscheidet ihr über Fortsetzen, Anpassen oder Stoppen?</p></div>
+            </fieldset>
             <button class="button" type="submit">Protokoll erstellen</button>
             <div id="workbench-result" hidden>
               <label>Workshop-Protokoll<textarea id="workbench-record" rows="12" readonly></textarea></label>
@@ -1169,19 +1191,21 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
       </div>
     </section>
 
-    <section id="lehre" class="teaching" hidden>
+    <section id="lehre" data-view="lehre" class="teaching">
       <div class="wrap">
         <div class="faculty-intro">
           <div><p class="eyebrow">FÜR LEHRENDE</p><h2>Kursarbeitsplatz</h2></div>
           <div class="faculty-intro-actions">
             <p>Öffentliche Vorschau mit fiktiven Kursdaten.</p>
-            <a class="button" id="grill-einstieg" href="#lehr-grill-me">Grill-me öffnen <span aria-hidden="true">↓</span></a>
+            <a class="button" id="grill-einstieg" href="#lehr-grill-me">Grill-me öffnen <span aria-hidden="true">→</span></a>
           </div>
         </div>
+        <div class="subnav" role="tablist" aria-label="Für Lehrende"><button type="button" role="tab" data-subview-tab="kurs" aria-selected="true">Kursarbeitsplatz</button><button type="button" role="tab" data-subview-tab="fahrplan" aria-selected="false">30-Tage-Lernfahrplan</button><button type="button" role="tab" data-subview-tab="material" aria-selected="false">Lehrplan und Rubrik</button></div>
+        <div data-subview="kurs">
         <div id="lehrvorschau" class="faculty-preview">
           <header class="faculty-header">
             <div><p class="eyebrow">FALLSEMINAR</p><h3>KI im Recruiting</h3></div>
-            <a href="#lernfahrplan">30-Tage-Lernfahrplan <span aria-hidden="true">↓</span></a>
+            <a href="#lernfahrplan">30-Tage-Lernfahrplan <span aria-hidden="true">→</span></a>
           </header>
           <div class="faculty-layout">
           <div class="faculty-tabs" id="lehrvorschau-tabs" role="tablist" aria-label="Ansichten für Lehrende">
@@ -1208,7 +1232,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
             </div>
           </div>
           <div class="faculty-panel" id="lehrpanel-arbeiten" role="tabpanel" aria-labelledby="lehrtab-arbeiten" tabindex="0" hidden>
-            <div class="faculty-panel-heading"><div><h4>Entscheidungsbriefings</h4><p>Zwei Beispielabgaben aus dem Kurs. Öffne einen Eintrag für Auszug und Feedback.</p></div><a href="#lehr-rubrik">Rubrik ansehen ↓</a></div>
+            <div class="faculty-panel-heading"><div><h4>Entscheidungsbriefings</h4><p>Zwei Beispielabgaben aus dem Kurs. Öffne einen Eintrag für Auszug und Feedback.</p></div><a href="#lehr-rubrik">Rubrik ansehen →</a></div>
             <div class="faculty-submissions">
               <details><summary><span>Gruppe A · Begrenzter KI-Pilot</span><small>Feedback offen</small></summary>
                 <p><strong>Auszug.</strong> „Wir testen KI-Zusammenfassungen ausschließlich mit fiktiven Fällen. Das Recruiting-Team prüft jedes Ergebnis am Original.“</p>
@@ -1230,7 +1254,7 @@ Verwende nur synthetische oder tatsächlich anonymisierte Angaben. Erfinde keine
             </article>
             <ol class="faculty-cycle">
               <li><div><strong>Übung vor der Revision</strong><p>Gib den Gruppen drei Belege. Sie ordnen jeden Beleg einer Messgröße zu: Sichtungszeit, Gesamtzeit oder Auswahlqualität. Jede Gruppe benennt anschließend eine Aussage, die sich mit den vorhandenen Daten nicht stützen lässt.</p></div></li>
-              <li><div><strong>Revision anhand derselben Rubrik prüfen</strong><p>Vergleiche Erstfassung und Revision. Für zwei Punkte müssen die Gruppen ihre Schlussfolgerung mit den Daten begründen und eine konkrete Grenze der Stichprobe benennen.</p><a href="#lehr-rubrik">Bewertungsrubrik öffnen <span aria-hidden="true">↓</span></a></div></li>
+              <li><div><strong>Revision anhand derselben Rubrik prüfen</strong><p>Vergleiche Erstfassung und Revision. Für zwei Punkte müssen die Gruppen ihre Schlussfolgerung mit den Daten begründen und eine konkrete Grenze der Stichprobe benennen.</p><a href="#lehr-rubrik">Bewertungsrubrik öffnen <span aria-hidden="true">→</span></a></div></li>
             </ol>
             <p class="faculty-caption">Im geschützten Arbeitsbereich werden nur Ergebnisse angezeigt, aus denen keine einzelnen Personen erkennbar sind.</p>
           </div>
@@ -1457,12 +1481,14 @@ Prüfe die folgenden Punkte nacheinander anhand meines Entwurfs:
 5. Verzögerte Selbsteinschätzung: Wie schätzen Lernende nach 48 Stunden ihre Sicherheit vor dem Abruf ein, vergleichen sie mit der tatsächlichen Antwort und wählen ihre nächste Übung?
 
 Wenn die fünf Punkte geklärt sind, liefere einen umsetzbaren Fahrplan für Tag 1, den 48-Stunden-Check sowie Tag 7, 14 und 30. Ergänze drei Abruffragen mit Musterantworten, zwei vertiefende Erklärfragen, ein durchgearbeitetes Beispiel mit anschließender Eigenübung und einen kurzen Selbstcheck für die 48 Stunden. Nenne das beobachtbare Transferkriterium und wer es wann prüft. Markiere offene Annahmen und trenne erwartete Lernwirkung von tatsächlich erhobenen Ergebnissen.</textarea><div class="prompt-actions"><button type="button" class="prompt-copy" data-target="grill-12">Prompt kopieren</button><a class="prompt-download" data-target="grill-12" download="grill-12.txt" href="#">Als Textdatei speichern ↓</a><span class="prompt-status" role="status"></span></div></div></details></div>
-              <div class="faculty-grill-end"><a href="#lernfahrplan">30-Tage-Lernfahrplan ansehen ↓</a></div>
+              <div class="faculty-grill-end"><a href="#lernfahrplan">30-Tage-Lernfahrplan ansehen →</a></div>
             </div>
           </div>
           </div>
         </div>
 
+        </div>
+        <div data-subview="fahrplan">
         <article id="lernfahrplan" class="faculty-learning">
           <p class="eyebrow">LERNFAHRPLAN · TAG 1 BIS 30</p>
           <h3>KI im Recruiting beurteilen und begrenzen</h3>
@@ -1506,6 +1532,8 @@ Wenn die fünf Punkte geklärt sind, liefere einen umsetzbaren Fahrplan für Tag
           <p class="faculty-caption"><a href="https://ies.ed.gov/ncee/wwc/PracticeGuide/1" target="_blank" rel="noopener noreferrer">Methodische Grundlage · IES / What Works Clearinghouse</a></p>
         </article>
 
+        </div>
+        <div data-subview="material">
         <div class="tools">
           <details id="lehrplan" open><summary>90-Minuten-Lehrplan</summary>
             <ol>
@@ -1528,11 +1556,12 @@ Wenn die fünf Punkte geklärt sind, liefere einen umsetzbaren Fahrplan für Tag
             <p>Erfasse je Gruppe die vier Rubrikwerte. Wenn die meisten Gruppen bei Evidenz 0 oder 1 erreichen, ergänze vor der nächsten Runde eine Kurzaufgabe, die Sichtungszeit, Gesamtzeit und Auswahlqualität trennt. Vergleiche danach dieselben Rubrikwerte und dokumentiere, was du beibehältst oder änderst.</p>
           </details>
         </div>
-        <p class="catalog-back"><a href="#decision-lab">Entscheidungsfall öffnen ↑</a> · <a href="#workshops">Reality Check öffnen ↑</a></p>
+        </div>
+        <p class="catalog-back"><a href="#decision-lab">Entscheidungsfall öffnen →</a> · <a href="#workshops">Reality Check öffnen →</a></p>
       </div>
     </section>
 
-    <section id="campus" class="teaching">
+    <section id="campus" data-view="campus" class="teaching">
       <div class="wrap">
         <div class="section-heading">
           <div><p class="eyebrow">FÜR HOCHSCHULEN</p><h2>Campus Edition</h2></div>
@@ -1564,11 +1593,24 @@ Wenn die fünf Punkte geklärt sind, liefere einen umsetzbaren Fahrplan für Tag
           </div>
 
         </div>
-        <p class="catalog-back"><a href="#lehrvorschau">Lehrendenansicht und Lehrmaterial ansehen ↑</a></p>
+        <p class="catalog-back"><a href="#lehrvorschau">Lehrendenansicht und Lehrmaterial ansehen →</a></p>
       </div>
     </section>
 
-    <section id="ueber" class="about">
+    <section id="arbeitsweise" data-view="arbeitsweise" class="wrap methods">
+      <div class="section-heading">
+        <div><p class="eyebrow">AUSBLICK</p><h2>In Entwicklung</h2></div>
+        <p>Diese Werkzeuge sind geplant und noch nicht nutzbar. Die Arbeitsbeispiele zeigen, wofür sie gedacht sind.</p>
+      </div>
+      <div class="tools card-grid tools-compact">
+        <details><summary><span class="card-kicker">In Entwicklung</span><span class="card-title">Evidence Engine</span><span class="card-goal">Quellen, Aussagekraft und Übertragbarkeit auf den konkreten HR-Fall prüfen.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Arbeitsbeispiel</strong><br>Ein Unternehmen möchte wissen, ob strukturierte Interviews die Auswahl verbessern. Formuliere die Frage, vergleiche Studiendesign und Zielgruppe zweier Quellen und halte fest, welche Aussage für die eigene Organisation belastbar ist.</p></div></details>
+        <details><summary><span class="card-kicker">In Entwicklung</span><span class="card-title">Human-AI Decision Trace</span><span class="card-goal">Festhalten, welche Vorschläge von KI kamen und wie Menschen die endgültige Entscheidung begründet haben.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Arbeitsbeispiel</strong><br>Ein KI-Entwurf empfiehlt ein automatisches Ranking. Protokolliere den Vorschlag, seine unbelegten Annahmen und die menschliche Entscheidung. Halte fest, wer entschieden hat und wann die Entscheidung überprüft wird.</p></div></details>
+        <details><summary><span class="card-kicker">In Entwicklung</span><span class="card-title">Competence Passport</span><span class="card-goal">Reflexionen und Kompetenznachweise im persönlichen Lernverlauf zusammenführen.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Arbeitsbeispiel</strong><br>Dokumentiere nach der Interviewübung den Skill, deine Arbeitsprobe, erhaltenes Feedback und eine konkrete Verbesserung für das nächste Interview.</p></div></details>
+        <details><summary><span class="card-kicker">In Entwicklung</span><span class="card-title">Teaching Intelligence &amp; Improvement Lab</span><span class="card-goal">Rückmeldungen zur Lehre auswerten und Verbesserungen erproben.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Arbeitsbeispiel</strong><br>Mehrere Gruppen verwechseln Korrelation mit Kausalität. Ergänze im nächsten Durchlauf zwei Gegenbeispiele und prüfe anhand derselben Bewertungsrubrik, ob die Begründungen präziser werden.</p></div></details>
+        <details><summary><span class="card-kicker">In Entwicklung</span><span class="card-title">Innovation Network</span><span class="card-goal">Ansätze und Erfahrungen zwischen Hochschulen und HR-Praxis austauschen.</span><span class="card-cta" aria-hidden="true"></span></summary><div class="lesson"><p><strong>Arbeitsbeispiel</strong><br>Erstelle eine Fallkarte zum Onboarding ohne personenbezogene Daten. Beschreibe Ausgangslage, Intervention, beobachtetes Ergebnis und eine offene Frage an eine Partnerhochschule.</p></div></details>
+      </div>
+    </section>
+    <section id="ueber" data-view="ueber" class="about">
       <div class="wrap about-grid">
         <div class="about-person">
           <p class="eyebrow">ÜBER DIE ACADEMY</p>
@@ -1591,7 +1633,9 @@ Wenn die fünf Punkte geklärt sind, liefere einen umsetzbaren Fahrplan für Tag
     </section>
 
   </main>
-  <footer class="wrap"><span>Aida Đulić, B.A. · HR Future Thinkers Academy · eine unabhängige Initiative · <a href="#ueber">Über die Academy</a></span><a href="#start">Nach oben ↑</a></footer>
+  <footer class="wrap"><span>Aida Đulić, B.A. · HR Future Thinkers Academy · eine unabhängige Initiative · <a href="#ueber">Über die Academy</a></span><a href="#start">Zur Startseite</a></footer>
+  </div>
+  </div>
 </body>
 </html>
 

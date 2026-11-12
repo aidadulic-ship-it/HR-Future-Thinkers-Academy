@@ -9,7 +9,7 @@ test('die Startseite ist gekürzt: kein doppeltes Lernangebot, Workbench liegt h
   assert.ok(!html.includes('<section id="lernangebot"'));
   assert.ok(!html.includes('href="#lernangebot"'));
   const workshop = section('workshops');
-  const box = workshop.split('<details class="workbench-details">')[1]?.split('</details>')[0] ?? '';
+  const box = workshop.split(/<details class="workbench-details"[^>]*>/)[1]?.split('</details>')[0] ?? '';
   assert.match(box, /^<summary>[^<]*Workbench öffnen/);
   assert.ok(box.includes('id="workbench-form"'));
   assert.ok(!/<details class="workbench-details" open/.test(workshop));
@@ -48,7 +48,7 @@ test('einheitliches Kartenmuster in Workshop und Campus, einheitliche Kicker', (
 
 test('der Workshop heißt Reality Check, der frühere Begriff kommt nicht mehr vor', () => {
   assert.doesNotMatch(html, /unlearn/i);
-  assert.match(html, /<a href="#workshops">Reality Check<\/a>/);
+  assert.match(html, /<a class="side-link" href="#workshops">[\s\S]*?Reality Check<\/span><\/a>/);
   assert.match(section('workshops'), /<h2>Reality Check<\/h2>/);
   assert.ok(html.includes("'REALITY CHECK · WORKSHOP-PROTOKOLL'"));
   assert.ok(html.includes('download="Reality-Check-Workshop.txt"'));

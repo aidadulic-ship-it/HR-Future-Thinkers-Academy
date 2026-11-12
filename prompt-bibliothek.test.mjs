@@ -7,7 +7,7 @@ const html = readFileSync(new URL('../Academy-Vorschau.html', import.meta.url), 
 const section = id => html.split('<section id="' + id + '"')[1]?.split('</section>')[0] ?? '';
 
 test('die Prompt-Bibliothek ist über Navigation und Skills erreichbar und enthält alle 20 Prompts ohne Sperre', () => {
-  assert.match(html, /<nav[\s\S]*?<a href="#prompts">Prompts<\/a>[\s\S]*?<\/nav>/);
+  assert.match(html, /<nav[\s\S]*?<a class="side-link" href="#prompts">[\s\S]*?Prompt-Bibliothek<\/span><\/a>[\s\S]*?<\/nav>/);
   const library = section('prompts');
   assert.match(library, /<h2>Prompt-Bibliothek<\/h2>/);
   const items = [...library.matchAll(/<textarea id="bib-([\w-]+)" rows="\d+" readonly data-title="[^"]+">([\s\S]*?)<\/textarea><div class="prompt-actions">/g)];

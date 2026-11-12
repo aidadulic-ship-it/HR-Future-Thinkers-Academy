@@ -1014,13 +1014,15 @@ if ($('crisis-button')) {
   for (const id of ['crisis-back', 'crisis-end-back']) $(id).addEventListener('click', renderCrisisSelect);
   $('crisis-home').addEventListener('click', () => show('screen-start'));
   // Direktlinks auf derselben Seite: #spiel-krise (Auswahl) und #spiel-krise-1 bis -3
-  const route = () => {
-    const direct = CRISES.find(crisis => location.hash === '#spiel-' + crisis.id);
-    if (location.hash === '#spiel-krise') renderCrisisSelect();
+  const route = (hash = location.hash) => {
+    const direct = CRISES.find(crisis => hash === '#spiel-' + crisis.id);
+    if (hash === '#spiel-krise') renderCrisisSelect();
     else if (direct) startCrisis(direct);
   };
   route();
-  window.addEventListener('hashchange', route);
+  window.addEventListener('hashchange', () => route());
+  // Links der Academy kommen auch ohne Hash-Ereignis an (eingebettete Vorschau)
+  window.addEventListener('academy-link', event => route('#' + event.detail));
 }
 
 // Für Tests und Konsole sichtbar machen, alles andere bleibt im Spiel gekapselt

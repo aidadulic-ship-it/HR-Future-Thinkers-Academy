@@ -221,29 +221,17 @@ if (skillSearch) {
   filterSkills();
 }
 
-function openLinkedLesson() {
-  const target = document.getElementById(location.hash.slice(1));
+// Öffnet das Ziel eines internen Links (z. B. eine Karte). Funktioniert per Hash und per Klick,
+// damit es auch in Vorschauen ohne Hash-Ereignisse zuverlässig bleibt.
+function openLinkedLesson(id = location.hash.slice(1)) {
+  const target = id ? document.getElementById(id) : null;
   const wasHidden = target?.closest('[hidden]');
-  const teaching = document.getElementById('lehre');
-  const main = document.getElementById('inhalt');
-  if (teaching && main && target !== main) {
-    const teachingActive = target?.closest('#lehre') === teaching;
-    for (const section of main.children) {
-      section.hidden = (section === teaching) !== teachingActive;
-    }
-    const nav = document.getElementById('nav-lehre');
-    if (teachingActive) nav.setAttribute('aria-current', 'page');
-    else nav.removeAttribute('aria-current');
-  }
   const lesson = target?.closest('details');
   if (lesson?.hidden) resetSkillFilters();
   const wasClosed = Boolean(lesson && !lesson.open);
   if (lesson) lesson.open = true;
-  if (wasHidden || wasClosed) target.scrollIntoView?.({ block: 'start' });
+  return Boolean(wasHidden || wasClosed);
 }
-
-window.addEventListener('hashchange', openLinkedLesson);
-openLinkedLesson();
 
 
 
@@ -251,9 +239,13 @@ const workbenchForm = document.getElementById('workbench-form');
 if (workbenchForm) {
   workbenchForm.addEventListener('submit', event => {
     event.preventDefault();
+    let lastStep = '';
     const fields = Array.from(workbenchForm.querySelectorAll('[name]'), field => {
       const label = field.labels[0].firstChild.textContent.trim();
-      return label + '\n' + (field.value.trim() || 'Offen');
+      const step = field.closest?.('fieldset')?.querySelector('legend')?.textContent.trim() ?? '';
+      const heading = step && step !== lastStep ? step.toUpperCase() + '\n\n' : '';
+      lastStep = step || lastStep;
+      return heading + label + '\n' + (field.value.trim() || 'Offen');
     });
     const record = document.getElementById('workbench-record');
     record.value = ['REALITY CHECK · WORKSHOP-PROTOKOLL', ...fields].join('\n\n');
@@ -507,3 +499,219 @@ libraryAll?.addEventListener('click', () => {
   const text = ['HR FUTURE THINKERS ACADEMY · 20 SKILL-PROMPTS', 'Ersetze die Angaben in eckigen Klammern. Verwende nur synthetische oder tatsächlich anonymisierte Daten.', ...parts].join('\n\n');
   libraryAll.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(text);
 });
+
+
+// Karten öffnen und schließen, ohne dass die Seite springt:
+// Die angeklickte Karte bleibt unter dem Mauszeiger, eine zuvor offene Karte im selben Raster schließt sich.
+let cardAnchor = null;
+document.addEventListener?.('click', event => {
+  const summary = event.target?.closest?.('.card-grid > details > summary');
+  if (summary) cardAnchor = { summary, top: summary.getBoundingClientRect().top };
+}, true);
+for (const card of document.querySelectorAll('.card-grid > details')) {
+  card.addEventListener('toggle', () => {
+    if (card.open) {
+      for (const other of card.parentElement.querySelectorAll(':scope > details[open]')) if (other !== card) other.open = false;
+    }
+    if (cardAnchor && cardAnchor.summary.parentElement === card) {
+      const shift = cardAnchor.summary.getBoundingClientRect().top - cardAnchor.top;
+      if (Math.abs(shift) > 1) window.scrollBy?.({ top: shift, behavior: 'instant' });
+      cardAnchor = null;
+    }
+  });
+}
+
+// Seitenleiste und Hauptfenster: Jedes Thema ist eine eigene Ansicht.
+// Klick in der Leiste zeigt nur dieses Thema, Zurück führt zur vorherigen Ansicht, Home zur Startseite.
+// Ohne Skript bleibt die ganze Seite lesbar (die Klasse js-views blendet erst dann aus).
+const viewRoot = document.getElementById('inhalt');
+const viewStack = [];
+let currentView = null;
+
+function viewOf(id) {
+  if (!id || id === 'inhalt') return 'home';
+  return document.getElementById(id)?.closest?.('#inhalt > [data-view]')?.dataset.view ?? null;
+}
+
+function sideLinkFor(view) {
+  return Array.from(document.querySelectorAll('.sidebar a[href^="#"]')).find(link => viewOf(link.getAttribute('href').slice(1)) === view && !link.classList?.contains('brand'));
+}
+
+function groupOf(link) {
+  let node = link?.previousElementSibling;
+  while (node && !node.classList?.contains('side-group')) node = node.previousElementSibling;
+  return node?.textContent?.trim() ?? link?.closest?.('.side-more')?.querySelector('summary')?.textContent?.trim() ?? '';
+}
+
+function showView(view) {
+  currentView = view;
+  for (const section of document.querySelectorAll('#inhalt > [data-view]')) section.classList.toggle('is-active', section.dataset.view === view);
+  let label = 'Startseite';
+  let group = '';
+  for (const link of document.querySelectorAll('.sidebar a[href^="#"]')) {
+    const match = viewOf(link.getAttribute('href').slice(1)) === view && !link.classList?.contains('brand');
+    if (match) {
+      link.setAttribute('aria-current', 'page');
+      label = link.textContent?.trim() || view;
+      group = groupOf(link);
+      const more = link.closest?.('.side-more');
+      if (more) more.open = true;
+    } else link.removeAttribute('aria-current');
+  }
+  const crumb = document.getElementById('crumb');
+  if (crumb) crumb.textContent = view === 'home' ? 'Startseite' : label;
+  const bar = document.querySelector('.topbar');
+  if (bar?.dataset) bar.dataset.group = view === 'home' ? '' : group;
+  updateProgress();
+  const back = document.querySelector('[data-action="back"]');
+  if (back) { back.disabled = viewStack.length === 0 && view === 'home'; }
+  setMenu(false);
+}
+
+// Feine Linie unter der Kopfleiste: wie weit du im aktuellen Thema gelesen hast
+function updateProgress() {
+  const line = document.querySelector('.topbar-progress');
+  if (!line?.style) return;
+  const max = (document.documentElement.scrollHeight ?? 0) - (window.innerHeight ?? 0);
+  line.style.transform = 'scaleX(' + (max > 40 ? Math.min(1, (window.scrollY ?? 0) / max) : 0) + ')';
+}
+
+// Reiter innerhalb einer Ansicht (z. B. Skills: Alle Skills / Welcher Skill passt?)
+function showSubview(viewElement, key) {
+  if (!viewElement?.querySelectorAll) return;
+  for (const panel of viewElement.querySelectorAll('[data-subview]')) panel.classList.toggle('is-active', panel.dataset.subview === key);
+  for (const tab of viewElement.querySelectorAll('[data-subview-tab]')) tab.setAttribute('aria-selected', String(tab.dataset.subviewTab === key));
+}
+
+function firstSubview(viewElement) {
+  return viewElement?.querySelector?.('[data-subview]')?.dataset.subview;
+}
+
+function navigate(id, { push = true, notify = true, focus = push } = {}) {
+  const view = viewOf(id);
+  if (!view) return false;
+  if (push && currentView && view !== currentView) viewStack.push({ view: currentView, y: window.scrollY ?? 0 });
+  showView(view);
+  const target = document.getElementById(id);
+  const viewElement = target?.closest?.('#inhalt > [data-view]');
+  const panel = target?.closest?.('[data-subview]');
+  if (panel) showSubview(viewElement, panel.dataset.subview);
+  else if (viewElement && firstSubview(viewElement)) showSubview(viewElement, firstSubview(viewElement));
+  openLinkedLesson(id);
+  const root = !target || target.dataset?.view || id === 'start' || id === 'inhalt';
+  if (root) window.scrollTo?.(0, 0);
+  else target.scrollIntoView?.({ block: 'start', behavior: 'instant' });
+  if (focus) {
+    const heading = root ? viewElement?.querySelector?.('h1, h2') : null;
+    if (heading) { heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true }); }
+    else if (target?.matches?.('summary, a, button, input, select, textarea')) target.focus?.({ preventScroll: true });
+  }
+  if (notify && typeof CustomEvent === 'function') window.dispatchEvent?.(new CustomEvent('academy-link', { detail: id }));
+  if (push) { try { history.pushState({ id }, '', '#' + id); } catch { /* Vorschau ohne eigene Adresse */ } }
+  return true;
+}
+
+function goBack() {
+  const previous = viewStack.pop();
+  if (!previous) return navigate('start', { push: false, focus: true });
+  showView(previous.view);
+  document.querySelector('#inhalt > [data-view].is-active')?.querySelector?.('h1, h2')?.focus?.({ preventScroll: true });
+  window.scrollTo?.(0, previous.y);
+  try { history.replaceState(null, '', previous.view === 'home' ? '#start' : '#' + previous.view); } catch { /* ohne Adresse */ }
+}
+
+function goHome() {
+  navigate('start');
+}
+
+function setMenu(open) {
+  const button = document.querySelector('[data-action="menu"]');
+  const sidebar = document.getElementById('sidebar');
+  const backdrop = document.querySelector('.sidebar-backdrop');
+  if (!button || !sidebar) return;
+  const wasOpen = sidebar.classList.contains('is-open');
+  sidebar.classList.toggle('is-open', open);
+  button.setAttribute('aria-expanded', String(open));
+  if (backdrop) backdrop.hidden = !open;
+  if (open) sidebar.querySelector('a, summary')?.focus?.();
+  else if (wasOpen && sidebar.contains?.(document.activeElement)) button.focus?.();
+}
+
+// Im offenen Handy-Menü bleibt der Tastaturfokus im Menü
+function trapMenuFocus(event) {
+  const sidebar = document.getElementById('sidebar');
+  if (event.key !== 'Tab' || !sidebar?.classList.contains('is-open')) return;
+  const items = Array.from(sidebar.querySelectorAll('a, summary')).filter(item => item.offsetParent !== null);
+  if (!items.length) return;
+  const first = items[0];
+  const last = items[items.length - 1];
+  if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+  else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+}
+
+// Unter jeder Ansicht: vorheriges und nächstes Thema in der Reihenfolge der Seitenleiste
+function buildPager() {
+  const links = Array.from(document.querySelectorAll('.sidebar nav a[href^="#"]'));
+  const order = links.map(link => ({ id: link.getAttribute('href').slice(1), label: link.textContent.trim(), group: groupOf(link) }));
+  order.forEach((entry, index) => {
+    const viewElement = document.getElementById(entry.id)?.closest?.('#inhalt > [data-view]');
+    if (!viewElement) return;
+    const host = viewElement.dataset.view === 'home' ? document.getElementById('einstieg') : viewElement;
+    if (!host || host.querySelector(':scope > .view-pager')) return;
+    const pager = document.createElement('div');
+    pager.classList.add('view-pager');
+    if (!host.classList.contains('wrap')) pager.classList.add('wrap');
+    pager.setAttribute('aria-label', 'Themen blättern');
+    for (const [neighbour, direction] of [[order[index - 1], 'prev'], [order[index + 1], 'next']]) {
+      if (!neighbour) { pager.append(document.createElement('span')); continue; }
+      const link = document.createElement('a');
+      link.href = '#' + neighbour.id;
+      link.className = 'pager-link pager-' + direction;
+      const small = document.createElement('small');
+      small.textContent = direction === 'prev' ? '← Vorheriges Thema' : 'Nächstes Thema →';
+      const strong = document.createElement('strong');
+      strong.textContent = (neighbour.group && neighbour.id !== 'start' ? neighbour.group + ' › ' : '') + neighbour.label;
+      link.append(small, strong);
+      pager.append(link);
+    }
+    host.append(pager);
+  });
+}
+
+if (viewRoot) {
+  document.documentElement.classList?.add('js-views');
+  window.addEventListener('scroll', () => requestAnimationFrame(updateProgress), { passive: true });
+  buildPager();
+  for (const view of document.querySelectorAll('#inhalt > [data-view]')) if (firstSubview(view)) showSubview(view, firstSubview(view));
+  navigate(location.hash.slice(1) || 'start', { push: false, notify: false });
+  window.addEventListener('popstate', () => { viewStack.pop(); navigate(location.hash.slice(1) || 'start', { push: false }); });
+  window.addEventListener('hashchange', () => navigate(location.hash.slice(1) || 'start', { push: false }));
+  document.addEventListener?.('click', event => {
+    const action = event.target?.closest?.('[data-action]')?.dataset.action;
+    if (action === 'back') return goBack();
+    if (action === 'home') return goHome();
+    if (action === 'menu') return setMenu(!document.getElementById('sidebar').classList.contains('is-open'));
+    if (action === 'close-menu') return setMenu(false);
+    const tab = event.target?.closest?.('[data-subview-tab]');
+    if (tab) { showSubview(tab.closest('[data-view]'), tab.dataset.subviewTab); tab.closest('[data-view]')?.querySelector('.subnav')?.scrollIntoView?.({ block: 'start', behavior: 'instant' }); return; }
+    if (event.defaultPrevented || event.button > 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target?.closest?.('a[href^="#"]');
+    const id = link?.getAttribute('href').slice(1);
+    if (!id || !document.getElementById(id)) return;
+    event.preventDefault?.();
+    if (id === 'inhalt') { viewRoot.setAttribute('tabindex', '-1'); viewRoot.focus?.(); return; }
+    navigate(id);
+  });
+  document.addEventListener?.('keydown', event => {
+    if (event.key === 'Escape') setMenu(false);
+    trapMenuFocus(event);
+    const tab = event.target?.closest?.('[data-subview-tab]');
+    if (tab && (event.key === 'ArrowRight' || event.key === 'ArrowLeft')) {
+      const tabs = Array.from(tab.parentElement.querySelectorAll('[data-subview-tab]'));
+      const next = tabs[(tabs.indexOf(tab) + (event.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      event.preventDefault();
+      next.focus();
+      showSubview(tab.closest('[data-view]'), next.dataset.subviewTab);
+    }
+  });
+}
