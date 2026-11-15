@@ -42,7 +42,8 @@ html[data-theme="classic"] .hero{grid-template-columns:minmax(0,1.65fr) minmax(2
 html[data-theme="classic"] .hero .kicker{font-size:11px;letter-spacing:.15em;color:#b21b70}
 html[data-theme="classic"] .hero .lead{max-width:55ch;color:#1a2b59;font-size:clamp(16px,1.4vw,21px);font-weight:700;line-height:1.45}
 html[data-theme="classic"] .hero-art{min-height:320px;aspect-ratio:1.13;background:#1a2b59 url('./assets/classic-staircase.png') center 58%/cover no-repeat;border-radius:0;box-shadow:15px 15px 0 #d9dff1}
-html[data-theme="classic"] .hero-art img,html[data-theme="classic"] .hero-art-title{display:none}
+html[data-theme="classic"] .hero-art img{display:none}
+html[data-theme="classic"] .hero-art-title{display:block;bottom:5%;border-radius:0;background:#fffffff0;color:#1a2b59;font-family:Georgia,'Times New Roman',serif;letter-spacing:.02em}
 html[data-theme="classic"] .primary{background:#b21b70;color:#fff;border-radius:0}
 html[data-theme="classic"] .primary:hover{background:#92165b}
 html[data-theme="classic"] .secondary{background:transparent;color:#1a2b59;border-radius:0}

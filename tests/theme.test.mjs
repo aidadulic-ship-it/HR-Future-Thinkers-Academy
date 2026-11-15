@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
+import { catalog } from '../src/content.mjs';
 
 const themeScript = readFileSync(new URL('../theme.js', import.meta.url), 'utf8');
 
@@ -54,8 +55,25 @@ test('GitHub Pages und Server bieten denselben Designschalter und dieselben Inha
   const css = readFileSync(new URL('../app.css', import.meta.url), 'utf8');
   assert.match(css, /html\[data-theme="classic"\] \.sidebar\{position:sticky/);
   assert.match(css, /html\[data-theme="classic"\] \.hero-art\{[^}]*classic-staircase\.png/);
+  assert.match(css, /html\[data-theme="classic"\] \.hero-art-title\{display:block/);
+  assert.doesNotMatch(readFileSync(new URL('../app.js', import.meta.url), 'utf8'), /data-theme|themeChoice/);
   assert.equal(
     readFileSync(new URL('../app.js', import.meta.url), 'utf8'),
     readFileSync(new URL('../src/app.js', import.meta.url), 'utf8')
   );
+});
+
+test('alle sechs Academy-Bereiche rendern in beiden Designs denselben Inhalt', () => {
+  const raw = readFileSync(new URL('../app.js', import.meta.url), 'utf8');
+  const script = raw.slice(0, raw.lastIndexOf('try{state.catalog=await api'));
+  function renderPages(theme) {
+    const element = { innerHTML: '', textContent: '', classList: { remove(){}, toggle(){} }, addEventListener(){} };
+    const context = {
+      catalog,
+      document: { documentElement: { dataset: { staticPreview: 'true', theme } }, querySelector(){return element}, addEventListener(){} },
+      localStorage: { getItem(){return null} }, setTimeout(){}, window: { scrollTo(){} }
+    };
+    return runInNewContext(`${script}\nstate.catalog=catalog; JSON.stringify([pathPage(),worldsPage(),decisionsPage(),knowledgePage(),practicePage(),teachingPage()])`, context);
+  }
+  assert.equal(renderPages('modern'), renderPages('classic'));
 });

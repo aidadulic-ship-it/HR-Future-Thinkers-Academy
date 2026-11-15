@@ -1,6 +1,6 @@
 # Testbericht · 15. November 2026
 
-Ausgeführt mit Node.js und `npm test` im Projektordner. Ergebnis: **21 Tests bestanden, 0 fehlgeschlagen**.
+Ausgeführt mit Node.js und `npm test` im Projektordner. Ergebnis: **22 Tests bestanden, 0 fehlgeschlagen**.
 
 Geprüft wurden Katalogmengen und eindeutige IDs; sechs unterschiedliche Arbeitsschritte und zwei Niveaus je Skill; Kennzeichnung synthetischer Fälle; getrennte Kontodaten, Export und Löschung; Passwort-Hashing und Sitzungsende; Campusrollen, Sitzplatzgrenze, Kurs, Aufgabe, Einreichung und Lehrendenfeedback; API-Setup, Login, CSRF-Schutz, ID-Validierung und persistierte Lernantwort; Handler für alle deklarierten UI-Aktionen; relative Assets, vorhandene Bilddateien und Katalog der GitHub-Pages-Demo. Der Startseitentest prüft, dass konkrete Lerninhalte vor den Kennzahlen stehen. Die sechs PNG-Kartenbilder wurden auf Existenz geprüft, und ein PNG wurde über den Server-Handler binär ausgeliefert.
 
@@ -26,3 +26,5 @@ Der sichtbare Schriftzug „Future HR Lab“ liegt als responsiver Seitentext ü
 Für die zweite Gestaltung wurden ein gespeicherter Designschalter und ein klassisches CSS-Thema ergänzt. Ein Test prüft den Wechsel zwischen Modern und Klassisch, den aktiven Zustand der Schaltflächen und die Speicherung der Auswahl. Ein weiterer Test prüft, dass GitHub Pages und Server denselben Schalter und dieselben App-Inhalte nutzen. Der HTTP-Test prüft die Auslieferung von `theme.js`. Die Browserumgebung erreichte den lokalen Testserver erneut nicht (`ERR_CONNECTION_TIMED_OUT`); deshalb liegt keine visuelle Browserabnahme der klassischen Ansicht vor.
 
 Nach dem zweiten Referenzscreenshot wurde die klassische Gestaltung auf eine weiße linke Navigation, große Serifentitel, eine helle Startbühne und ein neu erzeugtes blaues Architekturbild umgestellt. Der HTTP-Test prüft, dass dieses Bild in der Serverversion als PNG ausgeliefert wird. Die Katalog- und Funktionslogik blieb unverändert.
+
+Ein Paritätstest rendert alle sechs Academy-Bereiche einmal mit `modern` und einmal mit `classic` und vergleicht ihre HTML-Inhalte vollständig. Ergebnis: identisch. Die klassische CSS-Ansicht blendet nur das moderne Hero-Bild und die moderne Markenvariante aus; der Text „Future HR Lab“ ist in beiden Ansichten sichtbar. Die unterschiedlichen Bilder sind rein gestalterisch.
