@@ -1,83 +1,23 @@
 # HR Future Thinkers Academy
 
-Statische Academy-Seite für **aidadulic.at/academy**. Eine unabhängige Initiative von Aida Đulić, B.A.
+Eigenständige lokale Lernplattform mit neuer UX nach dem gelieferten Work-Paket. Die alten HTML-Dateien dienten als Inhalts- und Funktionsreferenz. Die Anwendung nutzt Node.js ohne externe Laufzeitpakete.
 
-> **Status: Vorschau, nicht für den Produktivbetrieb freigegeben.** Vor einer Veröffentlichung stehen Funktions-, Sicherheits-, Datenschutz- und Qualitätsprüfung sowie die fachliche Freigabe der Inhalte aus (siehe Checkliste unten). Bis dahin das Repository **privat** halten.
+**Start:** [INSTALLATION.md](INSTALLATION.md) lesen, dann `npm start`. **Tests:** `npm test`.
 
-## Aufbau
+**GitHub-Upload:** [GITHUB_UPLOAD.md](GITHUB_UPLOAD.md). Das Repository allein veröffentlicht die laufende Academy nicht.
 
-| Pfad | Inhalt |
-|---|---|
-| `academy/index.html` | Die fertige Seite als eine einzige Datei (Styles, Skripte, Bild, Schriften eingebettet). Das ist der Ordner, der später unter `/academy/` veröffentlicht wird. |
-| `source/academy-core/` | Bearbeitbare Quellen: `index.html`, `site.css`, `site.js`, Build, Tests, Schriften, Musterantworten |
-| `source/academy-core/musterantworten.json` | 120 Musterantworten (20 Skills × 6 Schritte), Entwurf zur fachlichen Freigabe |
-| `testdaten/zeitkapsel-testdaten.json` | Synthetische Kapseln zum Testen der Entscheidungs-Zeitkapsel |
-| `docs/briefing/` | Arbeitsauftrag und Content-Masterbriefing |
-| `.github/workflows/tests.yml` | Automatische Tests bei jedem Push |
+Die Dateien im Repository-Stammverzeichnis bilden eine **GitHub-Pages-Demo**. Sie zeigt das Layout und die Lerninhalte, speichert Übungsantworten lokal im Browser und braucht keine API. Die Mehrpersonen-Plattform mit Konten und Campus liegt unter `src/` und benötigt einen Node.js-Host.
 
-## Was die Seite kann
+Auf der Startseite führen konkrete Einstiege direkt zu einem sechsstufigen Skill, einem synthetischen Executive Case und einer gekennzeichneten Originalquelle. Die Kennzahlen stehen darunter.
 
-- Einstiegsweiche für HR, Lehrende, Workshop und Zeitkapsel
-- Decision Lab mit Beispiel-Decision-Trace und eigenem Executive Briefing
-- 20 HR-AI-Skills: sechs Schritte, Prüffrage, Human-First-Sperre für den KI-Prompt, Musterantworten nach eigener Antwort, Selbstbewertung, Transfer bis Tag 30, Wiederholungstermine (.ics), Gegenrede per E-Mail, Textexport
-- Prompt-Bibliothek mit allen 20 Prompts (kopieren, einzeln oder gesammelt speichern)
-- „Welcher Skill passt?“ mit sechs gemischten Fällen
-- 12 wissenschaftliche Perspektiven mit Quellen und Perspektiven-Duell
-- 8 synthetische Fallstudien
-- Reality Check (Workshop) mit Workbench und Protokoll-Export
-- Entscheidungs-Zeitkapsel mit Urteilsprofil
-- Lehrendenbereich mit Kursarbeitsplatz, 30-Tage-Lernpfad, Lehrpraxis und Grill-me (12 Perspektiven)
-- Campus Edition (geplant) mit drei Lernmodi
-- Spiel „HR-Mastermind“ direkt auf der Seite (#spiel): fünf Level, Fallakten finden, Prompt-Joker, Feuerwerk und Urkunde
-- Profi-Stufe mit Sicherheitsangabe vor jeder Antwort, 60 Spielfragen
-- Krisenmodus: drei frei erfundene, verzweigte Unternehmenskrisen in je vier Phasen mit Anzeigen für Vertrauen und Risiko, Rückblick und Vertiefung in der Academy (`#spiel-krise`)
-- Ohne Konto, ohne Anmeldung, ohne Datenübertragung, ohne Tracking, ohne externe Abrufe beim Laden
+Die Illustrationen liegen unter [`assets/`](assets/): sechs hochauflösende PNG-Kartenbilder, sechs SVG-Navigationsicons und ein neues, 3D-Hero-Motiv auf weißem Hintergrund. Die Kartenbilder wurden anhand des von der Nutzerin gezeigten Screenshots visuell rekonstruiert. Die Original-Bilddateien waren im Importpaket nicht enthalten. Pages und Serverversion laden dieselben Assets.
 
-## Lokal ansehen
+Über **Modern / Klassisch** in der Kopfzeile kann jede Person das Design wechseln. Beide Ansichten verwenden dieselben Seiten, Inhalte, Aktionen und gespeicherten Antworten. Die Auswahl wird nur in diesem Browser gespeichert. Ein Wechsel lädt die Seite nicht neu und lässt begonnene Eingaben stehen. Die klassische Variante folgt dem nachgereichten Screenshot: weiße linke Navigation, helle Bühne, große Serifentitel, Magenta-Akzente und ein blau getöntes Architekturmotiv. Das Motiv wurde für diese Fassung neu erzeugt.
 
-`academy/index.html` per Doppelklick im Browser öffnen.
+Die sechs Bereiche sind My Future Path, Competency Worlds, Decision Lab, Knowledge Hub, Practice Studio und Teaching Studio. Lernantworten werden serverseitig einem Konto zugeordnet. Campusrollen begrenzen Kursverwaltung, Einreichungen und Feedback. Persönliche Daten lassen sich exportieren und ein Konto löschen; wenn eine Person die letzte Campusadministration ist, muss die Verwaltung vorher übertragen werden.
 
-## Ändern, bauen, testen
+Der im früheren Chat erarbeitete Academy-Projektstand wurde erneut ausgewertet. Seine 20 vollständigen Prompts und je sechs Arbeitsschritte liegen in `src/data/legacy-content.json`, ebenso zwölf vollständige Grill-me-Lehrprompts, acht ausgearbeitete synthetische Fallstudien, ein 14-Felder-Workshop und Lehrmaterialien. Der Katalog in `src/content.mjs` verknüpft diese Datensätze mit Skills, Fällen, Perspektiven und Teaching Studio. Die GitHub-Pages-Demo erhält denselben Katalog als `content.json`. In der Prompt Library lassen sich Texte lesen, kopieren und exportieren; eigene Antworten lassen sich im Browser speichern. Auf dem Node-Host werden sie dem angemeldeten Konto zugeordnet.
 
-Voraussetzung: Node.js 24 oder neuer.
+**Direkte Einstiege:** Auf `My Future Path` führen eigene Karten zu **Grill-me**, **Für Lehrende** und **HR Mastermind**. Ein Button „HR Mastermind spielen“ steht zusätzlich im Startbereich. Das Spiel ist auch im `Practice Studio` erreichbar; Grill-me ebenfalls. Im `Teaching Studio` steht oben „Für Lehrende“, unmittelbar danach die zwölf Grill-me-Perspektiven und das weitere Lehrmaterial.
 
-```bash
-cd source/academy-core
-node build-preview.mjs        # erzeugt source/Academy-Vorschau.html
-node --test "*.test.mjs"      # 97 Tests
-```
-
-Danach die gebaute Datei übernehmen:
-
-```bash
-cp ../Academy-Vorschau.html ../../academy/index.html      # macOS/Linux
-copy ..\Academy-Vorschau.html ..\..\academy\index.html    # Windows
-```
-
-Die GitHub-Action prüft bei jedem Push, ob Build und Tests grün sind und ob `academy/index.html` dem aktuellen Build entspricht.
-
-## Veröffentlichen (erst nach Freigabe)
-
-- **Im bestehenden Website-Repository von aidadulic.at:** nur den Ordner `academy/` in dessen Veröffentlichungsverzeichnis kopieren. Repository und Veröffentlichungsquelle sind noch zu klären.
-- **Als eigene GitHub-Pages-Seite:** In den Repository-Einstellungen unter *Pages* den Branch `main` und den Ordner `/ (root)` wählen. Die Seite liegt dann unter `…github.io/<repo>/academy/`. Achtung: Bei einem öffentlichen Repository sind auch Briefing und Quellen öffentlich.
-
-## Checkliste vor dem Livegang
-
-- [ ] Fachliche Freigabe: Musterantworten, Skill-Zuordnung zu den fünf Tätigkeiten, Kurzziele, Text „Über die Academy“
-- [ ] USP-Satz gegen Wettbewerb geprüft
-- [ ] Quellenlinks der zwölf Profile geprüft und erreichbar
-- [ ] Bildrechte für das Hero-Bild geklärt
-- [ ] Impressum und Datenschutzerklärung von aidadulic.at verlinkt
-- [ ] Rechtliche Prüfung (DSGVO, EU AI Act) für die konkreten Anwendungsfälle
-- [ ] Sicherheitsprüfung (u. a. Content-Security-Policy beim Hosting, Datei-Upload der Zeitkapsel)
-- [ ] Barrierefreiheitsprüfung mit Screenreader und Tastatur
-- [ ] Test auf echten Geräten (iPhone, Android, Windows, Mac)
-
-## Offen (bewusst nicht umgesetzt)
-
-Geschützter Campus-Betrieb mit Konten und Rollen, echte KI-Integration, serverseitige Speicherung, Evidence Engine, signierter Kompetenzpass, skill-spezifische Zeitangaben und Rubriken, Wirkungsmessung mit echten Lernenden. Details und Verlauf: `source/academy-core/README.md`.
-
-## Lizenzen
-
-- Schriften DM Sans und Instrument Serif: SIL Open Font License 1.1 (`source/academy-core/fonts/`)
-- Inhalte und Code: alle Rechte bei Aida Đulić, sofern nicht anders angegeben. Eine Lizenz für die Weiterverwendung ist noch nicht festgelegt.
+Der Katalog enthält redaktionell rekonstruierte Inhalte. Quellenstatus, synthetische Fälle, nicht verfügbare Originale und Funktionsgrenzen stehen in [INHALTSSTATUS.md](INHALTSSTATUS.md). Der Teststand steht in [TESTBERICHT.md](TESTBERICHT.md).

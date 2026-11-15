@@ -1,0 +1,162 @@
+[
+  {
+    "id": "SKILL-001",
+    "title": "Evidence-based HR Decisions",
+    "world_id": "CW-04",
+    "case_id": "CASE-001",
+    "evidence_basis": "CIPD evidence-based practice",
+    "status": "in Unterhaltung konzipiert, Umsetzung und Volltext prüfen"
+  },
+  {
+    "id": "SKILL-002",
+    "title": "AI Literacy & Human Oversight",
+    "world_id": "CW-02",
+    "case_id": "CASE-002",
+    "evidence_basis": "EU AI Act Artikel 4",
+    "status": "in Unterhaltung konzipiert, Umsetzung und Volltext prüfen"
+  },
+  {
+    "id": "SKILL-003",
+    "title": "From Jobs to Skills",
+    "world_id": "CW-03",
+    "case_id": "CASE-003",
+    "evidence_basis": "OECD skills-first reports",
+    "status": "in Unterhaltung konzipiert, Umsetzung und Volltext prüfen"
+  },
+  {
+    "id": "SKILL-004",
+    "title": "Strategic Workforce Foresight",
+    "world_id": "CW-01",
+    "case_id": "CASE-004",
+    "evidence_basis": "WEF Future of Jobs 2025 / OECD Employment Outlook 2025",
+    "status": "in Unterhaltung konzipiert, Umsetzung und Volltext prüfen"
+  },
+  {
+    "id": "SKILL-005",
+    "title": "AI Governance & Human Accountability",
+    "world_id": "CW-02",
+    "case_id": "CASE-005",
+    "evidence_basis": "NIST AI RMF / EU AI Act",
+    "status": "in Unterhaltung konzipiert, Umsetzung und Volltext prüfen"
+  },
+  {
+    "id": "SKILL-006",
+    "title": "Strategic Unlearning",
+    "world_id": "CW-04",
+    "case_id": "CASE-006",
+    "evidence_basis": "CIPD evidence-based practice / OECD experimentation",
+    "status": "in Unterhaltung konzipiert, Umsetzung und Volltext prüfen"
+  },
+  {
+    "id": "SKILL-007",
+    "title": "Leading Transformation Without Authority",
+    "world_id": "CW-05",
+    "case_id": "CASE-007",
+    "evidence_basis": "CIPD change management",
+    "status": "in Unterhaltung konzipiert, Umsetzung und Volltext prüfen"
+  },
+  {
+    "id": "SKILL-008",
+    "title": "Scenario Planning & Horizon Scanning",
+    "world_id": "CW-01",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-009",
+    "title": "AI-Assisted Learning Design",
+    "world_id": "CW-02",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-010",
+    "title": "Responsible People Analytics",
+    "world_id": "CW-03",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-011",
+    "title": "Skills Taxonomy & Validation",
+    "world_id": "CW-03",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-012",
+    "title": "Internal Talent Marketplace",
+    "world_id": "CW-03",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-013",
+    "title": "Organizational Network Analysis",
+    "world_id": "CW-03",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-014",
+    "title": "Strategic HR Business Cases",
+    "world_id": "CW-06",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-015",
+    "title": "Behavioral Change Experiments",
+    "world_id": "CW-04",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-016",
+    "title": "Stakeholder Influence Mapping",
+    "world_id": "CW-05",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-017",
+    "title": "Bias & Fairness Challenge",
+    "world_id": "CW-06",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-018",
+    "title": "Evidence Synthesis & Research Critique",
+    "world_id": "CW-04",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-019",
+    "title": "Decision Reversal & Calibration",
+    "world_id": "CW-06",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  },
+  {
+    "id": "SKILL-020",
+    "title": "Executive Storytelling",
+    "world_id": "CW-05",
+    "case_id": null,
+    "evidence_basis": "Originalquelle noch zu recherchieren",
+    "status": "redaktioneller Rekonstruktionsvorschlag, noch auszuarbeiten"
+  }
+]

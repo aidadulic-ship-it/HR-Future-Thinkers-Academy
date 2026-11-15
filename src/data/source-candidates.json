@@ -1,0 +1,82 @@
+[
+  {
+    "id": "EVD-001",
+    "publisher": "CIPD",
+    "title": "Evidence-based practice",
+    "candidate_original_url": "https://www.cipd.org/en/knowledge/factsheets/evidence-based-practice-factsheet/",
+    "verified_in_this_package": false,
+    "instruction": "Work: Originalpublikation öffnen, URL/Titel/Datum/Aussagen prüfen; nicht ungeprüft zitieren"
+  },
+  {
+    "id": "EVD-002",
+    "publisher": "NIST",
+    "title": "AI Risk Management Framework",
+    "candidate_original_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "verified_in_this_package": false,
+    "instruction": "Work: Originalpublikation öffnen, URL/Titel/Datum/Aussagen prüfen; nicht ungeprüft zitieren"
+  },
+  {
+    "id": "EVD-003",
+    "publisher": "EU",
+    "title": "AI Act Originaltext",
+    "candidate_original_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "verified_in_this_package": false,
+    "instruction": "Work: Originalpublikation öffnen, URL/Titel/Datum/Aussagen prüfen; nicht ungeprüft zitieren"
+  },
+  {
+    "id": "EVD-004",
+    "publisher": "EU-Kommission",
+    "title": "AI literacy FAQ",
+    "candidate_original_url": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers",
+    "verified_in_this_package": false,
+    "instruction": "Work: Originalpublikation öffnen, URL/Titel/Datum/Aussagen prüfen; nicht ungeprüft zitieren"
+  },
+  {
+    "id": "EVD-005",
+    "publisher": "OECD",
+    "title": "A Skills-First Labour Market",
+    "candidate_original_url": "https://doi.org/10.1787/2e1b85f0-en",
+    "verified_in_this_package": false,
+    "instruction": "Work: Originalpublikation öffnen, URL/Titel/Datum/Aussagen prüfen; nicht ungeprüft zitieren"
+  },
+  {
+    "id": "EVD-006",
+    "publisher": "OECD",
+    "title": "Empowering the Workforce in the Context of a Skills-First Approach",
+    "candidate_original_url": "https://doi.org/10.1787/345b6528-en",
+    "verified_in_this_package": false,
+    "instruction": "Work: Originalpublikation öffnen, URL/Titel/Datum/Aussagen prüfen; nicht ungeprüft zitieren"
+  },
+  {
+    "id": "EVD-007",
+    "publisher": "WEF",
+    "title": "Future of Jobs Report 2025",
+    "candidate_original_url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+    "verified_in_this_package": false,
+    "instruction": "Work: Originalpublikation öffnen, URL/Titel/Datum/Aussagen prüfen; nicht ungeprüft zitieren"
+  },
+  {
+    "id": "EVD-008",
+    "publisher": "OECD",
+    "title": "Employment Outlook 2025",
+    "candidate_original_url": "https://www.oecd.org/en/publications/oecd-employment-outlook-2025_194a947b-en.html",
+    "verified_in_this_package": false,
+    "instruction": "Work: Originalpublikation öffnen, URL/Titel/Datum/Aussagen prüfen; nicht ungeprüft zitieren"
+  },
+  {
+    "id": "EVD-009",
+    "publisher": "CIPD",
+    "title": "Change Management",
+    "candidate_original_url": "https://www.cipd.org/en/knowledge/factsheets/change-management-factsheet/",
+    "verified_in_this_package": false,
+    "instruction": "Work: Originalpublikation öffnen, URL/Titel/Datum/Aussagen prüfen; nicht ungeprüft zitieren"
+  },
+  {
+    "id": "EVD-010",
+    "publisher": "OECD",
+    "title": "Seven Routes to Experimentation in Policymaking",
+    "candidate_original_url": "https://www.oecd.org/",
+    "verified_in_this_package": false,
+    "instruction": "Work: Originalpublikation öffnen, URL/Titel/Datum/Aussagen prüfen; nicht ungeprüft zitieren"
+  }
+]
