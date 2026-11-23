@@ -339,6 +339,23 @@
       "output": "Ergebnis · Angebotsentwurf und Validierungstest",
       "caseId": "CASE-004",
       "provenance": "academy-core/index.html · im früheren Chat erzeugter Projektstand"
+    },
+    {
+      "id": "PROMPT-21",
+      "slug": "progressive-overload-tutor",
+      "title": "Lern-Tutor: Progressive Overload",
+      "prompt": "Agiere als mein persönlicher Tutor für das Konzept: [Thema/Konzept]. Doziere nicht, sondern prüfe mein Verständnis Schritt für Schritt mit Fragen (\"Progressive Overload\"):\n- Level 1: Befrage mich wie einen Schüler.\n- Level 2: Befrage mich wie einen Studenten.\n- Level 3: Befrage mich streng wie in einem Vorstellungsgespräch für eine Führungsposition.\n- Level 4: Fordere mich heraus wie ein kritischer Chef, der glaubt, ich sei unvorbereitet.\nStelle immer nur eine Frage auf einmal und passe das Level meiner Antwort an.",
+      "steps": [
+        "Level 1: Du wirst befragt wie ein Schüler.",
+        "Level 2: Du wirst befragt wie ein Student.",
+        "Level 3: Du wirst streng befragt wie in einem Vorstellungsgespräch für eine Führungsposition.",
+        "Level 4: Du wirst herausgefordert wie von einem kritischen Chef, der glaubt, du seist unvorbereitet."
+      ],
+      "stepsTitle": "Vier Level",
+      "output": "Ergebnis · Schrittweise Verständnisprüfung in vier Leveln",
+      "caseId": null,
+      "label": "ERGÄNZT · LERN-TUTOR-PROMPT",
+      "provenance": "Ergänzt auf Wunsch der Academy-Leitung (Screenshot aus dem Chat „AI Hero“). Allgemeiner Lernprompt ohne zugeordneten Fall."
     }
   ],
   "grills": [
